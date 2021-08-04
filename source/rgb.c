@@ -63,8 +63,9 @@
 	//I made this little tool to create RGB Themes
 	//https://codepen.io/alvaro-prieto/full/gOLrwKm
 
-	//Probably it is better to save some RAM, I had some issues while adding 
-	//too many themed, so I will use PROGMEM to store them in the Program Space
+	//It is important to save some RAM, I had keyboard irresponsiveness issues while adding 
+	//too many themes since they were stored initially in the Data Space, so I will use 
+	//PROGMEM to store them in the Program Space and save some memory
 
 	//rgb themes[][NUMBER_OF_KEYS]  ={ 
 	const rgb themes[][NUMBER_OF_KEYS] PROGMEM ={
