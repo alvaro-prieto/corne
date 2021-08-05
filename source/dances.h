@@ -20,7 +20,8 @@ enum td_codes {
 	LESS,
 	NTEQ,
 	GRTP,
-	LSTP
+	LSTP,
+	STR12
 };
 
 enum tapType{
@@ -36,5 +37,7 @@ enum customTap{
 	LINE2,
 	RESET_KB,
 	CLOSE_WINDOW,
-	CLOSE_APP
+	CLOSE_APP,
+	STR1,
+	STR2,
 };

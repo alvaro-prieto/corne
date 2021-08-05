@@ -4,6 +4,8 @@
 //no need for underglow in a closed case. Also, I use foam and I don't want any overheat
 #define DISABLE_UNDERGLOW  
 #define LOCK_KB_WHEN_SCREEN_OFF
+#define STRING_1 "hola"
+#define STRING_2 "adios"
 #define MASTER_LEFT
 //#define MASTER_RIGHT
 

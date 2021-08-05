@@ -50,11 +50,12 @@ tapdance tds[] ={
 	{ SEQUENCE_TAP, LSS_EQ, SHF_L },	
 	//NTEQ
 	{ CUSTOM_TAP, DIFF, SIM },
-	//GRT
+	//GRTP
 	{ CUSTOM_TAP, QUOT_R, GREQ },
-	//LSS
+	//LSSP
 	{ CUSTOM_TAP, QUOT_L, LSEQ },
-
+	//STR12
+	{ CUSTOM_TAP, STR1, STR2 },
 
 };
 
@@ -94,6 +95,12 @@ void tap_custom( int kc ){ // enum customTap kc ){  //not restricted to customTa
 			holdTapCode = getOSKey( CLS_APP );
 			register_code16( holdTapCode ); 
 			break;
+		case STR1:
+			SEND_STRING( STRING_1 );
+			break;
+		case STR2:
+			SEND_STRING( STRING_2 );
+			break;		
 
 		//────────────────── DEFAULT ──────────────────	
 		default:
@@ -154,5 +161,6 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 	[NTEQ]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_action, dance_reset,  &((tap_data){   NTEQ    })),   
 	[GRTP]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_action, dance_reset,  &((tap_data){   GRTP 	  })),    
 	[LSTP]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_action, dance_reset,  &((tap_data){   LSTP    })),
+	[STR12]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_action, dance_reset,  &((tap_data){   STR12   })),
 
 };

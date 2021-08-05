@@ -194,7 +194,6 @@ enum custom_keycodes {
 	RGB_NEXT,
 	RGB_PREV
 
-
 };
 
 
