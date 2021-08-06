@@ -56,6 +56,16 @@ tapdance tds[] ={
 	{ CUSTOM_TAP, QUOT_L, LSEQ },
 	//STR12
 	{ CUSTOM_TAP, STR1, STR2 },
+	//AC_A
+	{ ACCENT_TAP, ES_A, 0 },
+	//AC_E
+	{ ACCENT_TAP, ES_E, 0 },
+	//AC_I
+	{ ACCENT_TAP, ES_I, 0 },
+	//AC_O
+	{ ACCENT_TAP, ES_O, 0 },
+	//AC_U
+	{ ACCENT_TAP, ES_U, 0 },
 
 };
 
@@ -109,9 +119,10 @@ void tap_custom( int kc ){ // enum customTap kc ){  //not restricted to customTa
 }
 
 
+
 //Main tap dance event handler. According to the tap type and the tap count
 //different actions are performed.
-void dance_action(qk_tap_dance_state_t *state, void *user_data) {
+void dance_finished(qk_tap_dance_state_t *state, void *user_data) {
 		tapdance td = tds[ ((tap_data*)user_data)->keycode ];
 		uint16_t kc = state->count == 1 ? td.kc1 : td.kc2;
 		switch(td.type){
@@ -127,8 +138,10 @@ void dance_action(qk_tap_dance_state_t *state, void *user_data) {
 			case CUSTOM_TAP:
 				tap_custom( kc );
 			break;
+			default:
+			break;
 		}
-};
+}
 
 
 //Tap dance over callback
@@ -139,28 +152,45 @@ void dance_reset(qk_tap_dance_state_t *state, void *user_data) {
 	holdTapCode = 0;	
 }
 
+//Vowels can be accented if pressed twice
+void accent_each(qk_tap_dance_state_t *state, void *user_data) {
+	uint16_t vowel = tds[ ((tap_data*)user_data)->keycode ].kc1;
+	if(state->count==1){
+		tap_code16( vowel );
+	}else{
+		tap_code16( KC_BSPC );
+		tap_code16( ES_ACUT );
+		tap_code16( vowel );
+		state->finished = true;	
+	}
+}
 
 
 //Handler hooks. Add new tap dances here to be able to use them in the keymap.c file using TD( keycode )
 qk_tap_dance_action_t tap_dance_actions[] = {
 
-	[ARROWS]  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_action, dance_reset,  &((tap_data){   ARROWS  })),
-	[COMMNT]  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_action, dance_reset,  &((tap_data){   COMMNT  })),
-	[LINES]   = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_action, dance_reset,  &((tap_data){   LINES   })),
-	[RSET]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_action, dance_reset,  &((tap_data){   RSET    })),
-	[TAG_O]   = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_action, dance_reset,  &((tap_data){   TAG_O   })),  
-	[TAG_C]   = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_action, dance_reset,  &((tap_data){   TAG_C   })), 
-	[DSK1]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_action, dance_reset,  &((tap_data){   DSK1    })), 
-	[DSK2]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_action, dance_reset,  &((tap_data){   DSK2    })), 
-	[DSK3]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_action, dance_reset,  &((tap_data){   DSK3    })), 
-	[ORD]     = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_action, dance_reset,  &((tap_data){   ORD     })), 
-	[SCR]     = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_action, dance_reset,  &((tap_data){   SCR     })),     
-	[EXIT]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_action, dance_reset,  &((tap_data){   EXIT    })),    
-	[GRTR]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_action, dance_reset,  &((tap_data){   GRTR    })),    
-	[LESS]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_action, dance_reset,  &((tap_data){   LESS    })),     
-	[NTEQ]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_action, dance_reset,  &((tap_data){   NTEQ    })),   
-	[GRTP]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_action, dance_reset,  &((tap_data){   GRTP 	  })),    
-	[LSTP]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_action, dance_reset,  &((tap_data){   LSTP    })),
-	[STR12]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_action, dance_reset,  &((tap_data){   STR12   })),
+	[ARROWS]  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   ARROWS  })),
+	[COMMNT]  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   COMMNT  })),
+	[LINES]   = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   LINES   })),
+	[RSET]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   RSET    })),
+	[TAG_O]   = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   TAG_O   })),  
+	[TAG_C]   = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   TAG_C   })), 
+	[DSK1]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   DSK1    })), 
+	[DSK2]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   DSK2    })), 
+	[DSK3]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   DSK3    })), 
+	[ORD]     = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   ORD     })), 
+	[SCR]     = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   SCR     })),     
+	[EXIT]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   EXIT    })),    
+	[GRTR]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   GRTR    })),    
+	[LESS]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   LESS    })),     
+	[NTEQ]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   NTEQ    })),   
+	[GRTP]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   GRTP 	  })),    
+	[LSTP]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   LSTP    })),
+	[STR12]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   STR12   })),
+	[AC_A]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each, NULL, NULL,  &((tap_data){ AC_A })),
+	[AC_E]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each, NULL, NULL,  &((tap_data){ AC_E })),
+	[AC_I]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each, NULL, NULL,  &((tap_data){ AC_I })),
+	[AC_O]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each, NULL, NULL,  &((tap_data){ AC_O })),
+	[AC_U]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each, NULL, NULL,  &((tap_data){ AC_U })),
 
 };

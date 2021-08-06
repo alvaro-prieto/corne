@@ -21,13 +21,19 @@ enum td_codes {
 	NTEQ,
 	GRTP,
 	LSTP,
-	STR12
+	STR12,
+	AC_A,
+	AC_E,
+	AC_I,
+	AC_O,
+	AC_U
 };
 
 enum tapType{
 	BASIC_TAP = 1,
 	BASIC_OS_TAP,
 	SEQUENCE_TAP,
+	ACCENT_TAP,
 	CUSTOM_TAP,
 };
 

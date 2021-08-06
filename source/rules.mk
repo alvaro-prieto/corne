@@ -19,9 +19,10 @@ RGB_MATRIX_CUSTOM_USER = yes #nuevo
 EXTRAFLAGS += -flto
 
 #Are you debugging? If so: REMEMBER to turn CONSOLE_ENABLE = yes
-CONSOLE_ENABLE = no #yes
+CONSOLE_ENABLE = yes #no #yes
 COMMAND_ENABLE = no  
 
 #To save some extra bytes
 #SPACE_CADET_ENABLE = no #en mi version de QMK no me sale rentable, quizas a futuro
 GRAVE_ESC_ENABLE = no
+
