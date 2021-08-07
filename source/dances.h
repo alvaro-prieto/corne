@@ -4,10 +4,15 @@
 				{ .fn = {user_fn_on_each_tap, user_fn_on_dance_finished, user_fn_on_dance_reset}, .user_data = (void*)user_user_data, }
 
 enum td_codes {
-	ARROWS = 0,
+	RSET = 0,
+	AC_A,
+	AC_E,
+	AC_I,
+	AC_O,
+	AC_U,	
+	//ARROWS,
 	COMMNT,
 	LINES,
-	RSET,
 	TAG_O,
 	TAG_C,
 	DSK1,
@@ -22,11 +27,10 @@ enum td_codes {
 	GRTP,
 	LSTP,
 	STR12,
-	AC_A,
-	AC_E,
-	AC_I,
-	AC_O,
-	AC_U
+	APPS,
+	CP,
+	PST,
+
 };
 
 enum tapType{

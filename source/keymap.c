@@ -15,7 +15,7 @@
    | |___| (_) | |  | | | |  __/
     \_____\___/|_|  |_| |_|\___|
     
-    Hysp keymap v0.77, (created by Alvaro Prieto Lauroba)
+    Hysp keymap v0.78, (created by Alvaro Prieto Lauroba)
     =====================================================
 
     [ Features ]
@@ -27,25 +27,26 @@
     - Modifier keys can behave as modifiers (if they are operated in conjunction with other keys), 
       or as normal keys (if they are pressed independently).
     - Support for Os dependent key outputs, key sequences, and more.
-    - Some keys has been moved from their usual location to improve accesibility (C, V, B, W, Ñ, delete, ...)   
+    - Some keys has been moved from their usual location to improve accessibility and ergonomics   
     - Hyper key. This key has been created to allow custom shortcuts depending on the focused application. 
       For example, Hyper + I could mean "italic" in Word while being, "indent" in a code editor, and "invert" in Photoshop.
       You can implement this kind of behaviour in programs such as Karabiner-Elements.
-    - Advanced Tap Dance: specify keys behave differently, based on the amount of times they have been tapped. Added compatibility
-      for OS dependent key combinations, sequences, and extended uint16_t keycodes.
+    - Advanced Tap Dance: some keys behave differently, based on the amount of times that they have been tapped. Added
+      compatibility for OS dependent key combinations, sequences, and extended uint16_t keycodes.
     - A visual keymap has been created as reminder, using meaningful symbols and colors.     
 
 
     [ Hardware ]
      ¯¯¯¯¯¯¯¯¯¯
-    - Developed for Corne LP with all extras included (RGB, OLED, etc). However
-    - OLED is not being used since I didn't find it useful and I preffer to save some bytes
+    - Developed for Corne LP with all extras included (RGB, OLED, etc). However OLED 
+      is not being used since I didn't find it useful and I preffer to save some bytes
 
 
     [ Passwords ]
      ¯¯¯¯¯¯¯¯¯¯
     - To unlok the keyboard type "yo". It will flash a purple notification to let you know that it is active.
       If you want to change the keyword, you can change it in before_key_handler to something like "me" or "hi"
+
 
     [ Settings ]
      ¯¯¯¯¯¯¯¯¯¯
@@ -94,81 +95,91 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   
   [_BASE] = LAYOUT_split_3x6_3( \
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
-      CMD,     ES_Q,     ES_V,     TD(AC_E), ES_R,      ES_T,                           ES_Y,     ES_U,     ES_I,      ES_O,     KC_P,     ES_K,    \
+      CMD,     ES_Q,     ES_V,     ES_D,     ES_R,      ES_F,                           ES_Y,     ES_U,     ES_B,      ES_L,     ES_NTIL,  ES_DOT,  \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-      ALT,     TD(AC_A), ES_S,     ES_D,     ES_C,      ES_F,                           ES_H,     ES_N,     ES_ACUT,   ES_L,     KC_BSPC,  ES_NTIL, \
+      ALT,     TD(AC_A), ES_S,     TD(AC_E), ES_T,      ES_G,                           ES_H,     ES_N,     ES_I,     ES_O,      ES_P,  KC_BSPC, \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-      CTR ,    ES_Z,     ES_X,     ES_W,     ES_B,      ES_G,                           ES_J,     ES_M,     ES_COMM,   ES_DOT,   M5,       M6,      \
+      CTR ,    ES_Z,     ES_X,     ES_W,     ES_C,      ES_MINS,                        ES_J,     ES_M,     ES_COMM,   ES_K,     M5,       M6,      \
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|
                                              M1,        KC_SPC,  M2,            S1,     M3,       M4        ),
                                         //`-------------------------------´   `----------------------------'
-  
+  //UNDO SELECT  PST_PLACE PST_CLEAN
+  //PINK
   [_M1] = LAYOUT_split_3x6_3( \
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
-      KC_ESC,  TD(RSET), SM_APP,   PREV_APP, NEXT_APP, REFRESH,                         APPLE_F11, APPLE_F6, APPLE_F7, APPLE_F8, APPLE_F9, APPLE_F12,\
+      KC_ESC,  TD(RSET), XXXXXXX,   MAXMZ,   REFRESH,   XXXXXXX,                         APPLE_F11, APPLE_F6, APPLE_F7, APPLE_F8, APPLE_F9, APPLE_F12,\
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-      SWAP_OS, SELECT,   SAVE,     UNDO,    REDO,      PST_CLEAN,                       APPLE_F10, APPLE_F1, APPLE_F2, APPLE_F3, APPLE_F4, APPLE_F5,\
+      SWAP_OS, XXXXXXX,  WIN_L,    RESTORE,  WIN_R,     XXXXXXX,                       APPLE_F10, APPLE_F1, APPLE_F2, APPLE_F3, APPLE_F4, APPLE_F5,\
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-      KC_LWIN, UNDO,     CUT,      COPY,    PASTE,     PST_PLACE,                       XXXXXXX,   XXXXXXX,  XXXXXXX,  S(ES_3),  XXXXXXX,  XXXXXXX, \
+      BR_DOWN, BR_UP,    XXXXXXX,    MINMZ,  XXXXXXX, XXXXXXX,                       XXXXXXX,   XXXXXXX,  XXXXXXX,  S(ES_3),  XXXXXXX,  XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|
                                              M1,  XXXXXXX,  M2,                 S1,     M3,        M4      ),
                                         //`-------------------------------´   `----------------------------'
-
+//MONITOR  TD(DSK1) 2 y 3
+  //PURPLE
   [_M2] = LAYOUT_split_3x6_3( \
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
-     MONITOR,  CLS_APPS, XXXXXXX,  MAXMZ,   EXPS,     TD(DSK1),                         ONEPLUS,  ES_6,      ES_7,     ES_8,     ES_9,     INFNT,   \
+     KC_LWIN,  TD(APPS), SM_APP,  PREV_APP,  NEXT_APP, EXPS,                            ONEPLUS,  ES_6,      ES_7,     ES_8,     ES_9,     INFNT,   \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-     BR_DOWN,  BR_UP,    WIN_L,  RESTORE,   WIN_R,    TD(DSK2),                         ES_0,     ES_1,      ES_2,     ES_3,     ES_4,     ES_5,    \
+     XXXXXXX,  SELECT,   SAVE,     UNDO,     REDO,    SHW_DSK,                         ES_0,     ES_1,      ES_2,     ES_3,     ES_4,     ES_5,    \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-     VOL_DOWN, VOL_UP,   TD(EXIT), MINMZ,    SHW_DSK, TD(DSK3),                         KC_SPC,   ONEMINS,  ES_COMM,   ES_DOT,   ES_ASTR,  ES_SLSH, \
+     VOL_DOWN, VOL_UP,   TD(EXIT), TD(PST),    TD(CP),  PASTE,                         KC_SPC,   ONEMINS,  ES_COMM,   ES_DOT,   ES_ASTR,  ES_SLSH, \
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|
                                              M1,       XXXXXXX,  M2,            S1,     ES_PLUS,  ES_MINS  ),
                                         //`-------------------------------´   `----------------------------'      
-   
+  
+  //ES_QUES ES_UNDS  ES_EXLM TD(ARROWS)
+  //RED
   [_M3] = LAYOUT_split_3x6_3( \
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
-     XXXXXXX,  ES_QUES,  ES_AT,    KC_UP,    ES_PLUS,  ES_MINS,                         TD(TAG_C), ES_LCBR,  ES_RCBR,  ES_PIPE,  TD(SCR), TD(STR12),\
+     XXXXXXX,  ES_HASH,  ES_DIAE,  KC_UP,    ES_ASTR,  ES_SLSH,                         TD(TAG_C), ES_LCBR,  ES_RCBR,  ES_PIPE,  TD(SCR), TD(STR12),\
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-     ES_HASH,  ES_EXLM,  KC_LEFT,  KC_DOWN,  KC_RIGHT, TD(ARROWS),                      TD(TAG_O), ES_LPRN,  ES_RPRN,  ES_AMPR,  DEL_W,    WAVE,    \
+     XXXXXXX,  ES_AT,  KC_LEFT,  KC_DOWN,  KC_RIGHT, FIELD,                      TD(TAG_O), ES_LPRN,  ES_RPRN,  ES_AMPR,  DEL_W,    WAVE,    \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-     XXXXXXX,  ES_UNDS,  ES_BSLS,  ES_PERC,  ES_ASTR,  ES_SLSH,                         NOT_EQ,    ES_LBRC,  ES_RBRC,  ELLIPSIS, ES_GRV,   XXXXXXX, \
+     XXXXXXX,  XXXXXXX,  ES_BSLS,  ES_PERC,  MEMBER,  ES_PLUS,                         NOT_EQ,    ES_LBRC,  ES_RBRC,  ELLIPSIS, ES_GRV,   XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|
                                              M1,       KC_LSFT,  M2,            S1,     M3,        M4       ),
                                         //`-------------------------------´   `----------------------------' 
-        
+  //EXCLAM (¡!)     QUESTN (¿?) 
+  //GREEN
   [_M4] = LAYOUT_split_3x6_3( \
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
-     XXXXXXX,  QUESTN,   TD(ORD),  KC_PGUP,  Z_OUT,    Z_IN,                            TD(GRTR),  SRCH_PR,  SRCH_NX,  EMOJI,    TD(RSET), KC_ESC,  \
+     XXXXXXX,  XXXXXXX,   XXXXXXX,  KC_PGUP,  Z_OUT,    Z_IN,                            TD(GRTR),  SRCH_PR,  SRCH_NX,  EMOJI,    TD(RSET), KC_ESC,  \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-     XXXXXXX,  EXCLAM,   W_LEFT,   KC_PGDN,  W_RIGHT,  XXXXXXX,                         TD(LESS),  SEARCH,  XXXXXXX,   KC_UP,    KC_DEL,   SWAP_OS, \
+     XXXXXXX,  TD(ORD),   W_LEFT,   KC_PGDN,  W_RIGHT,  XXXXXXX,                         TD(LESS),  SEARCH,  XXXXXXX,   KC_UP,    KC_DEL,   SWAP_OS, \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-     XXXXXXX,  MIDLN,    XXXXXXX,  XXXXXXX, TD(COMMNT),TD(LINES),                       XXXXXXX,   SPOTL,   KC_LEFT,   KC_DOWN,  KC_RIGHT, KC_LSFT, \
+     XXXXXXX,  TD(LINES),  BORDER,  XXXXXXX, TD(COMMNT), MIDLN,                       XXXXXXX,   SPOTL,   KC_LEFT,   KC_DOWN,  KC_RIGHT, KC_LSFT, \
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|
                                              M1,       KC_LSFT,  M2,             S1,    M3,        M4       ),
                                         //`-------------------------------´   `----------------------------' 
-  
+  //DEL_LN
+  //BLUE
   [_M5] = LAYOUT_split_3x6_3( \
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
      XXXXXXX,  XXXXXXX,  XXXXXXX,  TOP,      XXXXXXX,  XXXXXXX,                         TD(GRTP),  XXXXXXX,  XXXXXXX,  DEGR,     PI,       ES_CIRC, \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-     XXXXXXX,  XXXXXXX,  FIRST,    BOTTOM,   LAST,     XXXXXXX,                         TD(LSTP),  XXXXXXX,  XXXXXXX,  POUND,    DEL_LN,   ES_NOT,  \
+     XXXXXXX,  XXXXXXX,  FIRST,    BOTTOM,   LAST,     XXXXXXX,                         TD(LSTP),  XXXXXXX,  XXXXXXX,  POUND,    TD(SCR),   ES_NOT,  \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-     XXXXXXX,  LONGLN,   XXXXXXX,  XXXXXXX,  XXXXXXX,  BORDER,                          TD(NTEQ),  XXXXXXX,  XXXXXXX,  BULLET,   XXXXXXX,  XXXXXXX, \
+     XXXXXXX,  LONGLN,   XXXXXXX,  XXXXXXX,  XXXXXXX,  TOPLN,                          TD(NTEQ),  XXXXXXX,  XXXXXXX,  BULLET,   XXXXXXX,  XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|
                                              M1,       KC_LSFT,  M2,            S1,     M3,        M4      ),
                                         //`-------------------------------´  `----------------------------' 
-
-   [_M6] = LAYOUT_split_3x6_3( \
+  
+  //BROWN
+  [_M6] = LAYOUT_split_3x6_3( \
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
-     XXXXXXX,  XXXXXXX,  XXXXXXX,  EURO,     REG,      TM,                              XXXXXXX,   XXXXXXX,  XXXXXXX,  XXXXXXX,  LOCK,     BOOT,    \
+     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  REG,   XXXXXXX,                              XXXXXXX,   XXXXXXX,  XXXXXXX,  XXXXXXX,  LOCK,     BOOT,    \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  CR,       XXXXXXX,                         XXXXXXX,   XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  SCR_OFF, \
+     XXXXXXX,  XXXXXXX,  XXXXXXX,  EURO,     TM,       XXXXXXX,                         XXXXXXX,   XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  SCR_OFF, \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-     XXXXXXX,  TOPLN,    XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,                         XXXXXXX,   XXXXXXX,  SNG_PR,   SNG_NX,   PLAY,     XXXXXXX, \
+     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  CR,  XXXXXXX,                         XXXXXXX,   XXXXXXX,  SNG_PR,   SNG_NX,   PLAY,     XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|
                                              M1,       KC_SPC,   M2,            S1,     M3,        M4      ),
                                         //`-------------------------------´  `----------------------------' 
       
+
+      //TO-DO: a partir de aquí no he hecho nada
+
   [_HYP] = LAYOUT_split_3x6_3( \
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
       ES_0,    ES_Q,      ES_V,    ES_E,     ES_R,     ES_T,                             ES_Y,     ES_U,     ES_I,     ES_O,    ES_P,      ES_K,    \
