@@ -78,6 +78,8 @@ static uint16_t osKeys[][NUMBER_OF_OS] = {
 	{ G(ES_G), C(ES_G)},
 	//SRCH_PR
 	{ G(S(ES_G)), C(S(ES_G))},
+	//RPLC 
+	{ G(A(ES_F)), C(ES_H)},
 	//SPOTL
 	{ G(KC_SPC), LWIN(KC_S)},
 	//SM_APP

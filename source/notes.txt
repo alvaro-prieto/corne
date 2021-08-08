@@ -16,6 +16,7 @@
 
 [ Tareas pendientes ]
  ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+* poner Keydefs como PROGMEM?
 
 [ Mejoras e ideas ]
  ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯

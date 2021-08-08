@@ -122,6 +122,7 @@ enum custom_keycodes {
 	SEARCH,
 	SRCH_NX,
 	SRCH_PR,
+	RPLC,
 	SPOTL,
 	SM_APP,
 	EMOJI,
@@ -192,7 +193,8 @@ enum custom_keycodes {
 	BORDER,
 	KBLOCK,
 	RGB_NEXT,
-	RGB_PREV
+	RGB_PREV,
+	DEL,
 
 };
 

@@ -4,17 +4,16 @@
 				{ .fn = {user_fn_on_each_tap, user_fn_on_dance_finished, user_fn_on_dance_reset}, .user_data = (void*)user_user_data, }
 
 enum td_codes {
-	RSET = 0,
-	AC_A,
+	AC_A = 0,
 	AC_E,
 	AC_I,
 	AC_O,
 	AC_U,	
-	//ARROWS,
-	COMMNT,
-	LINES,
-	TAG_O,
-	TAG_C,
+	RSET,
+	CMNT,
+	LN,
+	TAGO,
+	TAGC,
 	DSK1,
 	DSK2,
 	DSK3,
@@ -30,6 +29,12 @@ enum td_codes {
 	APPS,
 	CP,
 	PST,
+	ADD,
+	MUL,
+	CURL,
+	SQR,
+	PRN,
+	MRK, 
 
 };
 

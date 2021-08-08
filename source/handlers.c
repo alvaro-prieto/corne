@@ -610,6 +610,27 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 		//────────────────── CUSTOM HANDLED KEYS ──────────────────
 
+		case DEL:
+			if(down){
+				if(shift){
+					interruptMods();
+					unregister_code( KC_RSFT );
+					register_os_dependent_key( getOSKey( DEL_LN ) );
+				}else{
+					register_code16( KC_BSPC );
+				}	
+			}else{
+				if(shift){
+					register_code( KC_RSFT );
+					unregister_os_dependent_key( getOSKey( DEL_LN ) );
+				}else{
+					unregister_code16( KC_BSPC );
+				}	
+			}
+			return false;
+
+		// · · · · · · · · · · · · · · · · · · · · · · · · ·				
+
 		case SWAP_OS:
 			if(down){
 				interruptMods();
