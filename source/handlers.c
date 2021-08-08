@@ -88,6 +88,10 @@ bool M1DownHandler ( Keypress *kp ){
 //fired when M1 is released 
 void M1UpHandler ( Keypress *kp ){
 	passive_up();
+}
+
+//fired when M2 is released
+void M2UpHandler ( Keypress *kp ){
 	app_switch_end();
 }
 
@@ -164,17 +168,17 @@ void ctrUpHandler( Keypress *kp ){
 
 Keypress KP[] = {
 
-	//NAME			MASK 	LAYER 	SKIP_TIME	KC 			ALT_KC 		OS_KC 		ALT_OS_KC	DOWN_CBACK			UP_CBACK			INTERNAL
-	{ M1_MOD, 		M1_M,	_M1, 	300,		0,			ES_COLN, 	0, 			0, 			&M1DownHandler,		&M1UpHandler,		0, 0, 0, 0 },  
-	{ M2_MOD, 		M2_M,	_M2, 	300,		0, 			ES_SCLN, 	0,			0,			0,					0,					0, 0, 0, 0 },
-	{ M3_MOD, 		M3_M,	_M3, 	300,		0,  		ES_EQL, 	0, 			0, 			0,					0,					0, 0, 0, 0 },
-	{ M4_MOD, 		M4_M,	_M4, 	300,		0,  		ES_DLR, 	0,			0,			0,					0,					0, 0, 0, 0 },
-	{ M5_MOD, 		M5_M,	_M5, 	300,		0,  		ES_DQUO, 	0,			0,			0,					0, 					0, 0, 0, 0 },
-	{ M6_MOD, 		M6_M,	_M6, 	300,		0,  		ES_QUOT, 	0, 			0,			&M6DownHandler,		0,					0, 0, 0, 0 },
-	{ CMD_MOD,		NO_M,	_MOD, 	250,		0, 			KC_TAB, 	CMD_OS,		0, 			0,					0,					0, 0, 0, 0 },	
-	{ ALT_MOD, 		NO_M,	_MOD, 	250,		KC_LALT,	S(KC_TAB),	0,			0,			0,					0,					0, 0, 0, 0 },	
-	{ CTR_MOD,  	NO_M,	_MOD, 	300,		0, 			0, 			0, 			MUTE,		&ctrDownHandler,	&ctrUpHandler,		0, 0, 0, 0 },	
-	{ S1_MOD,   	S1_M,	_BASE,	250,		0,  		KC_ENT, 	0, 			0,			&shiftDownHandler,	&shiftUpHandler,	0, 0, 0, 0 },	
+	//NAME			MASK 	LAYER 	SKIP_TIME	KC 				ALT_KC 			OS_KC 		ALT_OS_KC	DOWN_CBACK					UP_CBACK					INTERNAL
+	{ M1_MOD, 	M1_M,	_M1, 		300,			0,				ES_COLN, 		0, 				0, 				&M1DownHandler,			&M1UpHandler,			0, 0, 0, 0 },  
+	{ M2_MOD, 	M2_M,	_M2, 		300,			0, 				ES_SCLN, 		0,				0,				0,									&M2UpHandler,			0, 0, 0, 0 },
+	{ M3_MOD, 	M3_M,	_M3, 		300,			0,  			ES_EQL, 		0, 				0, 				0,									0,								0, 0, 0, 0 },
+	{ M4_MOD, 	M4_M,	_M4, 		300,			0,  			ES_DLR, 		0,				0,				0,									0,								0, 0, 0, 0 },
+	{ M5_MOD, 	M5_M,	_M5, 		300,			0,  			ES_DQUO, 		0,				0,				0,									0, 								0, 0, 0, 0 },
+	{ M6_MOD, 	M6_M,	_M6, 		300,			0,  			ES_QUOT, 		0, 				0,				&M6DownHandler,			0,								0, 0, 0, 0 },
+	{ CMD_MOD,	NO_M,	_MOD, 	250,			0, 				KC_TAB, 		CMD_OS,		0, 				0,									0,								0, 0, 0, 0 },	
+	{ ALT_MOD, 	NO_M,	_MOD, 	250,			KC_LALT,	S(KC_TAB),	0,				0,				0,									0,								0, 0, 0, 0 },	
+	{ CTR_MOD,  NO_M,	_MOD, 	300,			0, 				0, 					0, 				MUTE,			&ctrDownHandler,		&ctrUpHandler,		0, 0, 0, 0 },	
+	{ S1_MOD,   S1_M,	_BASE,	250,			0,  			KC_ENT, 		0, 				0,				&shiftDownHandler,	&shiftUpHandler,	0, 0, 0, 0 },	
 
 };
 
@@ -403,7 +407,6 @@ bool mod_combo( bool down ){
 		#endif	
 	}
 
-	//set_rgb_indicator(RGB_ADJUST_LOCK, false);
 	lastMask = modMask;
 	return false;
 
@@ -671,6 +674,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 				#endif
 			}
 			return false; 
+
 		// · · · · · · · · · · · · · · · · · · · · · · · · ·	
 
 		case SHW_DSK:
@@ -766,7 +770,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 		return false;  
 
 		// · · · · · · · · · · · · · · · · · · · · · · · · ·
-
 		
 		case H_LOCK:
 			if(down){
@@ -776,7 +779,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 		return false;  
 		
-
 		// · · · · · · · · · · · · · · · · · · · · · · · · ·
 
 		case RGB_RST:
