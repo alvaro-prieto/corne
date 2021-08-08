@@ -125,30 +125,21 @@
 	//value >= 100 && < 200 = right
 	//value >= 200 = both sides
 
-	rgb_led leds[] ={
+	static const rgb_led leds[] PROGMEM ={
 		//0 - RGB_HYPER_LOCK
 		{126, 0xff * BRM, 0x00 * BRM, 0x90 * BRM, 0},
 		//1 - RGB_CAPS_LOCK
 		{126, 0x21 * BRM, 0xd1 * BRM, 0xc8 * BRM, 0},
-		//2 - RGB_ADJUST_LOCK
-		{6,   0x2f * BRM, 0x00 * BRM, 0xff * BRM, 2},
-		{106, 0x2f * BRM, 0x00 * BRM, 0xff * BRM, 0},
-		//4 - RGB_MOD_HELPER	
-		{14,  0x40 * BRM, 0x00 * BRM, 0xbf * BRM, 5},
-		{6,   0xb8 * BRM, 0x06 * BRM, 0x8e * BRM, 6},
-		{106, 0x00 * BRM, 0x00 * BRM, 0xbb * BRM, 7},
-		{113, 0x55 * BRM, 0x00 * BRM, 0x00 * BRM, 8},
-		{114, 0x00 * BRM, 0x33 * BRM, 0x00 * BRM, 0},
-		//9 - RGB_SHIFT
+		//2 - RGB_SHIFT
 		{126, 0x00 * BRM, 0x10 * BRM, 0x65 * BRM, 0},	
-		//10 - RGB_EXTRAS
-		{214, 0xbb * BRM, 0x15 * BRM, 0x00 * BRM, 11},	 
-		{213, 0xbb * BRM, 0x15 * BRM, 0x00 * BRM, 12},
+		//3 - RGB_EXTRAS
+		{214, 0xbb * BRM, 0x15 * BRM, 0x00 * BRM, 4},	 
+		{213, 0xbb * BRM, 0x15 * BRM, 0x00 * BRM, 5},
 		{206, 0xbb * BRM, 0x15 * BRM, 0x00 * BRM, 0},
-		//13 - RGB_HYPER_HOLD
-		{214, 0xff * BRM, 0x00 * BRM, 0x90 * BRM, 14},	 
-		{213, 0xff * BRM, 0x00 * BRM, 0x90 * BRM, 15},
-		{206, 0xff * BRM, 0x00 * BRM, 0x90 * BRM, 16},
+		//6 - RGB_HYPER_HOLD
+		{214, 0xff * BRM, 0x00 * BRM, 0x90 * BRM, 7},	 
+		{213, 0xff * BRM, 0x00 * BRM, 0x90 * BRM, 8},
+		{206, 0xff * BRM, 0x00 * BRM, 0x90 * BRM, 9},
 		{126, 0x36 * BRM, 0x00 * BRM, 0x2c * BRM, 0}		
 	};
 
@@ -180,7 +171,9 @@
 		}	
 		*/
 
-		//New implementation for PROGMEM themes
+		//New implementation for PROGMEM themes. This way is not the safest one
+		//to access data, using its size as offset (+0, +1, +2), but it works.
+		//A safer way of doing the same kind of task is shown in "dance_finished" (dances.c)
 		uintptr_t rgb_led;
 		for(int i=0; i<NUMBER_OF_KEYS; i++){
 			rgb_led = (uintptr_t) &(themes[theme_index][i]) ;
@@ -284,16 +277,20 @@
 	//this function is used to draw an indicator, that can be compound of several LEDs 
 	void draw_indicator(enum rgb_indicator indicator){
 		unsigned char iteration = 0, index, adjust;
-		rgb_led led;
+		uintptr_t ledAddress;  
 		while( iteration < MAX_INDICATOR_LENGTH && (iteration++ == 0 || indicator > 0) ){
-			led = leds[ indicator ];
-			index = led.number;
+			ledAddress = (uintptr_t) &(leds[ indicator ]);
+			index = pgm_read_byte( ledAddress + 0 ); //number
 			adjust = index >= 200 ? 200 : index >= 100 ? 100 : 0;
 			if( (is_master &&  (index < 100 || index >= 200) ) ||
 				(!is_master && index >= 100)){
-				rgb_matrix_set_color( index - adjust, led.R, led.G, led.B);
+				rgb_matrix_set_color( index - adjust, 
+					pgm_read_byte(ledAddress + 1),	//R
+					pgm_read_byte(ledAddress + 2),	//G
+					pgm_read_byte(ledAddress + 3)	//B
+				);
 			}
-			indicator = led.next;
+			indicator = pgm_read_byte( ledAddress + 4 ); //next
 		}
 	}
 

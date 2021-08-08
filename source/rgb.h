@@ -16,11 +16,9 @@
 		RGB_NONE = -1,
 		RGB_HYPER_LOCK = 0,
 		RGB_CAPS_LOCK = 1,
-		RGB_ADJUST_LOCK = 2,
-		RGB_MOD_HELPER = 4,
-		RGB_SHIFT = 9,
-		RGB_EXTRAS = 10,
-		RGB_HYPER_HOLD = 13,
+		RGB_SHIFT = 2,
+		RGB_EXTRAS = 3,
+		RGB_HYPER_HOLD = 6,
 	};
 
 	enum rgb_map{
