@@ -291,7 +291,7 @@
 				);
 			}
 			indicator = pgm_read_byte( ledAddress + 4 ); //next
-		}
+		}	
 	}
 
 	//this function is used to draw all active indicators

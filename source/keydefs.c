@@ -127,9 +127,9 @@ static const uint16_t sequenceKeys[][SEQUENCE_MAX_LENGTH] PROGMEM = {
 	{ ES_MINS, ES_RABK, NULL_KEY }, 
 	//FIELD
 	{ ES_EQL, ES_RABK, NULL_KEY }, 
-	//QUESTION
+	//QUESTN
 	{ ES_IQUE, ES_QUES, KC_LEFT },
-	//EXCLAMATION
+	//EXCLAM
 	{ ES_IEXL, ES_EXLM, KC_LEFT },
 	//CMNT_OP
 	{ ES_SLSH, ES_ASTR, NULL_KEY }, 
@@ -212,28 +212,20 @@ static const uint16_t asciiKeys[][NUMBER_OF_OS] PROGMEM = {
 
 //returns the extendend shortcut keycode according to the current OS
 static uint16_t getOSKey(uint16_t keyName ){
-	//OLD implementation (without PROGMEM)
-	/*
-	uint16_t *p = osKeys[ keyName - OS_INDEX -1 ];
-	return p[ os ]; 
-	*/
-	uintptr_t keyPtr = (uintptr_t) &( osKeys[ keyName - OS_INDEX -1 ] );
-	return pgm_read_word( keyPtr + os);
+	return pgm_read_word( &( osKeys[ keyName - OS_INDEX -1 ][ os ] ) );
 }; 
 
 //Returns the uint16_t keycode or the ASCII index according to the current OS
 static uint16_t getAsciiKey(uint16_t keyName ){
-	uintptr_t keyPtr = (uintptr_t) &( asciiKeys[ keyName - ASCII_INDEX -1 ] );
-	return pgm_read_word( keyPtr + os);
+	return pgm_read_word( &( asciiKeys[ keyName - ASCII_INDEX -1 ][ os ] ));
 };
 
 //taps a sequence of keys. Useful for common key sequences such as <= -> and so on
 static void tap_sequence(uint16_t seqName){
 	char overflow = SEQUENCE_MAX_LENGTH;
-	uintptr_t keyPtr = (uintptr_t) &( sequenceKeys[ seqName - SEQUENCE_INDEX -1 ] );
 	uint16_t currentKey;
 	for(int i=0; i<SEQUENCE_MAX_LENGTH && overflow>0; i++, overflow--){
-		currentKey = pgm_read_word( keyPtr + i);
+		currentKey = pgm_read_word( &( sequenceKeys[ seqName - SEQUENCE_INDEX -1 ][ i ] )); 
 		if(currentKey == NULL_KEY) break;
 		tap_code16( currentKey ); 
 	}	
