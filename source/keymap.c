@@ -18,6 +18,7 @@
     Hysp keymap v0.78, (created by Alvaro Prieto Lauroba)
     =====================================================
 
+
     [ Features ]
      ¯¯¯¯¯¯¯¯¯¯
 
@@ -35,6 +36,10 @@
       compatibility for OS dependent key combinations, sequences, and extended uint16_t keycodes.
     - A visual keymap has been created as reminder, using meaningful symbols and colors.     
 
+   [ Dev tips ]
+    ¯¯¯¯¯¯¯¯¯¯
+    - If you are modifying this keymap and your keyboard doesnt output anything, probably you are running out
+      of 'RAM' (Data Space). If so, try to move your data to Program Space using PROGMEM
 
     [ Hardware ]
      ¯¯¯¯¯¯¯¯¯¯
@@ -166,7 +171,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
      XXXXXXX,  XXXXXXX,  FIRST,    BOTTOM,   LAST,     XXXXXXX,                         TD(LSTP),  XXXXXXX,  XXXXXXX,  DEGR,     TD(SCR),  XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-     XXXXXXX,  LONGLN,   XXXXXXX,  XXXXXXX,  XXXXXXX,  MIDLN,                           TD(NTEQ),  XXXXXXX,  XXXXXXX,  ES_CIRC,  XXXXXXX,  XXXXXXX, \
+     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  MIDLN,                           TD(NTEQ),  XXXXXXX,  XXXXXXX,  ES_CIRC,  XXXXXXX,  XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|
                                              M1,       KC_LSFT,  M2,            S1,     M3,        M4      ),
                                         //`-------------------------------´  `----------------------------' 
