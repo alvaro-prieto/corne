@@ -19,7 +19,7 @@ typedef struct {
 //on the number of taps, a sequence tap outpus more than keystroke, a custom tap is handled manually 
 //and can be used, for example to output a different key combination according to the OS. New types of
 //dances could be added if required.
-tapdance tds[] ={
+static const tapdance tds[] ={
 	//AC_A
 	{ ACCENT_TAP, ES_A, 0 },
 	//AC_E

@@ -214,40 +214,24 @@ static uint16_t getOSKey(uint16_t keyName ){
 	return p[ os ]; 
 	*/
 	uintptr_t keyPtr = (uintptr_t) &( osKeys[ keyName - OS_INDEX -1 ] );
-	return pgm_read_byte( keyPtr + os);
+	return pgm_read_word( keyPtr + os);
  
 }; 
 
 static uint16_t getAsciiKey(uint16_t keyName ){
-	/*
-	uint16_t *p = asciiKeys[ keyName - ASCII_INDEX -1 ];
-	return p[ os ];  
-	*/
 	uintptr_t keyPtr = (uintptr_t) &( asciiKeys[ keyName - ASCII_INDEX -1 ] );
-	return pgm_read_byte( keyPtr + os);
+	return pgm_read_word( keyPtr + os);
 };
 
 static void tap_sequence(uint16_t seqName){
 	char overflow = SEQUENCE_MAX_LENGTH;
-	/*
-	uint16_t *sequence = sequenceKeys[ seqName - SEQUENCE_INDEX -1 ],
-		currentKey;
-		
-	for(int i=0; i<SEQUENCE_MAX_LENGTH && overflow>0; i++, overflow--){
-		currentKey = sequence[i];
-		if(currentKey == NULL_KEY) break;
-		tap_code16( currentKey ); 
-	}
-	*/
 	uintptr_t keyPtr = (uintptr_t) &( sequenceKeys[ seqName - SEQUENCE_INDEX -1 ] );
 	uint16_t currentKey;
 	for(int i=0; i<SEQUENCE_MAX_LENGTH && overflow>0; i++, overflow--){
-		currentKey = pgm_read_byte( keyPtr + i);
+		currentKey = pgm_read_word( keyPtr + i);
 		if(currentKey == NULL_KEY) break;
 		tap_code16( currentKey ); 
 	}	
-
-
 }; 
 
 static void tap_ascii_key(uint16_t kc){
