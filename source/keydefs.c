@@ -3,10 +3,12 @@
 #include "keydefs.h"
 #include "handlers.h"
 
-
-
+//CODES:
 //ALT A,  CMD G,  CONTROL C, SHIFT S, C+A LCA, ALGR (for Windows), LWIN, H (hyper)
 
+
+//Definition of those shortcuts that perform the same action using different 
+//key combinations accordint to the OS. Currently: {OSX, Windows}
 static const uint16_t osKeys[][NUMBER_OF_OS] PROGMEM = { 
 	//CMD_OS
 	{ KC_LCMD, KC_LCTRL},
@@ -119,7 +121,7 @@ static const uint16_t osKeys[][NUMBER_OF_OS] PROGMEM = {
    
 };
 
-
+//Definition of those keys that should output more than one character, for example:  >=
 static const uint16_t sequenceKeys[][SEQUENCE_MAX_LENGTH] PROGMEM = { 
 	//MEMBER
 	{ ES_MINS, ES_RABK, NULL_KEY }, 
@@ -164,6 +166,9 @@ static const uint16_t sequenceKeys[][SEQUENCE_MAX_LENGTH] PROGMEM = {
 	
 };
 
+//ASCII characters are managed differently according to the OS. 
+//In OSX usually they have a custom key combination, while in Windows 
+//they can be managed using its ASCII index code.
 static const uint16_t asciiKeys[][NUMBER_OF_OS] PROGMEM = { 
 	//MIDLN
 	{ A(ES_MINS), 150},
@@ -201,12 +206,11 @@ static const uint16_t asciiKeys[][NUMBER_OF_OS] PROGMEM = {
 	{ A(S(ES_3)), 149},
 	//CR
 	{ A(ES_C), 169},
-
 	
 };
 
 
-
+//returns the extendend shortcut keycode according to the current OS
 static uint16_t getOSKey(uint16_t keyName ){
 	//OLD implementation (without PROGMEM)
 	/*
@@ -215,14 +219,15 @@ static uint16_t getOSKey(uint16_t keyName ){
 	*/
 	uintptr_t keyPtr = (uintptr_t) &( osKeys[ keyName - OS_INDEX -1 ] );
 	return pgm_read_word( keyPtr + os);
- 
 }; 
 
+//Returns the uint16_t keycode or the ASCII index according to the current OS
 static uint16_t getAsciiKey(uint16_t keyName ){
 	uintptr_t keyPtr = (uintptr_t) &( asciiKeys[ keyName - ASCII_INDEX -1 ] );
 	return pgm_read_word( keyPtr + os);
 };
 
+//taps a sequence of keys. Useful for common key sequences such as <= -> and so on
 static void tap_sequence(uint16_t seqName){
 	char overflow = SEQUENCE_MAX_LENGTH;
 	uintptr_t keyPtr = (uintptr_t) &( sequenceKeys[ seqName - SEQUENCE_INDEX -1 ] );
@@ -234,6 +239,7 @@ static void tap_sequence(uint16_t seqName){
 	}	
 }; 
 
+//taps a single ascii key according to the current OS
 static void tap_ascii_key(uint16_t kc){
 	uint16_t v = getAsciiKey( kc );
 	if(os == OSX){

@@ -19,7 +19,7 @@ typedef struct {
 //on the number of taps, a sequence tap outpus more than keystroke, a custom tap is handled manually 
 //and can be used, for example to output a different key combination according to the OS. New types of
 //dances could be added if required.
-static const tapdance tds[] ={
+static const tapdance tds[] PROGMEM ={
 	//AC_A
 	{ ACCENT_TAP, ES_A, 0 },
 	//AC_E
@@ -140,24 +140,32 @@ void tap_custom( int kc ){ // enum customTap kc ){  //not restricted to customTa
 //Main tap dance event handler. According to the tap type and the tap count
 //different actions are performed.
 void dance_finished(qk_tap_dance_state_t *state, void *user_data) {
-		tapdance td = tds[ ((tap_data*)user_data)->keycode ];
-		uint16_t kc = state->count == 1 ? td.kc1 : td.kc2;
-		switch(td.type){
-			case BASIC_TAP:
-				tap_code16( kc );
-			break;
-			case BASIC_OS_TAP:
-				tap_code16( getOSKey( kc ) );
-			break;
-			case SEQUENCE_TAP:
-				tap_sequence( kc );
-			break;
-			case CUSTOM_TAP:
-				tap_custom( kc );
-			break;
-			default:
-			break;
-		}
+	//old code working without PROGMEM
+	//tapdance td = tds[ ((tap_data*)user_data)->keycode ];
+	//uint16_t kc = state->count == 1 ? td.kc1 : td.kc2;
+
+	//Note that the tapdance struct has mixed size fields (byte, word, word),
+	//so we can access in a safer maner. 
+	const tapdance * t = &tds[ ((tap_data*)user_data)->keycode ];
+	enum tapType type = (enum tapType) pgm_read_byte( &t->type );
+	uint16_t kc = pgm_read_word( state->count == 1 ? &t->kc1 : &t->kc2 );
+
+	switch(type){
+		case BASIC_TAP:
+			tap_code16( kc );
+		break;
+		case BASIC_OS_TAP:
+			tap_code16( getOSKey( kc ) );
+		break;
+		case SEQUENCE_TAP:
+			tap_sequence( kc );
+		break;
+		case CUSTOM_TAP:
+			tap_custom( kc );
+		break;
+		default:
+		break;
+	}
 }
 
 
