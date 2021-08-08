@@ -7,7 +7,7 @@
 
 //ALT A,  CMD G,  CONTROL C, SHIFT S, C+A LCA, ALGR (for Windows), LWIN, H (hyper)
 
-static uint16_t osKeys[][NUMBER_OF_OS] = { 
+static const uint16_t osKeys[][NUMBER_OF_OS] PROGMEM = { 
 	//CMD_OS
 	{ KC_LCMD, KC_LCTRL},
 	//CTR_OS
@@ -120,7 +120,7 @@ static uint16_t osKeys[][NUMBER_OF_OS] = {
 };
 
 
-static uint16_t sequenceKeys[][SEQUENCE_MAX_LENGTH] = { 
+static const uint16_t sequenceKeys[][SEQUENCE_MAX_LENGTH] PROGMEM = { 
 	//MEMBER
 	{ ES_MINS, ES_RABK, NULL_KEY }, 
 	//FIELD
@@ -164,7 +164,7 @@ static uint16_t sequenceKeys[][SEQUENCE_MAX_LENGTH] = {
 	
 };
 
-static uint16_t asciiKeys[][NUMBER_OF_OS] = { 
+static const uint16_t asciiKeys[][NUMBER_OF_OS] PROGMEM = { 
 	//MIDLN
 	{ A(ES_MINS), 150},
 	//LONGLN
@@ -207,23 +207,30 @@ static uint16_t asciiKeys[][NUMBER_OF_OS] = {
 
 
 
-static uint16_t * getKeySequence(uint16_t keyName ){
-	return sequenceKeys[ keyName - SEQUENCE_INDEX -1 ];
-}; 
-
 static uint16_t getOSKey(uint16_t keyName ){
+	//OLD implementation (without PROGMEM)
+	/*
 	uint16_t *p = osKeys[ keyName - OS_INDEX -1 ];
-	return p[ os ];  
+	return p[ os ]; 
+	*/
+	uintptr_t keyPtr = (uintptr_t) &( osKeys[ keyName - OS_INDEX -1 ] );
+	return pgm_read_byte( keyPtr + os);
+ 
 }; 
 
 static uint16_t getAsciiKey(uint16_t keyName ){
+	/*
 	uint16_t *p = asciiKeys[ keyName - ASCII_INDEX -1 ];
 	return p[ os ];  
+	*/
+	uintptr_t keyPtr = (uintptr_t) &( asciiKeys[ keyName - ASCII_INDEX -1 ] );
+	return pgm_read_byte( keyPtr + os);
 };
 
 static void tap_sequence(uint16_t seqName){
 	char overflow = SEQUENCE_MAX_LENGTH;
-	uint16_t *sequence = getKeySequence( seqName ),
+	/*
+	uint16_t *sequence = sequenceKeys[ seqName - SEQUENCE_INDEX -1 ],
 		currentKey;
 		
 	for(int i=0; i<SEQUENCE_MAX_LENGTH && overflow>0; i++, overflow--){
@@ -231,6 +238,16 @@ static void tap_sequence(uint16_t seqName){
 		if(currentKey == NULL_KEY) break;
 		tap_code16( currentKey ); 
 	}
+	*/
+	uintptr_t keyPtr = (uintptr_t) &( sequenceKeys[ seqName - SEQUENCE_INDEX -1 ] );
+	uint16_t currentKey;
+	for(int i=0; i<SEQUENCE_MAX_LENGTH && overflow>0; i++, overflow--){
+		currentKey = pgm_read_byte( keyPtr + i);
+		if(currentKey == NULL_KEY) break;
+		tap_code16( currentKey ); 
+	}	
+
+
 }; 
 
 static void tap_ascii_key(uint16_t kc){

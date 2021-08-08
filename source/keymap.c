@@ -36,10 +36,6 @@
       compatibility for OS dependent key combinations, sequences, and extended uint16_t keycodes.
     - A visual keymap has been created as reminder, using meaningful symbols and colors.     
 
-   [ Dev tips ]
-    ¯¯¯¯¯¯¯¯¯¯
-    - If you are modifying this keymap and your keyboard doesnt output anything, probably you are running out
-      of 'RAM' (Data Space). If so, try to move your data to Program Space using PROGMEM
 
     [ Hardware ]
      ¯¯¯¯¯¯¯¯¯¯
@@ -91,6 +87,13 @@
     [ Used function keys FN ]
      ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
     16 ln1, 17, ln2, 18 borde, F19 monitor
+
+
+   [ Dev tips ]
+    ¯¯¯¯¯¯¯¯¯¯
+    - If you are modifying this keymap and your keyboard doesn't output anything, probably you are running out
+      of 'RAM' (Data Space). If so, try to move your data to Program Space using PROGMEM, or just add less stuff
+
 
 */
 

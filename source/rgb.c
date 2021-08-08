@@ -68,7 +68,7 @@
 	//PROGMEM to store them in the Program Space and save some memory
 
 	//rgb themes[][NUMBER_OF_KEYS]  ={ 
-	const rgb themes[][NUMBER_OF_KEYS] PROGMEM ={
+	static const rgb themes[][NUMBER_OF_KEYS] PROGMEM ={
 
 		//0 - RGB_WINDOWS_NOTIFICATION (windows logo)
 		{{0x00,0x00,0x00},{0x12,0x14,0x00}, {0x9e,0x94,0x00}, {0x01,0x98,0x3b}, 

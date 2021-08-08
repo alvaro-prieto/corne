@@ -19,7 +19,7 @@ You can implement this kind of behaviour in programs such as Karabiner-Elements
 */
 
 enum OS {
-	OSX,
+	OSX = 0,
 	WINDOWS
 };
 
@@ -200,7 +200,6 @@ enum custom_keycodes {
 
 
 static void tap_sequence(uint16_t seqName );
-static uint16_t * getKeySequence(uint16_t keyName );
 static uint16_t getOSKey(uint16_t keyName );
 static void tap_sequence(uint16_t seqName);
 static void tap_ascii_key(uint16_t keyName);
