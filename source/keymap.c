@@ -45,7 +45,7 @@
 
     [ Passwords ]
      ¯¯¯¯¯¯¯¯¯¯
-    - To unlok the keyboard type "yo". It will flash a purple notification to let you know that it is active.
+    - To unlok the keyboard type "ni". It will flash a purple notification to let you know that it is active.
       If you want to change the keyword, you can change it in before_key_handler to something like "me" or "hi"
 
 
@@ -107,7 +107,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
       CMD,     ES_Q,     ES_V,     ES_D,     ES_R,     ES_F,                            ES_Y,      TD(AC_U), ES_B,     ES_L,     ES_NTIL,  ES_DOT,  \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-      ALT,     TD(AC_A), TD(MRK),     TD(AC_E), ES_T,     ES_G,                            ES_H,      ES_N,     TD(AC_I), TD(AC_O), ES_P,     DEL,     \
+      ALT,     TD(AC_A), ES_S,     TD(AC_E), ES_T,     ES_G,                            ES_H,      ES_N,     TD(AC_I), TD(AC_O), ES_P,     DEL,     \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
       CTR ,    ES_Z,     ES_X,     ES_W,     ES_C,     ES_MINS,                         ES_J,      ES_M,     ES_COMM,  ES_K,     M5,       M6,      \
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|
@@ -124,9 +124,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
       BR_DOWN, BR_UP,    XXXXXXX,  MINMZ,    XXXXXXX,  XXXXXXX,                         XXXXXXX,  TD(DSK1),  TD(DSK2), TD(DSK3), XXXXXXX,  XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|
-                                             M1,  XXXXXXX,  M2,                 S1,     M3,        M4      ),
+                                             M1,       XXXXXXX,  M2,            S1,     M3,        M4      ),
                                         //`-------------------------------´   `----------------------------'
-   
+
   
   //PURPLE
   [_M2] = LAYOUT_split_3x6_3( \

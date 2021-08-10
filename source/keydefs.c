@@ -81,7 +81,7 @@ static const uint16_t osKeys[][NUMBER_OF_OS] PROGMEM = {
 	//SRCH_PR
 	{ G(S(ES_G)), C(S(ES_G))},
 	//RPLC 
-	{ G(A(ES_F)), C(ES_H)},
+	{ A(G(ES_F)), C(ES_H)},
 	//SPOTL
 	{ G(KC_SPC), LWIN(KC_S)},
 	//SM_APP

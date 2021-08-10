@@ -347,9 +347,10 @@ bool before_key_handler(uint16_t keycode, bool down, keyrecord_t *record){
 		if(down){
 			klog1 = klog2;
 			klog2 = keycode;
-			//unlock by typing: "yo"
-			if(klog1 == ES_Y && klog2 == ES_O){
+			//unlock by typing: "ni"
+			if(klog1 == ES_N && klog2 == ES_I){
 				kb_lock = false;
+				layer_move( _BASE );
 				#ifdef RGB_MATRIX_ENABLE
 					set_rgb_notification( RGB_LOCK_NOTIFICATION );
 				#endif
@@ -543,7 +544,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 		case CLS_W:
 		case SEARCH:
 		case SRCH_NX:
-		case SRCH_PR:      
+		case SRCH_PR:
+		case RPLC:      
 		case SPOTL:
 		case SM_APP:
 		case EMOJI:
@@ -618,20 +620,20 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 				if(shift){
 					interruptMods();
 					unregister_code( KC_RSFT );
-					register_os_dependent_key( getOSKey( DEL_LN ) );
+					register_os_dependent_key( DEL_LN );
 				}else{
 					register_code16( KC_BSPC );
 				}	
 			}else{
-				if(shift){
+				if(shift){	
+					unregister_os_dependent_key( DEL_LN );
 					register_code( KC_RSFT );
-					unregister_os_dependent_key( getOSKey( DEL_LN ) );
 				}else{
 					unregister_code16( KC_BSPC );
 				}	
 			}
 			return false;
-
+ 
 		// · · · · · · · · · · · · · · · · · · · · · · · · ·				
 
 		case SWAP_OS:
@@ -669,6 +671,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 		case KBLOCK: 
 			if(down){
 				kb_lock = true;
+				layer_move( _MOD );
 				#ifdef RGB_MATRIX_ENABLE
 					set_rgb_notification( RGB_LOCK_NOTIFICATION );
 				#endif

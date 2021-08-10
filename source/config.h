@@ -6,7 +6,7 @@
 #define LOCK_KB_WHEN_SCREEN_OFF
 #define STRING_1 "hola"
 #define STRING_2 "adios"
-#define TAPPING_TERM 190
+#define TAPPING_TERM 200
 #define MASTER_LEFT
 //#define MASTER_RIGHT
 

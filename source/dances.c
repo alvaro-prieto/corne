@@ -83,7 +83,6 @@ static const tapdance tds[] PROGMEM ={
 	//MRK
 	{ SEQUENCE_TAP, QUESTN, EXCLAM },     
 
-
 };
 
 //if the tap dance output should be a hold (instead of tap), the keycode
@@ -179,12 +178,15 @@ void dance_reset(qk_tap_dance_state_t *state, void *user_data) {
 
 //Vowels can be accented if pressed twice
 void accent_each(qk_tap_dance_state_t *state, void *user_data) {
-	uint16_t vowel = tds[ ((tap_data*)user_data)->keycode ].kc1;
+	const tapdance * t = &tds[ ((tap_data*)user_data)->keycode ];
+	uint16_t vowel = pgm_read_word( &t->kc1 );
 	if(state->count==1){
 		tap_code16( vowel );
 	}else{
 		tap_code16( KC_BSPC );
+		if(shift) unregister_code(KC_RSFT);
 		tap_code16( ES_ACUT );
+		if(shift) register_code(KC_RSFT);
 		tap_code16( vowel );
 		//this allows to prevent long tap dances 
 		state->finished = true;	
