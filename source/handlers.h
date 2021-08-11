@@ -4,7 +4,6 @@ void tap_key_sequence( uint16_t key );
 bool mod_key_handler( uint16_t keycode, bool down, keyrecord_t *record );
 bool hold_key_handler( uint16_t keycode, bool down, keyrecord_t *record );
 void interruptMods( void );
-void tap_ascii( int ascii );
 void hyper( bool down );
 void toggle_hyper_lock( void );
 void passive_down( uint16_t key );

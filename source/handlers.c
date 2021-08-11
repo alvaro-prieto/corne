@@ -296,32 +296,6 @@ void passive_up( void ){
 	}
 }
 
-//Function that outputs a character using its ASCII code in Windows.
-//As far as I know, it has no equivalent in macOs.
-//Interrupts any active mods.
-void tap_ascii( int ascii ){
-	if(os == WINDOWS){
-		interruptMods();
-		register_code16( KC_LALT );
-		int length = ascii >= 1000 ? 4: 3, i = 0;
-		if(length == 3) tap_code16( KC_P0 );
-		unsigned char n, arr[ length ];
-	    while (ascii != 0) { 
-	        arr[i++] = ascii % 10; 
-	        ascii = ascii / 10; 
-	    } 
-	    for (i = length - 1; i > -1; i--) { 
-	        n = arr[i];
-	        if(n == 0){
-	        	tap_code16( KC_P0 );
-	        }else{
-	        	tap_code16( KC_P1 + n - 1);
-	        }
-	    } 		
-		unregister_code16( KC_LALT );		
-	}
-}
-
 
 
 
@@ -347,7 +321,7 @@ bool before_key_handler(uint16_t keycode, bool down, keyrecord_t *record){
 		if(down){
 			klog1 = klog2;
 			klog2 = keycode;
-			//unlock by typing: "ni"
+			//unlock by typing: "yo"
 			if(klog1 == ES_N && klog2 == ES_I){
 				kb_lock = false;
 				layer_move( _BASE );
@@ -592,7 +566,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 			return false;
 
 
-		//────────────────── ASCII KEYS ──────────────────
+		//────────────────── UNICODE KEYS ──────────────────
 
 		case LONGLN:
 		case MIDLN:

@@ -166,48 +166,48 @@ static const uint16_t sequenceKeys[][SEQUENCE_MAX_LENGTH] PROGMEM = {
 	
 };
 
-//ASCII characters are managed differently according to the OS. 
+//UNICODE characters are managed differently according to the OS. 
 //In OSX usually they have a custom key combination, while in Windows 
-//they can be managed using its ASCII index code.
+//they can be managed using its UNICODE code https://unicode-table.com
 static const uint16_t asciiKeys[][NUMBER_OF_OS] PROGMEM = { 
 	//MIDLN
-	{ A(ES_MINS), 150},
+	{ A(ES_MINS), 0x2013},
 	//LONGLN
-	{ A(S(ES_MINS)), 151},
+	{ A(S(ES_MINS)), 0x2014},
 	//TOPLN
-	{ A(S(ES_J)), 175},
+	{ A(S(ES_J)), 0x00AF},
 	//INFNT
-	{ A(ES_5), 236},
+	{ A(ES_5), 0x221E},
 	//ELLIPSIS
-	{ A(S(ES_DOT)), 133},
+	{ A(S(ES_DOT)), 0x2026},
 	//PI
-	{ A(ES_P), 227},
+	{ A(ES_P), 0x03C0},
 	//POUND
-	{ A(S(ES_4)), 163},
+	{ A(S(ES_4)), 0x00A3},
 	//DIFF
-	{ A(ES_0), 8800},
+	{ A(ES_0), 0x2260},
 	//SIM
-	{ A(S(ES_0)), 247},
+	{ A(S(ES_0)), 0x2248},
 	//QUOT_R
-	{ A(S(ES_CCED)), 175},
+	{ A(S(ES_CCED)), 0x00BB},
 	//GREQ
-	{ A(S(ES_LABK)), 242},
+	{ A(S(ES_LABK)), 0x2265},
 	//QUOT_L
-	{ A(S(ES_ACUT)), 174},
+	{ A(S(ES_ACUT)), 0x00AB},
 	//LSEQ
-	{ A(ES_LABK), 243},
+	{ A(ES_LABK), 0x2264},
 	//DEGR
-	{ A(S(KC_GRV)), 248},
+	{ A(S(KC_GRV)), 0x00B0},
 	//REG
-	{ A(ES_R), 174},
+	{ A(ES_R), 0x00AE},
 	//TM
-	{ A(ES_H), 153},
+	{ A(ES_H), 0x2122},
 	//BULLET
-	{ A(S(ES_3)), 149},
+	{ A(S(ES_3)), 0x2022},
 	//CR
-	{ A(ES_C), 169},
+	{ A(ES_C), 0x00A9},
 	
-};
+};	
 
 
 //returns the extendend shortcut keycode according to the current OS
@@ -231,12 +231,14 @@ static void tap_sequence(uint16_t seqName){
 	}	
 }; 
 
-//taps a single ascii key according to the current OS
+//Function that outputs a character using its Unicode number in Windows or its key 
+//combination in macOS. It could behave in the same way in different OS (using only its unicode), 
+//but it requires to set the keyboard settings in Unicode Hex Input mode in OSX, which I dislike.
 static void tap_ascii_key(uint16_t kc){
-	uint16_t v = getAsciiKey( kc );
+	uint16_t u = getAsciiKey( kc );
 	if(os == OSX){
-		tap_code16( v );
+		tap_code16( u );
 	}else{
-		tap_ascii( v );
+		register_unicode( u );
 	}
 }

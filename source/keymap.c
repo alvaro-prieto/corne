@@ -27,7 +27,7 @@
       according to the selected OS mode (macOs by default).
     - Modifier keys can behave as modifiers (if they are operated in conjunction with other keys), 
       or as normal keys (if they are pressed independently).
-    - Support for Os dependent key outputs, key sequences, and more.
+    - Support for Os dependent key outputs, key sequences, ASCII, and more.
     - Some keys has been moved from their usual location to improve accessibility and ergonomics   
     - Hyper key. This key has been created to allow custom shortcuts depending on the focused application. 
       For example, Hyper + I could mean "italic" in Word while being, "indent" in a code editor, and "invert" in Photoshop.
@@ -45,7 +45,7 @@
 
     [ Passwords ]
      ¯¯¯¯¯¯¯¯¯¯
-    - To unlok the keyboard type "ni". It will flash a purple notification to let you know that it is active.
+    - To unlok the keyboard type "yo". It will flash a purple notification to let you know that it is active.
       If you want to change the keyword, you can change it in before_key_handler to something like "me" or "hi"
 
 
@@ -66,9 +66,10 @@
     - In macOS settings -> keyboard. Disable: "Use F1, F2 , etc. keys as standard function keys"
     - In Windows, advanced energy settings: Sleep : turn off screen.
     - In macOS, split screen features achieved using BetterSnapTool
+    - In Windows Unicode is managed using WinCompose, in macOs using custom key combos (to prevent Unicode Hex)
     - If you are facing problems in characters such as: ª, >, and others not outputing the expected value, 
       it might depend in your OS keyboard regional settings. Go to Karabiner and select, Country code: 1
-      for your Corne keyboard.
+      for your Corne keyboard. MacOS settings is set to "Spanish - ISO"
     - Turning off your computer shortcut in Windows might change according to your OS language.
     - Some shortcuts / outputs, might require third party software.
     - Desktop features in macOS require 3 desktops and Change to desktop shortcuts enabled in 
@@ -107,7 +108,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
       CMD,     ES_Q,     ES_V,     ES_D,     ES_R,     ES_F,                            ES_Y,      TD(AC_U), ES_B,     ES_L,     ES_NTIL,  ES_DOT,  \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-      ALT,     TD(AC_A), ES_S,     TD(AC_E), ES_T,     ES_G,                            ES_H,      ES_N,     TD(AC_I), TD(AC_O), ES_P,     DEL,     \
+      ALT,     TD(AC_A), INFNT,     TD(AC_E), ES_T,     ES_G,                            ES_H,      ES_N,     TD(AC_I), TD(AC_O), ES_P,     DEL,     \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
       CTR ,    ES_Z,     ES_X,     ES_W,     ES_C,     ES_MINS,                         ES_J,      ES_M,     ES_COMM,  ES_K,     M5,       M6,      \
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|

@@ -9,13 +9,13 @@ NKRO_ENABLE = no            # Nkey Rollover - if this doesn't work, see here: ht
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 MIDI_ENABLE = no            # MIDI controls
 AUDIO_ENABLE = no           # Audio output on port C6
-UNICODE_ENABLE = no         # Unicode
+UNICODE_ENABLE = yes        # Unicode
 BLUETOOTH_ENABLE = no       # Enable Bluetooth with the Adafruit EZ-Key HID
 SWAP_HANDS_ENABLE = no      # Enable one-hand typing
 
 RGBLIGHT_ENABLE    = no
 RGB_MATRIX_ENABLE  =  yes  
-RGB_MATRIX_CUSTOM_USER = yes #nuevo
+RGB_MATRIX_CUSTOM_USER = yes 
 EXTRAFLAGS += -flto
 
 #Are you debugging? 	If so: 	REMEMBER to turn CONSOLE_ENABLE = yes
