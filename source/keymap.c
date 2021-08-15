@@ -106,11 +106,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //BLACK (default layer)
   [_BASE] = LAYOUT_split_3x6_3( \
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
-      CMD,     ES_Q,     ES_V,     ES_D,     ES_R,     ES_F,                            ES_Y,      TD(AC_U), ES_B,     ES_L,     ES_NTIL,  ES_DOT,  \
+      CMD,     ES_Q,     ES_V,     TD(AC_E), ES_R,     ES_F,                            ES_Y,      TD(AC_U), TD(AC_I), TD(AC_O), ES_P,     DOT,     \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-      ALT,     TD(AC_A), ES_S,     TD(AC_E), ES_T,     ES_G,                            ES_H,      ES_N,     TD(AC_I), TD(AC_O), ES_P,     DEL,     \
+      ALT,     TD(AC_A), ES_S,     ES_D,     ES_C,     ES_G,                            ES_H,      TD(ENYE), ES_T,     ES_L,     DEL,      TD(MRK), \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-      CTR ,    ES_Z,     ES_X,     ES_W,     ES_C,     ES_MINS,                         ES_J,      ES_M,     ES_COMM,  ES_K,     M5,       M6,      \
+      CTR ,    ES_Z,     ES_X,     ES_W,     ES_B,     ES_MINS,                         ES_J,      ES_M,     ES_COMM,  ES_K,     M5,       M6,      \
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|
                                              M1,       KC_SPC,   M2,            S1,     M3,        M4        ),
                                         //`-------------------------------´   `----------------------------'
@@ -145,9 +145,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //RED
   [_M3] = LAYOUT_split_3x6_3( \
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
-     XXXXXXX,  ES_HASH,  ES_DIAE,  KC_UP,    ES_ASTR,  ES_SLSH,                         TD(GRTR),  TD(CURL), TD(SQR),  ES_AMPR,  ES_QUES,  ES_EXLM, \
+     XXXXXXX,  ES_HASH,  ES_DIAE,  KC_UP,    ES_ASTR,  ES_SLSH,                         TD(GRTR),  TD(CURL), TD(SQR),  ES_PIPE,  ES_QUES,  ES_EXLM, \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-     XXXXXXX,  ES_AT,    KC_LEFT,  KC_DOWN,  KC_RIGHT, FIELD,                           TD(LESS),  TD(PRN),  ES_RPRN,  ES_PIPE,  TD(MRK),  DEL_W,   \
+     XXXXXXX,  ES_AT,    KC_LEFT,  KC_DOWN,  KC_RIGHT, FIELD,                           TD(LESS),  TD(PRN),  ES_RPRN,  ES_AMPR,  DEL_W,    XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
      XXXXXXX,  XXXXXXX,  ES_BSLS,  ES_PERC,  MEMBER,   ES_PLUS,                         NOT_EQ,    TD(TAGO), TD(TAGC), XXXXXXX,  ES_GRV,  TD(STR12),\
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|
@@ -160,7 +160,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
      XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_PGUP,  Z_OUT,    Z_IN,                            EMOJI,     RPLC,     XXXXXXX,  POUND,    TD(RSET), ELLIPSIS,\
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-     XXXXXXX,  TD(ORD),  W_LEFT,   KC_PGDN,  W_RIGHT,  XXXXXXX,                         SRCH_PR,   SEARCH,   SRCH_NX,  KC_UP,    XXXXXXX,  KC_DEL,  \
+     XXXXXXX,  TD(ORD),  W_LEFT,   KC_PGDN,  W_RIGHT,  XXXXXXX,                         SRCH_PR,   SEARCH,   SRCH_NX,  KC_UP,    KC_DEL,   XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
      XXXXXXX,  TD(LN),   BORDER,  XXXXXXX,   TD(CMNT), LONGLN,                          XXXXXXX,   SPOTL,    KC_LEFT,  KC_DOWN,  KC_RIGHT, KC_LSFT, \
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|
@@ -171,9 +171,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //BLUE
   [_M5] = LAYOUT_split_3x6_3( \
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
-     XXXXXXX,  XXXXXXX,  XXXXXXX,  TOP,      XXXXXXX,  XXXXXXX,                         TD(GRTP),  XXXXXXX,  XXXXXXX,  ES_NOT,   WAVE,     BULLET,  \
+     XXXXXXX,  XXXXXXX,  XXXXXXX,  TOP,      XXXXXXX,  XXXXXXX,                         TD(GRTP),  XXXXXXX,  ES_NOT,   DEGR,     PI,       BULLET,  \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-     XXXXXXX,  XXXXXXX,  FIRST,    BOTTOM,   LAST,     XXXXXXX,                         TD(LSTP),  XXXXXXX,  XXXXXXX,  DEGR,     TD(SCR),  XXXXXXX, \
+     XXXXXXX,  XXXXXXX,  FIRST,    BOTTOM,   LAST,     XXXXXXX,                         TD(LSTP),  WAVE,     TM,       POUND,    XXXXXXX,  XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
      XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  MIDLN,                           TD(NTEQ),  XXXXXXX,  XXXXXXX,  ES_CIRC,  XXXXXXX,  XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|
@@ -184,11 +184,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //BROWN
   [_M6] = LAYOUT_split_3x6_3( \
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
-     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  REG,      XXXXXXX,                         XXXXXXX,   XXXXXXX,  XXXXXXX,  KBLOCK,   LOCK,     BOOT,    \
+     XXXXXXX,  XXXXXXX,  XXXXXXX,  EURO,     REG,      XXXXXXX,                         XXXXXXX,   XXXXXXX,  XXXXXXX,  XXXXXXX,  TD(SCR),  BOOT,    \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-     XXXXXXX,  XXXXXXX,  XXXXXXX,  EURO,     TM,       XXXXXXX,                         XXXXXXX,   XXXXXXX,  XXXXXXX,  S(ES_3),  PI,       SCR_OFF, \
+     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  CR,       XXXXXXX,                         XXXXXXX,   XXXXXXX,  XXXXXXX,  KBLOCK,   LOCK,     SCR_OFF, \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  CR,       TOPLN,                           XXXXXXX,   XXXXXXX,  SNG_PR,   SNG_NX,   PLAY,     XXXXXXX, \
+     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  TOPLN,                           XXXXXXX,   XXXXXXX,  SNG_PR,   SNG_NX,   PLAY,     XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|
                                              M1,       KC_SPC,   M2,            S1,     M3,        M4      ),
                                         //`-------------------------------´  `----------------------------' 
@@ -197,11 +197,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //AUX (no color)
   [_HYP] = LAYOUT_split_3x6_3( \
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
-      ES_0,    ES_Q,      ES_V,    ES_D,     ES_R,     ES_F,                            ES_Y,      ES_U,     ES_B,     ES_L,     ES_NTIL,  ES_DOT,  \
+      ES_0,    ES_Q,      ES_V,    ES_E,     ES_R,     ES_F,                            ES_Y,      ES_U,     ES_I,     ES_O,     ES_P,     ES_DOT,  \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-      ES_1,    ES_A,      ES_S,    ES_E,     ES_T,     ES_G,                            ES_H,      ES_N,     ES_I,     ES_O,     ES_P,     S(KC_DEL),\
+      ES_1,    ES_A,      ES_S,    ES_D,     ES_C,     ES_G,                            ES_H,      ES_N,     ES_T,     ES_L,     S(KC_DEL),XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-      ES_2,    ES_Z,      ES_X,    ES_W,     ES_C,     ES_MINS,                         ES_J,      ES_M,     ES_COMM,  ES_K,     ES_9,     H_LOCK,  \
+      ES_2,    ES_Z,      ES_X,    ES_W,     ES_B,     ES_MINS,                         ES_J,      ES_M,     ES_COMM,  ES_K,     ES_9,     H_LOCK,  \
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|
                                              ES_3,     ES_4,    ES_5,          ES_6,    ES_7,     ES_8    ),
                                         //`-------------------------------´   `----------------------------'   
@@ -210,11 +210,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //AUX (no color) 
   [_MOD] = LAYOUT_split_3x6_3( \
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
-      CMD,     ES_Q,     ES_V,     ES_D,     ES_R,     ES_G,                            ES_Y,      ES_U,     ES_B,     ES_L,    ES_NTIL,   ES_DOT,  \
+      CMD,     ES_Q,     ES_V,     ES_D,     ES_R,     ES_F,                            ES_Y,      ES_U,     ES_I,     ES_O,     ES_P,     ES_DOT,  \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-      KC_LALT, ES_A,     ES_S,     ES_E,     ES_T,     ES_G,                            ES_H,      ES_N,     ES_I,     ES_O,    ES_P,      KC_BSPC, \
+      KC_LALT, ES_A,     ES_S,     ES_E,     ES_C,     ES_G,                            ES_H,      ES_N,     ES_T,     ES_L,     KC_BSPC,  XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-      CTR,     ES_Z,     ES_X,     ES_W,     ES_C,     ES_MINS,                         ES_J,      ES_M,     ES_COMM,  ES_K,    XXXXXXX,   XXXXXXX, \
+      CTR,     ES_Z,     ES_X,     ES_W,     ES_B,     ES_MINS,                         ES_J,      ES_M,     ES_COMM,  ES_K,     XXXXXXX,  XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|
                                              KC_LSFT,  KC_SPC,   KC_LSFT,       KC_ENT,  KC_LSFT,  KC_LSFT  ),
                                         //`-------------------------------´   `----------------------------'    

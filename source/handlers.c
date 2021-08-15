@@ -610,6 +610,25 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
  
     // · · · · · · · · · · · · · · · · · · · · · · · · ·        
 
+    case DOT:
+      if(down){
+        if(shift){
+          interruptMods();
+          register_code16( ES_3 );
+        }else{
+          register_code16( ES_DOT );
+        } 
+      }else{
+        if(shift){  
+          unregister_code16( ES_3 );
+        }else{
+          unregister_code16( ES_DOT );
+        } 
+      }
+      return false;      
+
+    // · · · · · · · · · · · · · · · · · · · · · · · · ·   
+
     case SWAP_OS:
       if(down){
         interruptMods();

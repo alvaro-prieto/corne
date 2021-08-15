@@ -34,7 +34,8 @@ enum td_codes {
 	CURL,
 	SQR,
 	PRN,
-	MRK, 
+	MRK,
+	ENYE,
 
 };
 
@@ -43,6 +44,7 @@ enum tapType{
 	BASIC_OS_TAP,
 	SEQUENCE_TAP,
 	ACCENT_TAP,
+	REPLACE_TAP, 
 	CUSTOM_TAP,
 };
 

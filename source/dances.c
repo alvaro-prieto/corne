@@ -81,7 +81,9 @@ static const tapdance tds[] PROGMEM ={
 	//PRN
 	{ BASIC_TAP, ES_LPRN, ES_RPRN }, 
 	//MRK
-	{ SEQUENCE_TAP, QUESTN, EXCLAM },     
+	{ SEQUENCE_TAP, QUESTN, EXCLAM },
+	//ENYE
+	{ REPLACE_TAP, ES_N, ES_NTIL },   
 
 };
 
@@ -193,15 +195,30 @@ void accent_each(qk_tap_dance_state_t *state, void *user_data) {
 	}
 }
 
+//Replace tap. Second tap replaces first output
+void replace_each(qk_tap_dance_state_t *state, void *user_data) {
+	const tapdance * t = &tds[ ((tap_data*)user_data)->keycode ];
+	uint16_t kc = pgm_read_word( state->count == 1 ? &t->kc1 : &t->kc2 );
+	if(state->count==1){
+		tap_code16( kc );
+	}else{
+		tap_code16( KC_BSPC );
+		tap_code16( kc );
+		//this allows to prevent long tap dances 
+		state->finished = true;	
+	}
+}
+
 
 //Handler hooks. Add new tap dances here to be able to use them in the keymap.c file using TD( keycode )
 qk_tap_dance_action_t tap_dance_actions[] = {
 
-	[AC_A]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each, NULL, NULL,  &((tap_data){ AC_A })),
-	[AC_E]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each, NULL, NULL,  &((tap_data){ AC_E })),
-	[AC_I]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each, NULL, NULL,  &((tap_data){ AC_I })),
-	[AC_O]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each, NULL, NULL,  &((tap_data){ AC_O })),
-	[AC_U]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each, NULL, NULL,  &((tap_data){ AC_U })),
+	[AC_A]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each,  NULL, NULL,  &((tap_data){ AC_A })),
+	[AC_E]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each,  NULL, NULL,  &((tap_data){ AC_E })),
+	[AC_I]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each,  NULL, NULL,  &((tap_data){ AC_I })),
+	[AC_O]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each,  NULL, NULL,  &((tap_data){ AC_O })),
+	[AC_U]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each,  NULL, NULL,  &((tap_data){ AC_U })),
+	[ENYE]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each, NULL, NULL,  &((tap_data){ ENYE })),
 	[RSET]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   RSET    })),
 	[CMNT]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   CMNT  	})),
 	[LN]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   LN      })),
