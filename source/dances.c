@@ -182,16 +182,16 @@ void dance_reset(qk_tap_dance_state_t *state, void *user_data) {
 void accent_each(qk_tap_dance_state_t *state, void *user_data) {
 	const tapdance * t = &tds[ ((tap_data*)user_data)->keycode ];
 	uint16_t vowel = pgm_read_word( &t->kc1 );
-	if(state->count==1){
+	if( state->count == 1 ){
 		tap_code16( vowel );
-	}else{
+	}else if( state->count == 2 ){
 		tap_code16( KC_BSPC );
 		if(shift) unregister_code(KC_RSFT);
 		tap_code16( ES_ACUT );
 		if(shift) register_code(KC_RSFT);
 		tap_code16( vowel );
 		//this allows to prevent long tap dances 
-		state->finished = true;	
+		//state->finished = true;	
 	}
 }
 
@@ -199,13 +199,13 @@ void accent_each(qk_tap_dance_state_t *state, void *user_data) {
 void replace_each(qk_tap_dance_state_t *state, void *user_data) {
 	const tapdance * t = &tds[ ((tap_data*)user_data)->keycode ];
 	uint16_t kc = pgm_read_word( state->count == 1 ? &t->kc1 : &t->kc2 );
-	if(state->count==1){
+	if( state->count == 1 ){
 		tap_code16( kc );
-	}else{
+	}else if( state->count == 2 ){
 		tap_code16( KC_BSPC );
 		tap_code16( kc );
 		//this allows to prevent long tap dances 
-		state->finished = true;	
+		//state->finished = true;	
 	}
 }
 

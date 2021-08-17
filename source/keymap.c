@@ -15,7 +15,7 @@
    | |___| (_) | |  | | | |  __/
     \_____\___/|_|  |_| |_|\___|
     
-    Hysp keymap v0.78, (created by Alvaro Prieto Lauroba)
+    Hysp keymap v0.79, (created by Alvaro Prieto Lauroba)
     =====================================================
 
 

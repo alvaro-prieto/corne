@@ -19,7 +19,7 @@ RGB_MATRIX_CUSTOM_USER = yes
 EXTRAFLAGS += -flto
 
 #Are you debugging? 	If so: 	REMEMBER to turn CONSOLE_ENABLE = yes
-CONSOLE_ENABLE = yes #no #yes 	CONSOLE_ENABLE = no in a release version
+CONSOLE_ENABLE = no #no #yes 	CONSOLE_ENABLE = no in a release version
 COMMAND_ENABLE = no  
 
 #To save some extra bytes

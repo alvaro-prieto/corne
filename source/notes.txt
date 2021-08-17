@@ -14,18 +14,17 @@
 
 
 
-[ Tareas pendientes ]
- ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-* poner Keydefs como PROGMEM?
+    [ Tareas pendientes ]
+     ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 
-[ Mejoras e ideas ]
- ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    [ Mejoras e ideas ]
+     ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 
-[ Comentarios tal vez obsoletos ]
- ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    [ Comentarios tal vez obsoletos ]
+     ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 
-[ Problemas conocidos ]
- ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    [ Problemas conocidos ]
+     ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 
 
 

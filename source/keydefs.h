@@ -189,7 +189,6 @@ enum custom_keycodes {
 	EXPS,
 	BOOT,
 	H_LOCK,
-	RGB_RST,
 	BORDER,
 	KBLOCK,
 	RGB_NEXT,

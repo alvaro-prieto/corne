@@ -322,7 +322,7 @@ bool before_key_handler(uint16_t keycode, bool down, keyrecord_t *record){
       klog1 = klog2;
       klog2 = keycode;
       //unlock by typing: "yo"
-      if(klog1 == ES_N && klog2 == ES_I){
+      if( klog1 == ES_Y && klog2 == ES_O ){
         kb_lock = false;
         layer_move( _BASE );
         #ifdef RGB_MATRIX_ENABLE
@@ -612,8 +612,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     case DOT:
       if(down){
+        interruptMods();
         if(shift){
-          interruptMods();
           register_code16( ES_3 );
         }else{
           register_code16( ES_DOT );
@@ -663,6 +663,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     case KBLOCK: 
       if(down){
+        interruptMods();
         kb_lock = true;
         layer_move( _MOD );
         #ifdef RGB_MATRIX_ENABLE
@@ -708,8 +709,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     // · · · · · · · · · · · · · · · · · · · · · · · · ·     
 
     case SCR_OFF:
-      if(!down){
+      if(down){
         interruptMods();
+      }else{
         if(os == OSX){
           tap_fn_key(C(S(KC_POWER)));
         }else{
@@ -756,6 +758,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     case BOOT:
       if(down){
+        interruptMods();
         if(os == OSX){
           tap_code16( C(KC_POWER) );
         }else{
@@ -774,23 +777,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       }
 
     return false;  
-    
-    // · · · · · · · · · · · · · · · · · · · · · · · · ·
-
-    case RGB_RST:
-      if(down){
-        #ifdef RGB_MATRIX_ENABLE
-        reset_rgb();
-        #endif
-      }
-
-    return false;  
 
     // · · · · · · · · · · · · · · · · · · · · · · · · ·
 
     case RGB_PREV:
     case RGB_NEXT:
       if(down){
+        interruptMods();
         #ifdef RGB_MATRIX_ENABLE
         rgb_rotate_theme(keycode == RGB_NEXT ? 1 : -1);
         #endif        
