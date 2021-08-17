@@ -108,9 +108,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
       CMD,     ES_Q,     ES_V,     TD(AC_E), ES_R,     ES_F,                            ES_Y,      TD(AC_U), TD(AC_I), TD(AC_O), ES_P,     DOT,     \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-      ALT,     TD(AC_A), ES_S,     ES_D,     ES_C,     ES_G,                            ES_H,      TD(ENYE), ES_T,     ES_L,     DEL,      TD(MRK), \
+      ALT,     TD(AC_A), ES_S,     ES_D,     ES_T,     ES_G,                            ES_H,      TD(ENYE), ES_B,     ES_L,     DEL,      TD(MRK), \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-      CTR ,    ES_Z,     ES_X,     ES_W,     ES_B,     ES_MINS,                         ES_J,      ES_M,     ES_COMM,  ES_K,     M5,       M6,      \
+      CTR ,    ES_Z,     ES_X,     ES_W,     ES_C,     ES_MINS,                         ES_J,      ES_M,     ES_COMM,  ES_K,     M5,       M6,      \
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|
                                              M1,       KC_SPC,   M2,            S1,     M3,        M4        ),
                                         //`-------------------------------´   `----------------------------'
@@ -173,7 +173,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
      XXXXXXX,  XXXXXXX,  XXXXXXX,  TOP,      XXXXXXX,  XXXXXXX,                         TD(GRTP),  XXXXXXX,  ES_NOT,   DEGR,     PI,       BULLET,  \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-     XXXXXXX,  XXXXXXX,  FIRST,    BOTTOM,   LAST,     XXXXXXX,                         TD(LSTP),  WAVE,     TM,       POUND,    XXXXXXX,  XXXXXXX, \
+     XXXXXXX,  XXXXXXX,  FIRST,    BOTTOM,   LAST,     XXXXXXX,                         TD(LSTP),  WAVE,     XXXXXXX,  POUND,    XXXXXXX,  XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
      XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  MIDLN,                           TD(NTEQ),  XXXXXXX,  XXXXXXX,  ES_CIRC,  XXXXXXX,  XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|
@@ -186,9 +186,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
      XXXXXXX,  XXXXXXX,  XXXXXXX,  EURO,     REG,      XXXXXXX,                         XXXXXXX,   XXXXXXX,  XXXXXXX,  XXXXXXX,  TD(SCR),  BOOT,    \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  CR,       XXXXXXX,                         XXXXXXX,   XXXXXXX,  XXXXXXX,  KBLOCK,   LOCK,     SCR_OFF, \
+     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  TM,       XXXXXXX,                         XXXXXXX,   XXXXXXX,  XXXXXXX,  KBLOCK,   LOCK,     SCR_OFF, \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  TOPLN,                           XXXXXXX,   XXXXXXX,  SNG_PR,   SNG_NX,   PLAY,     XXXXXXX, \
+     XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  CR,       TOPLN,                           XXXXXXX,   XXXXXXX,  SNG_PR,   SNG_NX,   PLAY,     XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|
                                              M1,       KC_SPC,   M2,            S1,     M3,        M4      ),
                                         //`-------------------------------´  `----------------------------' 
@@ -199,9 +199,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
       ES_0,    ES_Q,      ES_V,    ES_E,     ES_R,     ES_F,                            ES_Y,      ES_U,     ES_I,     ES_O,     ES_P,     ES_DOT,  \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-      ES_1,    ES_A,      ES_S,    ES_D,     ES_C,     ES_G,                            ES_H,      ES_N,     ES_T,     ES_L,     S(KC_DEL),XXXXXXX, \
+      ES_1,    ES_A,      ES_S,    ES_D,     ES_T,     ES_G,                            ES_H,      ES_N,     ES_B,     ES_L,     S(KC_DEL),XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-      ES_2,    ES_Z,      ES_X,    ES_W,     ES_B,     ES_MINS,                         ES_J,      ES_M,     ES_COMM,  ES_K,     ES_9,     H_LOCK,  \
+      ES_2,    ES_Z,      ES_X,    ES_W,     ES_C,     ES_MINS,                         ES_J,      ES_M,     ES_COMM,  ES_K,     ES_9,     H_LOCK,  \
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|
                                              ES_3,     ES_4,    ES_5,          ES_6,    ES_7,     ES_8    ),
                                         //`-------------------------------´   `----------------------------'   
@@ -212,9 +212,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
       CMD,     ES_Q,     ES_V,     ES_D,     ES_R,     ES_F,                            ES_Y,      ES_U,     ES_I,     ES_O,     ES_P,     ES_DOT,  \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-      KC_LALT, ES_A,     ES_S,     ES_E,     ES_C,     ES_G,                            ES_H,      ES_N,     ES_T,     ES_L,     KC_BSPC,  XXXXXXX, \
+      KC_LALT, ES_A,     ES_S,     ES_E,     ES_T,     ES_G,                            ES_H,      ES_N,     ES_B,     ES_L,     KC_BSPC,  XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
-      CTR,     ES_Z,     ES_X,     ES_W,     ES_B,     ES_MINS,                         ES_J,      ES_M,     ES_COMM,  ES_K,     XXXXXXX,  XXXXXXX, \
+      CTR,     ES_Z,     ES_X,     ES_W,     ES_C,     ES_MINS,                         ES_J,      ES_M,     ES_COMM,  ES_K,     XXXXXXX,  XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------+---------|  |---------+----------+---------+---------+---------+---------+---------|
                                              KC_LSFT,  KC_SPC,   KC_LSFT,       KC_ENT,  KC_LSFT,  KC_LSFT  ),
                                         //`-------------------------------´   `----------------------------'    
