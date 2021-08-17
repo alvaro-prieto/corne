@@ -3,6 +3,7 @@
 #include "handlers.h"
 #include "keydefs.h"
 #include "dances.h"
+#include "strings.h"
 
 typedef struct{
 	uint16_t keycode;
@@ -124,10 +125,10 @@ void tap_custom( int kc ){ // enum customTap kc ){  //not restricted to customTa
 			register_code16( holdTapCode ); 
 			break;
 		case STR1:
-			SEND_STRING( STRING_1 );
+			send_string( STRING_1 );
 			break;
 		case STR2:
-			SEND_STRING( STRING_2 );
+			send_string( STRING_2 );
 			break;		
 
 		//────────────────── DEFAULT ──────────────────	
