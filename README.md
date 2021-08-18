@@ -8,7 +8,7 @@ Developed by Álvaro Prieto Lauroba
 
 [🇬🇧 Description](#-description)    [🇪🇸 Descripción](#-descripción)    [⬇️ Descarga](#%EF%B8%8F-descarga)
 
-
+<img src="extra/keymap.png" width="100%" alt="QMK Corne Keyboard layout RSI"/>
 
 
 ## 🇬🇧 Description
