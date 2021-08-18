@@ -1,10 +1,10 @@
-![alt text](http://bacubacu.com/colresizable/githubLogo.png "colResizable jQuery plugin")
+<img src="misc/logo.png" width="100%" style="max-width:400px;" alt="Corne QMK hysp keymap Alvaro Prieto Lauroba"/>
 
 # Spanish developer layout for split keyboards (RSI friendly) 
 ### ISO ES Win to Mac, based on [R-go Split](https://www.r-go-tools.com/products/ergonomic-keyboards/r-go-split/) (Karabiner + Goku) 
 [🇬🇧 Description](#-description)    [🇪🇸 Descripción](#-descripción)    [⬇️ Descarga](#%EF%B8%8F-descarga)
 
-<img src="misc/logo.png" width="100%"/>
+
 
 
 ## 🇬🇧 Description
