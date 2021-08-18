@@ -790,6 +790,18 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       }
       return false; 
 
+    // · · · · · · · · · · · · · · · · · · · · · · · · ·
+
+    case LNG:
+      if(down){
+        interruptMods();
+        lang = ( lang == ES ? EN : ES );
+        #ifdef RGB_MATRIX_ENABLE
+          set_rgb_notification( lang == ES ? RGB_LANG_ES : RGB_LANG_EN );
+        #endif        
+      }
+      return false;       
+
     //────────────────── DEFAULT ──────────────────     
 
     default:

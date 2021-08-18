@@ -67,6 +67,10 @@ enum modMask{
 	S1_M = 1 << 6 
 };
 
+enum languages {
+	ES = 0,
+	EN
+};
 
 //active holds and mods are kept in queue, so if any other key is pressed 
 //in combination their alternative behavior could be prevented
@@ -83,6 +87,8 @@ unsigned char win = 0;  //0 = false, 1 = waiting for second key 2 = active
 int RGB_current_mode;  //no se si se usa... TO-DO
 bool hyper_lock = false;
 bool kb_lock = false;
+unsigned char lang = ES;
+
 
 
 

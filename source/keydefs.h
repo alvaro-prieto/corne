@@ -195,6 +195,7 @@ enum custom_keycodes {
 	RGB_PREV,
 	DEL,
 	DOT,
+	LNG,
 
 };
 

@@ -28,7 +28,10 @@
 		RGB_MAC_NOTIFICATION,
 		RGB_LOCK_NOTIFICATION,
 		RGB_THEME_1,
-		RGB_THEME_2
+		RGB_THEME_2,
+		RGB_LANG_ES,
+		RGB_LANG_EN,
+
 	};
 
 	void init_rgb( void );
