@@ -1,6 +1,6 @@
 <img src="misc/logo.png" width="500" alt="Corne QMK hysp keymap Alvaro Prieto Lauroba"/>
 
-# Custom layout (macOS & Windows) for [Corne Keyboard](https://github.com/foostan/crkbd) 
+# Custom QMK keymap for [Corne Keyboard](https://github.com/foostan/crkbd) 
 [🇬🇧 Description](#-description)    [🇪🇸 Descripción](#-descripción)    [⬇️ Descarga](#%EF%B8%8F-descarga)
 
 
