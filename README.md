@@ -1,4 +1,4 @@
-<img src="misc/logo.png" width="550" alt="Corne QMK hysp keymap Alvaro Prieto Lauroba"/>
+<img src="misc/logo.png" width="500" alt="Corne QMK hysp keymap Alvaro Prieto Lauroba"/>
 
 # Spanish developer layout for split keyboards (RSI friendly) 
 ### ISO ES Win to Mac, based on [R-go Split](https://www.r-go-tools.com/products/ergonomic-keyboards/r-go-split/) (Karabiner + Goku) 
