@@ -4,7 +4,7 @@
 ### ISO ES Win to Mac, based on [R-go Split](https://www.r-go-tools.com/products/ergonomic-keyboards/r-go-split/) (Karabiner + Goku) 
 [🇬🇧 Description](#-description)    [🇪🇸 Descripción](#-descripción)    [⬇️ Descarga](#%EF%B8%8F-descarga)
 
-<img src="splitLayout_v114.png" width="100%"/>
+<img src="misc/logo.png" width="100%"/>
 
 
 ## 🇬🇧 Description
