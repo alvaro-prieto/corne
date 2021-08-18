@@ -1,7 +1,6 @@
 <img src="misc/logo.png" width="500" alt="Corne QMK hysp keymap Alvaro Prieto Lauroba"/>
 
-# Spanish developer layout for split keyboards (RSI friendly) 
-### ISO ES Win to Mac, based on [R-go Split](https://www.r-go-tools.com/products/ergonomic-keyboards/r-go-split/) (Karabiner + Goku) 
+# Custom layout (macOS & Windows) for [Corne Keyboard](https://github.com/foostan/crkbd) 
 [🇬🇧 Description](#-description)    [🇪🇸 Descripción](#-descripción)    [⬇️ Descarga](#%EF%B8%8F-descarga)
 
 
