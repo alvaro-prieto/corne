@@ -194,7 +194,8 @@ void resetState( Keypress *kp ){
 void layer_off_if_not_used( char layer){
   if(layer){
     Keypress *kp = activeMods;
-    while( kp != 0){
+    uint8_t iteration = 0;
+    while( kp != 0 && iteration++ < OVERFLOW_SMALL){
       if( kp->layer == layer  ) return;
       kp = kp->next;
     }   
@@ -206,7 +207,8 @@ void layer_off_if_not_used( char layer){
 //Interrupts the mods queue (to prevent its alternative output)
 void interruptMods( void ){
   Keypress *kp = activeMods;
-  while( kp != 0){
+  uint8_t iteration = 0;
+  while( kp != 0 && iteration++ < OVERFLOW_SMALL){
     kp->interrupted = true;
     kp = kp->next;
   }
@@ -834,6 +836,7 @@ bool mod_key_handler(uint16_t keycode, bool down, keyrecord_t *record){
   bool reset = false;
   Keypress *currentMod = NULL;
   Keypress *kp = &KP[ keycode - MODIFIER_INDEX - 1];
+  uint8_t iteration = 0;
 
   if(down){
     //uprintf("Mod down %d\n", keycode - MODIFIER_INDEX - 1);
@@ -857,7 +860,8 @@ bool mod_key_handler(uint16_t keycode, bool down, keyrecord_t *record){
       activeMods = kp;  
     }else{
       currentMod = activeMods;
-      while(currentMod->next != 0){
+      iteration = 0;
+      while(currentMod->next != 0 && iteration++ < OVERFLOW_SMALL){
         currentMod = currentMod->next;
       }
       currentMod->next = kp;
@@ -881,7 +885,8 @@ bool mod_key_handler(uint16_t keycode, bool down, keyrecord_t *record){
         activeMods = activeMods->next;
       }else{
         currentMod = activeMods;
-        while( currentMod->next != 0){
+        iteration = 0;
+        while( currentMod->next != 0 && iteration++ < OVERFLOW_SMALL){
           if( currentMod->next == kp){
             currentMod->next = currentMod->next->next;
             resetState( kp );
