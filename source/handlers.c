@@ -719,6 +719,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         }
         #ifdef LOCK_KB_WHEN_SCREEN_OFF
           kb_lock = true;
+          layer_move( _MOD );
           #ifdef RGB_MATRIX_ENABLE
             set_rgb_notification( RGB_LOCK_NOTIFICATION );
           #endif          
