@@ -12,7 +12,7 @@ Developed by Álvaro Prieto Lauroba
 
 
 # 🇬🇧 Description
-Keyamap for [Corne Keyboard](https://github.com/foostan/crkbd) specially designed for software developers using macOS and Windows.
+Keyamap for [Corne Keyboard](https://github.com/foostan/crkbd) specially designed for software developers using macOS and Windows and writting in Spanish and English.
 
 This keymap features the following key concepts:
 
@@ -36,26 +36,26 @@ Some features require installing and configuring third-party applications; some 
 * Keyboard shortcuts per application using the hyper key (Karabiner Elements).
 * Split screen functions in macOS (BetterSnapTool).
 * Move an application to a specific desktop.
-* Some special outputs have been achieved with mapping applications such as Karabiner.
-* In macOS system settings -> keyboard: disable "Use F1, F2, etc. as function keys".
+* Some special outputs have been achieved with remapping applications such as Karabiner.
+* In macOS system settings -> keyboard: disable: "Use F1, F2 , etc. keys as standard function keys"
 * On Windows install WinCompose to support unicode keys.
-* The key combination to shut down the operating system in Windows may vary depending on the language of your operating system. Currently compatible with Spanish version.
+* The key combination to shut down the computer may vary in Windows depending on the language of your operating system. Currently compatible with the Spanish version.
 * The ability to switch between desktops in macOS requires 3 desktops and activate the shortcuts in: keyboard -> shortcuts -> mission control.
-* If you are experiencing problems with characters such as `` ª '', ``> `` and other keys that generate unexpected output, check the regional settings of your keyboard in the operating system. In Karabiner, select `` Country code: 1 '' for your Corne keyboard. The regional configuration in macOS has to be set to `` Spanish - ISO ''.
+* If you are experiencing problems with characters such as ``ª``, ``>`` and other keys generating unexpected outputs, check the regional settings of your keyboard in the operating system. In Karabiner, select ``Country code: 1`` for your Corne keyboard. The regional configuration in macOS has to be set to ``Spanish - ISO``.
 
 
 & nbsp;
 & nbsp;
 ## Developer Notes
 
-For more information go to the file `` keymap.c ''. Some minor modifications have been made to the QMK code in order to compile this keymap; these changes have been listed in the `` Settings '' section.
+For further information check the file ``keymap.c``. Some minor modifications have been made to the QMK code in order to compile this keymap; these changes have been listed in the ``Settings`` section.
 
 &nbsp;
 &nbsp;
 
 # 🇪🇸 Descripción
 
-Firmaware para [Teclado Corne](https://github.com/foostan/crkbd) especialmente diseñado para desarrolladores de software que utilizan macOS y Windows. 
+Firmaware para [Teclado Corne](https://github.com/foostan/crkbd) especialmente diseñado para desarrolladores de software que utilizan macOS y Windows y escriben en español e inglés.
 
 Algunos de los conceptos que se han tenido en cuenta:
 
