@@ -33,7 +33,7 @@ The following concepts have been used to put it into practice:
 
 
 
-## 🇪🇸 Descripción
+# 🇪🇸 Descripción
 
 Firmaware para [Teclado Corne](https://github.com/foostan/crkbd) especialmente diseñado para desarrolladores de software que utilizan macOS y Windows. 
 
@@ -50,7 +50,7 @@ Algunos de los conceptos que se han tenido en cuenta:
 * Posibilidad de bloquear el teclado con password, útil para cuando te levantas unos minutos de tu puesto de trabajo. Presiona ``M6 + L`` o ``M6 + ☾`` si también quieres apagar la pantalla. Escribe "yo" para desbloquear el teclado.
 
 
-# Características dependientes de aplicaciones externas
+## Características dependientes de aplicaciones externas
 
 Algunas características requieren de instalar y configurar aplicaciones de terceros. Algunas de ellas son:
 
