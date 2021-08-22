@@ -6,7 +6,7 @@
 # Custom QMK keymap for [Corne Keyboard](https://github.com/foostan/crkbd) 
 Hysp keymap - developed by Álvaro Prieto Lauroba
 
-[🇬🇧 Description](#-description)    [🇪🇸 Descripción](#-descripción)    [⬇️ Descarga / download](tree/main/hex)
+[🇬🇧 Description](#-description)    [🇪🇸 Descripción](#-descripción)    [⬇️ Descarga / download](https://github.com/alvaro-prieto/corne/tree/main/hex)
 
 <img src="extra/keymap.png" width="100%" alt="QMK Corne Keyboard layout RSI"/>
 
