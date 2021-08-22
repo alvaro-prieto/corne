@@ -40,6 +40,7 @@ Firmaware para [Teclado Corne](https://github.com/foostan/crkbd) especialmente d
 
 Algunos de los conceptos que se han tenido en cuenta:
 
+* Posibilidad de alternar entre sistemas operativos presionando ``M1 + OS``.
 * Los atajos de teclas son independientes del sistema operativo: las mismas combinaciones de teclas realizan las mismas acciones ya estemos en macOS o en Windows (copiar, pegar, apagar el ordenador, cambiar entre escritorios, reordenar las ventanas, etc ...).
 * Posibilidad de alternar entre lenguajes: inglés / español. En español las teclas acentuadas se consiguen con una doble pulsación de la vocal en cuestión, por ejemplo: ``á = a + a``. Lo mismo sucede con la ``ñ = n + n``. Se puede alternarnar entre inglés y español presionando ``CFG + L``.
 * Compatible con teclas y combinaciones de teclas dependientes del sistema operativo de manera sencilla. También soporta secuencias de carateres y salida de caracteres unicode personalizadas en función del OS.
@@ -62,9 +63,9 @@ Algunas características requieren instalar y configurar aplicaciones de tercero
 * Algunas salidas especiales se han conseguido con aplicaciones de mapeo como Karabiner.
 * En la configuración del sistema de macOS -> teclado:  desabilitar "Usar F1, F2, etc. como teclas de función".
 * En Windows instalar WinCompose para dar soporte a las teclas unicode.
-* La combinación de teclas para apagar el sistema operativo en Windows puede variar en función del idioma de tu sistema operativo. Actualmente configurado para funcionar con la versión en Español.
-* La posibilidad de alternar entre escritorios en macOS requiere de 3 escritorios y activar los atajos en teclado -> funciones rápidas -> mission control.
-* Si estas experimentando problemas con caracteres como ª, > y otras teclas generando resultados inesperados, comprueba la configuración regional de tu teclado en el sistema operativo. En Karabiner, selecciona ``Country code: 1`` para tu teclado Corne. La configuración regional en macOS ha de establecerse en``Español - ISO``.
+* La combinación de teclas para apagar el sistema operativo en Windows puede variar en función del idioma de tu sistema operativo. Actualmente compatible con versión en Español.
+* La posibilidad de alternar entre escritorios en macOS requiere de 3 escritorios y activar los atajos en: teclado -> funciones rápidas -> mission control.
+* Si estas experimentando problemas con caracteres como ``ª``, ``>`` y otras teclas que generan salidas inesperadas, comprueba la configuración regional de tu teclado en el sistema operativo. En Karabiner, selecciona ``Country code: 1`` para tu teclado Corne. La configuración regional en macOS ha de establecerse en``Español - ISO``.
 
 
 &nbsp;
