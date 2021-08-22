@@ -28,7 +28,6 @@ This keymap features the following key concepts:
 * Possibility of locking the keyboard with a password, useful if you leave your workstation for a few minutes. Press ``M6 + L`` or ``M6 + ☾`` if you also want to turn off the screen. Type "yo" to unlock the keyboard (it means "it is me" in spanish, you can customize it).
 
 &nbsp;
-&nbsp;
 
 ## Additional configuration
 
@@ -44,8 +43,6 @@ Some features require installing and configuring third-party applications; some 
 * The ability to switch between desktops in macOS requires 3 desktops and activate the shortcuts in: keyboard -> shortcuts -> mission control.
 * If you are experiencing problems with characters such as ``ª``, ``>`` and other keys generating unexpected outputs, check the regional settings of your keyboard in the operating system. In Karabiner, select ``Country code: 1`` for your Corne keyboard. The regional configuration in macOS has to be set to ``Spanish - ISO``.
 
-
-&nbsp;
 &nbsp;
 
 ## Developer Notes
