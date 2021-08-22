@@ -14,14 +14,14 @@ Developed by Álvaro Prieto Lauroba
 # 🇬🇧 Description
 Keyamap for [Corne Keyboard](https://github.com/foostan/crkbd) specially designed for software developers using macOS and Windows and writting in Spanish and English.
 
-This keymap features the following key concepts:
+This keymap features the following concepts:
 
 * Possibility to switch between operating systems by pressing ``CFG + O`` or `` M1 + OS``.
-* Keyboard shortcuts are OS independent: the same key combinations perform the same actions whether you are on a macOS or Windows machine (copy, paste, screen capture, turn off the computer, switch between desktops, reorder the windows, etc. ).
+* Keyboard shortcuts are OS independent: the same key combinations perform the same actions whether you are on a macOS or Windows machine (copy, paste, screen capture, turn off the computer, switch between desktops, reorder the windows, and many more ... ).
 * Possibility to switch between languages: English / Spanish. In Spanish, accented characters are achieved with a quick double tap. For example: ``á = a + a``. The same thing happens with ``ñ = n + n``. You can toggle between English and Spanish by pressing ``CFG + L``.
 * Compatible with OS dependent keys / key combinations in a simple and customizable fashion. It also supports character sequences and unicode character output depending on the OS.
-* Modifiers can have many behaviors simultaneously. Passive modifiers: hold down a mute key as long as no other key is pressed; normal keystroke: when the modifier key is actuated and released within a short period of time; common modifier: when it is held pressed in conjunction with a second key. Modifier keys have been represented with a differential color on the keymap and have been implemented from scratch for greater control.
-* A ``Hyper key`` (and its corresponding ``Hyper Lock``) has been created, to allow customizable keyboard shortcuts per application. In this way ``hyper + i`` can mean "indent" in a code editor, "invert colors" in Photoshop, or "italic" in a word processor. The possibilities are endless. This type of behavior can be achieved in combination with programs like [Karabiner-Elements](https://karabiner-elements.pqrs.org/).
+* Modifiers can have many behaviors simultaneously. Passive modifiers: hold down a non printable keycode as long as no other key is pressed; normal keystroke: when the modifier key is actuated and released within a short period of time; common modifier: when it is held pressed in conjunction with a second key. Modifier keys have been represented with a differential color on the keymap and have been implemented from scratch for greater control.
+* A ``Hyper key`` (and its corresponding ``Hyper Lock``) has been created, to allow customizable keyboard shortcuts per application. In this way ``hyper + i`` can mean "indent" in a code editor, "invert colors" in Photoshop, or "italic" in a word processor. Possibilities are endless. This type of behavior can be achieved in combination with programs like [Karabiner-Elements](https://karabiner-elements.pqrs.org/).
 * Support for visual themes (``CFG + R``) and light alerts using LEDs. An [online theme editor](https://codepen.io/alvaro-prieto/full/gOLrwKm) is included .
 * Advanced tap dance: some keys act differently when pressed multiple times in a short amount of time. Compatible with operating system dependent keys and key combinations, sequences, and uint16_t extended codes.
 * Some keys have been relocated to improve ergonomics. In the future probably it will look a bit more like the Workman layout, but I preferred to make a gradual transition.
@@ -33,21 +33,21 @@ This keymap features the following key concepts:
 
 Some features require installing and configuring third-party applications; some do not have direct equivalence between operating systems.
 
-* Keyboard shortcuts per application using the hyper key (Karabiner Elements).
+* Keyboard shortcuts per application using the ``hyper key`` (Karabiner Elements).
 * Split screen functions in macOS (BetterSnapTool).
 * Move an application to a specific desktop.
-* Some special outputs have been achieved with remapping applications such as Karabiner.
+* Some special outputs have been achieved with remapping apps such as Karabiner, Hammerspoon, ...
 * In macOS system settings -> keyboard: disable: "Use F1, F2 , etc. keys as standard function keys"
 * On Windows install WinCompose to support unicode keys.
 * The key combination to shut down the computer may vary in Windows depending on the language of your operating system. Currently compatible with the Spanish version.
-* The ability to switch between desktops in macOS requires 3 desktops and activate the shortcuts in: keyboard -> shortcuts -> mission control.
-* If you are experiencing problems with characters such as ``ª``, ``>`` and other keys generating unexpected outputs, check the regional settings of your keyboard in the operating system. In Karabiner, select ``Country code: 1`` for your Corne keyboard. The regional configuration in macOS has to be set to ``Spanish - ISO``.
+* The ability to switch between desktops in macOS requires 3 desktops and activate its shortcuts in: keyboard -> shortcuts -> mission control.
+* If you are experiencing problems with characters such as ``ª``, ``>`` and other keys generating unexpected outputs, check the regional settings of your keyboard in the operating system. The regional configuration in macOS has to be set to ``Spanish - ISO``. In Karabiner, select ``Country code: 1`` for your Corne keyboard. 
 
 &nbsp;
 
 ## Developer Notes
 
-For further information check the file ``keymap.c``. Some minor modifications have been made to the QMK code in order to compile this keymap; these changes have been listed in the ``Settings`` section.
+For further information check the file ``keymap.c``. Some minor modifications have been made to the QMK code in order to compile this keymap; these changes have been listed in the ``Settings`` section. Greetings to Fauxpark, Drashna and all the QMK developers and members of its Discord channel.
 
 &nbsp;
 &nbsp;
@@ -90,6 +90,8 @@ Algunas características requieren instalar y configurar aplicaciones de tercero
 &nbsp;
 ## Notas para desarrolladores
 
-Para más información acudir al archivo ``keymap.c``. Se han realizado algunas modificaciones mínimas en el código de QMK para poder compilar este keymap; dichos cambios han sido listados en la sección ``Settings``. 
+Para más información acudir al archivo ``keymap.c``. Se han realizado algunas modificaciones mínimas en el código de QMK para poder compilar este keymap; dichos cambios han sido listados en la sección ``Settings``.  
+
+Agradecimientos a Fauxpark, Drashna y a todos los desarrolladores de QMK y los miembros de su canal en Discord.
 
 
