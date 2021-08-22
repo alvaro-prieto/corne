@@ -52,13 +52,25 @@ Algunos de los conceptos que se han tenido en cuenta:
 
 &nbsp;
 &nbsp;
-## Características dependientes de aplicaciones externas
+## Configuración adicional
 
-Algunas características requieren de instalar y configurar aplicaciones de terceros. Algunas de ellas son:
+Algunas características requieren instalar y configurar aplicaciones de terceros; algunas no tienen equivalencia directa entre sistemas operativos. 
 
-* Atajos de teclado por aplicación empleando la tecla hyper
-* Las funciones pantalla partida en macOS (se ha utilizado BetterSnapTool)
-* Algunos atajos de salidas especiales se han conseguido con aplicaciones de mapeo como Karabiner Elements
+* Atajos de teclado por aplicación empleando la tecla hyper (Karabiner Elements).
+* Funciones de pantalla partida en macOS (BetterSnapTool).
+* Mover una aplicación a un escritorio en concreto.
+* Algunas salidas especiales se han conseguido con aplicaciones de mapeo como Karabiner.
+* En la configuración del sistema de macOS -> teclado:  desabilitar "Usar F1, F2, etc. como teclas de función".
+* En Windows instalar WinCompose para dar soporte a las teclas unicode.
+* La combinación de teclas para apagar el sistema operativo en Windows puede variar en función del idioma de tu sistema operativo. Actualmente configurado para funcionar con la versión en Español.
+* La posibilidad de alternar entre escritorios en macOS requiere de 3 escritorios y activar los atajos en teclado -> funciones rápidas -> mission control.
+* Si estas experimentando problemas con caracteres como ª, > y otras teclas generando resultados inesperados, comprueba la configuración regional de tu teclado en el sistema operativo. En Karabiner, selecciona ``Country code: 1`` para tu teclado Corne. La configuración regional en macOS ha de establecerse en``Español - ISO``.
 
+
+&nbsp;
+&nbsp;
+## Notas para desarrolladores
+
+Para más información acudir al archivo ``keymap.c``. Se han realizado algunas modificaciones mínimas en el código de QMK para poder compilar este keymap; dichos cambios han sido listados en la sección ``Settings``. 
 
 
