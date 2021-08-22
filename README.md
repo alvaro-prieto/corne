@@ -39,8 +39,14 @@ Firmaware para [Teclado Corne](https://github.com/foostan/crkbd) especialmente d
 
 Algunos de los conceptos que se han tenido en cuenta:
 
-* Los atajos de teclas son indpendientes del sistema operativo: las mismas combinaciones de teclas realizan las mismas acciones ya estemos en macOS o en Windows (copiar, pegar, apagar el ordenador, cambiar entre escritorios, reordenar las ventanas, etc ...).
+* Los atajos de teclas son independientes del sistema operativo: las mismas combinaciones de teclas realizan las mismas acciones ya estemos en macOS o en Windows (copiar, pegar, apagar el ordenador, cambiar entre escritorios, reordenar las ventanas, etc ...).
 * Posibilidad de alternar entre lenguajes: inglés / español. En español las teclas acentuadas se consiguen con una doble pulsación de la vocal en cuestión, por ejemplo: ``á = a + a``. Lo mismo sucede con la ``ñ = n + n``. Se puede alternarnar entre inglés y español presionando ``CFG + L``.
+* Las teclas de modificación pueden tener muchos comportamientos simultáneamente. Modificador pasivo: mantiene presionada una tecla mientras se mantengan presionada de manera independiente, pulsación normal cuando la tecla es accionada y liberada en un lapso corto de tiempo, modificador común cuando se mantiene pulsada al mismo tiempo que se presiona una segunda tecla. Las teclas de modificación se han representado con un color diferencial en el mapa de teclas.
+* Se ha creado una tecla Hyper (y su correspondiente Bloqueo Hyper), para permitir atajos de teclado personalizables a nivel de aplicación. De esta manera ``hyper + i`` puede significar "indentar" en un editor de código, "invertir colores" en Photoshop, o poner un texto en "italica" en un procesador de texto. Las posibilidades son infinitas. Este tipo de comportamiento se puede conseguir en combiación con programas como Karabiner-Elements.
+* Soporte para temas y alertas visuales empleando los LEDs. Se incluye un [editor de temas online](https://codepen.io/alvaro-prieto/full/gOLrwKm). 
+* Tap dance avanzado: algunas teclas actúan de manera diferente cuando son presionadas varias veces seguidas en lapso corto de tiempo. Compatible con teclas y combinaciones de teclas dependientes del sistema operativo, secuencias, y codigos extendidos uint16_t.
+* Algunas teclas se han modificado de lugar para mejorar la ergonomía. En el futuro es posible que poco a poco la distribución de teclas vaya pariéndose un poco más a la distribución Workman.
+* Posibilidad de bloquear el teclado con password, útil para cuando te levantas unos minutos de tu puesto de trabajo. Presiona ``M6 + L`` o ``M6 + ☾`` si también quieres apagar la pantalla. Escribe "yo" para desbloquear el teclado.
 
 
 # Test
