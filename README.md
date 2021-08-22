@@ -35,9 +35,12 @@ The following concepts have been used to put it into practice:
 
 ## 🇪🇸 Descripción
 
-Esta distribución de teclado ha sido diseñada para minimizar los problemas posturales asociados con la ubicación de ciertas teclas y símbolos comúnmente utilizados por los desarrolladores de software. Para lograrlo, se ha intentado reducir al mínimo el área útil del teclado, colocando los símbolos en posiciones cercanas a los dedos más fuertes (como los dedos pulgar e índice).
+Firmaware para [Teclado Corne](https://github.com/foostan/crkbd) especialmente diseñado para desarrolladores de software que utilizan macOS y Windows. 
 
-Los siguientes conceptos se han utilizado para ponerlo en práctica:
+Algunos de los conceptos que se han tenido en cuenta:
+
+* Los atajos de teclas son indpendientes del sistema operativo: las mismas combinaciones de teclas realizan las mismas acciones ya estemos en macOS o en Windows (copiar, pegar, apagar el ordenador, cambiar entre escritorios, reordenar las ventanas, etc ...).
+* Posibilidad de alternar entre lenguajes: inglés / español. En español las teclas acentuadas se consiguen con una doble pulsación de la vocal en cuestión, por ejemplo: ``á = a + a``. Lo mismo sucede con la ``ñ = n + n``. Se puede alternarnar entre inglés y español presionando ``CFG + L``.
 
 
 # Test
