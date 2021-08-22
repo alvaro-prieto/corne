@@ -41,35 +41,22 @@ Algunos de los conceptos que se han tenido en cuenta:
 
 * Los atajos de teclas son independientes del sistema operativo: las mismas combinaciones de teclas realizan las mismas acciones ya estemos en macOS o en Windows (copiar, pegar, apagar el ordenador, cambiar entre escritorios, reordenar las ventanas, etc ...).
 * Posibilidad de alternar entre lenguajes: inglés / español. En español las teclas acentuadas se consiguen con una doble pulsación de la vocal en cuestión, por ejemplo: ``á = a + a``. Lo mismo sucede con la ``ñ = n + n``. Se puede alternarnar entre inglés y español presionando ``CFG + L``.
+* Compatible con teclas y combinaciones de teclas dependientes del sistema operativo de manera sencilla. También soporta secuencias de carateres y salida de caracteres unicode personalizadas en función del OS.
 * Las teclas de modificación pueden tener muchos comportamientos simultáneamente. Modificador pasivo: mantiene presionada una tecla mientras se mantengan presionada de manera independiente, pulsación normal cuando la tecla es accionada y liberada en un lapso corto de tiempo, modificador común cuando se mantiene pulsada al mismo tiempo que se presiona una segunda tecla. Las teclas de modificación se han representado con un color diferencial en el mapa de teclas.
-* Se ha creado una tecla Hyper (y su correspondiente Bloqueo Hyper), para permitir atajos de teclado personalizables a nivel de aplicación. De esta manera ``hyper + i`` puede significar "indentar" en un editor de código, "invertir colores" en Photoshop, o poner un texto en "italica" en un procesador de texto. Las posibilidades son infinitas. Este tipo de comportamiento se puede conseguir en combiación con programas como Karabiner-Elements.
-* Soporte para temas y alertas visuales empleando los LEDs. Se incluye un [editor de temas online](https://codepen.io/alvaro-prieto/full/gOLrwKm). 
-* Tap dance avanzado: algunas teclas actúan de manera diferente cuando son presionadas varias veces seguidas en lapso corto de tiempo. Compatible con teclas y combinaciones de teclas dependientes del sistema operativo, secuencias, y codigos extendidos uint16_t.
-* Algunas teclas se han modificado de lugar para mejorar la ergonomía. En el futuro es posible que poco a poco la distribución de teclas vaya pariéndose un poco más a la distribución Workman.
+* Se ha creado una tecla Hyper (y su correspondiente Bloqueo Hyper), para permitir atajos de teclado personalizables a nivel de aplicación. De esta manera ``hyper + i`` puede significar "indentar" en un editor de código, "invertir colores" en Photoshop, o poner un texto en "italica" en un procesador de texto. Las posibilidades son infinitas. Este tipo de comportamiento se puede conseguir en combiación con programas como [Karabiner-Elements](https://karabiner-elements.pqrs.org/).
+* Soporte para temas visuales y alertas luminosas empleando los LEDs. Se incluye un [editor de temas online](https://codepen.io/alvaro-prieto/full/gOLrwKm). 
+* Tap dance avanzado: algunas teclas actúan de manera diferente cuando son presionadas varias veces seguidas en un lapso corto de tiempo. Compatible con teclas y combinaciones de teclas dependientes del sistema operativo, secuencias, y codigos extendidos uint16_t.
+* Algunas teclas se han reubicado para mejorar la ergonomía. En el futuro es posible que poco a poco la distribución de teclas vaya pariéndose un poco más a la distribución Workman, pero he preferido hacer el salto gradual.
 * Posibilidad de bloquear el teclado con password, útil para cuando te levantas unos minutos de tu puesto de trabajo. Presiona ``M6 + L`` o ``M6 + ☾`` si también quieres apagar la pantalla. Escribe "yo" para desbloquear el teclado.
 
 
-# Test
+# Características dependientes de aplicaciones externas
 
-colResizable is a free jQuery plugin designed to enhance any kind of HTML table object adding column resizing features by dragging column anchors manually. It is compatible with both mouse and touch devices and has some nice features such as layout persistence after page refresh or postback and compatibility with both percentage and pixel-based table layouts. It is tiny in size (colResizable 1.0 is only 2kb) and it is fully compatible with all major browsers(IE7+, Firefox, Chrome and Opera). 
+Algunas características requieren de instalar y configurar aplicaciones de terceros. Algunas de ellas son:
 
-#### [official website](http://bacubacu.com/colresizable/) &nbsp;&nbsp;&nbsp;&nbsp; [demos](http://bacubacu.com/colresizable/#samples) &nbsp;&nbsp;&nbsp;&nbsp; [documentation](http://bacubacu.com/colresizable/#attributes) &nbsp;&nbsp;&nbsp;&nbsp; [downloads](http://bacubacu.com/colresizable/#download) &nbsp;&nbsp;&nbsp;&nbsp; [github](https://github.com/alvaro-prieto/colResizable) 
-
-## Features
-colResizable was developed since no other similar plugin with the below listed features was found:
-
-* Compatible with mouse and touch devices (PC, tablets, and mobile phones)
-* Compatibility with both percentage and pixel-based table layouts
-* Column resizing not altering total table width (optional)
-* No external resources needed (such as images or stylesheets)
-* Optional layout persistence after page refresh or postback
-* Customization of column anchors
-* Small footprint
-* Cross-browser compatibility (IE7+, Chrome, Safari, Firefox)
-* Events
+* Atajos de teclado por aplicación empleando la tecla hyper
+* Las funciones pantalla partida en macOS (se ha utilizado BetterSnapTool)
+* Algunos atajos de salidas especiales se han conseguido con aplicaciones de mapeo como Karabiner Elements
 
 
-## Usage
-To use t
 
-QMK based Corne Keymap. It features OS independent shortcuts, custom modifier keys, RGB themes, key sequences, and much more.
