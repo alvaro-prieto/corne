@@ -16,7 +16,7 @@ Keyamap for [Corne Keyboard](https://github.com/foostan/crkbd) specially designe
 
 This keymap features the following concepts:
 
-* Possibility to switch between operating systems by pressing ``CFG + O`` or `` M1 + OS``.
+* Possibility to switch between operating systems by pressing ``CFG + O`` or `` M1 + OS``. MacOS by default.
 * Keyboard shortcuts are OS independent: the same key combinations perform the same actions whether you are on a macOS or Windows machine (copy, paste, screen capture, turn off the computer, switch between desktops, reorder the windows, and many more ... ).
 * Possibility to switch between languages: English / Spanish. In Spanish, accented characters are achieved with a quick double tap. For example: ``á = a + a``. The same thing happens with ``ñ = n + n``. You can toggle between English and Spanish by pressing ``CFG + L``.
 * Compatible with OS dependent keys / key combinations in a simple and customizable fashion. It also supports character sequences and unicode character output depending on the OS.
@@ -60,7 +60,7 @@ Firmaware para [Teclado Corne](https://github.com/foostan/crkbd) especialmente d
 
 Algunos de los conceptos que se han tenido en cuenta:
 
-* Posibilidad de alternar entre sistemas operativos presionando ``CFG + O`` o ``M1 + OS``.
+* Posibilidad de alternar entre sistemas operativos presionando ``CFG + O`` o ``M1 + OS``. MacOS por defecto.
 * Los atajos de teclas son independientes del sistema operativo: las mismas combinaciones de teclas realizan las mismas acciones ya estemos en macOS o en Windows (copiar, pegar, capturar la pantalla, apagar el ordenador, cambiar entre escritorios, reordenar las ventanas, etc ...).
 * Posibilidad de alternar entre lenguajes: inglés / español. En español las teclas acentuadas se consiguen con una doble pulsación de la vocal en cuestión, por ejemplo: ``á = a + a``. Lo mismo sucede con la ``ñ = n + n``. Se puede alternarnar entre inglés y español presionando ``CFG + L``.
 * Compatible con teclas y combinaciones de teclas dependientes del sistema operativo de manera sencilla. También soporta secuencias de carateres y salida de caracteres unicode personalizadas en función del OS.
