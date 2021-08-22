@@ -19,7 +19,7 @@ enum layers{
 	_M6,
 	_HYP,
 	_MOD,
-	_EXT,
+	_CFG,
 };
 
 

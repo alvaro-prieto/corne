@@ -359,7 +359,7 @@ bool mod_combo( bool down ){
         M1UpHandler(0);
         indicator = RGB_EXTRAS;
         //uprintf("Extras \n");
-        layer_on(_EXT);
+        layer_on(_CFG);
       break;
     }
     
@@ -374,7 +374,7 @@ bool mod_combo( bool down ){
       case M1_M + M4_M:
         //uprintf("Bye Extras \n");
         indicator = RGB_EXTRAS;
-        layer_off(_EXT);
+        layer_off(_CFG);
       break;
     } 
   }

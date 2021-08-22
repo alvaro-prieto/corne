@@ -221,9 +221,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   
   //ORANGE
-  [_EXT] = LAYOUT_split_3x6_3( \
+  [_CFG] = LAYOUT_split_3x6_3( \
   //,-----------------------------------------------------------.                      ,-----------------------------------------------------------.
-     XXXXXXX,  XXXXXXX,  XXXXXXX,  RGB_PREV, RGB_NEXT, XXXXXXX,                         XXXXXXX,   XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX, \
+     XXXXXXX,  XXXXXXX,  XXXXXXX,  RGB_PREV, RGB_NEXT, XXXXXXX,                         XXXXXXX,   XXXXXXX,  XXXXXXX,  SWAP_OS,  XXXXXXX,  XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
      XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,                         XXXXXXX,   XXXXXXX,  XXXXXXX,  LNG,      XXXXXXX,  XXXXXXX, \
   //|---------+---------+---------+---------+---------+---------|                      |----------+---------+---------+---------+---------+---------|
