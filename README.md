@@ -9,7 +9,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 [🇬🇧 Description](#-description)    [🇪🇸 Descripción](#-descripción)    [⬇️ Descarga / download](https://github.com/alvaro-prieto/corne/tree/main/hex)
 
 <img src="extra/keymap.png" width="100%" alt="QMK Corne Keyboard layout RSI"/>
-<img src="extra/legend.png" width="600" alt="Legend"/>
+<img src="extra/legend.png" width="300" alt="Legend"/>
 
 # 🇬🇧 Description
 Keyamap for [Corne Keyboard](https://github.com/foostan/crkbd) specially designed for software developers using macOS and Windows and writting in Spanish and English.
