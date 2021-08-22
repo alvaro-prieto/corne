@@ -11,7 +11,7 @@ Developed by Álvaro Prieto Lauroba
 <img src="extra/keymap.png" width="100%" alt="QMK Corne Keyboard layout RSI"/>
 
 
-## 🇬🇧 Description
+# 🇬🇧 Description
 
 A repetitive strain injury (RSI) is an injury to part of the musculoskeletal or nervous system caused by repetitive use, vibrations, compression or long periods in a fixed position. This keyboard layout has been designed to minimize postural problems associated with the placement of certain keys and symbols commonly used by software developers. To achieve this, it has been attempted to reduce the useful area of the keyboard to the minimum, placing symbols in positions close to the strongest fingers (such as thumb and index fingers).
 
@@ -31,7 +31,8 @@ The following concepts have been used to put it into practice:
 
 - Usage of a visual layout as a mnemonic aid
 
-
+&nbsp;
+&nbsp;
 
 # 🇪🇸 Descripción
 
@@ -49,7 +50,8 @@ Algunos de los conceptos que se han tenido en cuenta:
 * Algunas teclas se han reubicado para mejorar la ergonomía. En el futuro es posible que poco a poco la distribución de teclas vaya pariéndose un poco más a la distribución Workman, pero he preferido hacer el salto gradual.
 * Posibilidad de bloquear el teclado con password, útil para cuando te levantas unos minutos de tu puesto de trabajo. Presiona ``M6 + L`` o ``M6 + ☾`` si también quieres apagar la pantalla. Escribe "yo" para desbloquear el teclado.
 
-
+&nbsp;
+&nbsp;
 ## Características dependientes de aplicaciones externas
 
 Algunas características requieren de instalar y configurar aplicaciones de terceros. Algunas de ellas son:
