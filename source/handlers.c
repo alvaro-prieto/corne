@@ -584,7 +584,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case TOPLN:
       if(down){
         interruptMods();
-        tap_ascii_key( keycode );
+        tap_unicode_key( keycode );
       }
       return false;
 

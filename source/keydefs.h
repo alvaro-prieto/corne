@@ -143,8 +143,8 @@ enum custom_keycodes {
 	DEL_LN,
 
 
-	//────────────── ASCII KEYS ──────────────
-	ASCII_INDEX,
+	//────────────── UNICODE KEYS ──────────────
+	UNICODE_INDEX,
 	MIDLN,
 	LONGLN,
 	TOPLN,
@@ -203,7 +203,7 @@ enum custom_keycodes {
 static void tap_sequence(uint16_t seqName );
 static uint16_t getOSKey(uint16_t keyName );
 static void tap_sequence(uint16_t seqName);
-static void tap_ascii_key(uint16_t keyName);
+static void tap_unicode_key(uint16_t keyName);
 
 
 

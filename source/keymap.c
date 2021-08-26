@@ -27,7 +27,7 @@
       according to the selected OS mode (macOs by default).
     - Modifier keys can behave as modifiers (if they are operated in conjunction with other keys), 
       or as normal keys (if they are pressed independently).
-    - Support for Os dependent key outputs, key sequences, ASCII, and more.
+    - Support for Os dependent key outputs, key sequences, unicode, and more.
     - Some keys has been moved from their usual location to improve accessibility and ergonomics   
     - Hyper key. This key has been created to allow custom shortcuts depending on the focused application. 
       For example, Hyper + I could mean "italic" in Word while being, "indent" in a code editor, and "invert" in Photoshop.

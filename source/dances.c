@@ -97,14 +97,14 @@ uint16_t holdTapCode = 0;
 void tap_custom( int kc ){ // enum customTap kc ){  //not restricted to customTaps to allow keydef codes
 	switch( kc ){
 
-		//────────────────── ASCII KEYS ──────────────────
+		//────────────────── UNICODE KEYS ──────────────────
 		case SIM:	
 		case DIFF:
 		case QUOT_R:
 		case GREQ:
 		case QUOT_L:
 		case LSEQ:	
-			tap_ascii_key( kc );
+			tap_unicode_key( kc );
 			break;		
 
 		//────────────────── CUSTOM ACTIONS ──────────────────	

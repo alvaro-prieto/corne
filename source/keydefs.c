@@ -166,10 +166,12 @@ static const uint16_t sequenceKeys[][SEQUENCE_MAX_LENGTH] PROGMEM = {
 	
 };
 
-//UNICODE characters are managed differently according to the OS. 
-//In OSX usually they have a custom key combination, while in Windows 
-//they can be managed using its UNICODE code https://unicode-table.com
-static const uint16_t asciiKeys[][NUMBER_OF_OS] PROGMEM = { 
+//UNICODE characters are managed differently according to the OS. In OSX you can set 
+//Unicode Hex Input in the keyboard device settings, but for most used characters you
+//can use their custom key combination if you don't want to mess with strange input modes.
+//In Windows unicode characters can be managed using its code https://unicode-table.com 
+//and installing WinCompose
+static const uint16_t unicodeKeys[][NUMBER_OF_OS] PROGMEM = { 
 	//MIDLN
 	{ A(ES_MINS), 0x2013},
 	//LONGLN
@@ -215,9 +217,9 @@ static uint16_t getOSKey(uint16_t keyName ){
 	return pgm_read_word( &( osKeys[ keyName - OS_INDEX -1 ][ os ] ) );
 }; 
 
-//Returns the uint16_t keycode or the ASCII index according to the current OS
-static uint16_t getAsciiKey(uint16_t keyName ){
-	return pgm_read_word( &( asciiKeys[ keyName - ASCII_INDEX -1 ][ os ] ));
+//Returns the uint16_t keycode or the unicode number according to the current OS
+static uint16_t getUnicodeKey(uint16_t keyName ){
+	return pgm_read_word( &( unicodeKeys[ keyName - UNICODE_INDEX -1 ][ os ] ));
 };
 
 //taps a sequence of keys. Useful for common key sequences such as <= -> and so on
@@ -234,8 +236,8 @@ static void tap_sequence(uint16_t seqName){
 //Function that outputs a character using its Unicode number in Windows or its key 
 //combination in macOS. It could behave in the same way in different OS (using only its unicode), 
 //but it requires to set the keyboard settings in Unicode Hex Input mode in OSX, which I dislike.
-static void tap_ascii_key(uint16_t kc){
-	uint16_t u = getAsciiKey( kc );
+static void tap_unicode_key(uint16_t kc){
+	uint16_t u = getUnicodeKey( kc );
 	if(os == OSX){
 		tap_code16( u );
 	}else{
