@@ -49,7 +49,7 @@ Some features require installing and configuring third-party applications; some 
 
 For further information check the file ``keymap.c``. Some minor modifications have been made to the QMK code in order to compile this keymap; these changes have been listed in the ``Settings`` section. 
 
-Greetings to [Fauxpark](https://github.com/fauxpark), [Drashna](https://github.com/drashna), [Thomas Baart](https://splitkb.com/) and all the QMK developers and members of its Discord channel.
+Greetings to [Fauxpark](https://github.com/fauxpark), [Drashna](https://github.com/drashna), [Sigprof](https://github.com/sigprof), [Thomas Baart](https://splitkb.com/) and all the QMK developers and members of its Discord channel.
 
 &nbsp;
 &nbsp;
