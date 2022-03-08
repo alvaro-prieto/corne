@@ -12,16 +12,18 @@
 
     [ Tareas pendientes ]
      ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+     - parece que la vuelta de la capa hyper, no vuelve a la capa activa si no sueltas uno de los dedos, ¿es lo deseable?
 
     [ Mejoras e ideas ]
      ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
     * Almacenar en eeprom la última configuración del teclado (idioma, os, rgb)
+    * Controlar el nivel de brillo de los leds
 
-    [ Comentarios tal vez obsoletos ]
-     ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    [ Posibles obsoletos ]
+     ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 
     [ Problemas conocidos ]
-     ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+     ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 
 
     QMK TWEAKS

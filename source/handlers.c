@@ -327,6 +327,7 @@ bool before_key_handler(uint16_t keycode, bool down, keyrecord_t *record){
       if( klog1 == ES_Y && klog2 == ES_O ){
         kb_lock = false;
         layer_move( _BASE );
+        rgb_matrix_suspend_state_changed( false );
         #ifdef RGB_MATRIX_ENABLE
           set_rgb_notification( RGB_LOCK_NOTIFICATION );
         #endif
@@ -567,18 +568,16 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       if(down){
         interruptMods();
       }else{
-          /*
         if(os == OSX){
           tap_fn_key(C(S(KC_POWER)));
         }else{
           tap_code16(KC_SLEP);
         }
-        */
-          kb_lock = true;
-          layer_move( _MOD );
-          #ifdef RGB_MATRIX_ENABLE
+        kb_lock = true;
+        layer_move( _MOD );
+        #ifdef RGB_MATRIX_ENABLE
             set_rgb_notification( RGB_LOCK_NOTIFICATION );
-          #endif
+        #endif
       }
       return false;
 
