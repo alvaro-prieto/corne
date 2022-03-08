@@ -41,7 +41,7 @@
 	void update_rgb_state(void);
 	void rgb_hibernate( bool );
 	void rgb_rotate_theme( int direction );
-    void rgb_matrix_suspend_state_changed( bool suspend );
+    	void rgb_matrix_suspend_state_changed( bool suspend );
 
 
 //#endif
