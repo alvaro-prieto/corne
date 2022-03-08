@@ -2,7 +2,7 @@
 
 #define CUSTOM_CODES_BASE_INDEX SAFE_RANGE
 #define NUMBER_OF_OS 2
-#define SEQUENCE_MAX_LENGTH 3 //Max number of characters that a sequence key can output 
+#define SEQUENCE_MAX_LENGTH 3 //Max number of characters that a sequence key can output
 //#define H(k) C(A(S(k)))  //H = Hyper
 
 /*
@@ -12,7 +12,7 @@ What is the Hyper key for?
 
 In my case it is going to be used as trigger to activate custom actions/shortcuts
 depending on the focused application. For example, Hyper + I could mean "italic" in
-Word while being "indent" in a code editor and "invert" in Photoshop. 
+Word while being "indent" in a code editor and "invert" in Photoshop.
 
 You can implement this kind of behaviour in programs such as Karabiner-Elements
 
@@ -36,7 +36,7 @@ enum passive_keycodes{
 //═══════════════════════════════════════════════════════════════
 //   KEYCODE DECLARATIONS
 //═══════════════════════════════════════════════════════════════
-//most keycodes (except the ones manually handled) are order dependent. If you are 
+//most keycodes (except the ones manually handled) are order dependent. If you are
 //going to add new codes, add them at the bottom of each section and use them in the
 //same order when handling them in handlers.c
 
@@ -44,25 +44,24 @@ enum custom_keycodes {
 
 	//────────────── NULL KEY ──────────────
 	//used when no action is required
-
 	NULL_KEY = CUSTOM_CODES_BASE_INDEX, //SAFE_RANGE = 23849
 
 	//────────────── MODIFIERS AND HOLD KEYS ──────────────
-	MODIFIER_INDEX,
+	FIRST_MODIFIER_INDEX,
 	M1,
 	M2,
 	M3,
-	M4, 
-	M5, 
-	M6,  
+	M4,
+	M5,
+	M6,
 	CMD,
 	ALT,
-	CTR,	
+	CTR,
 	S1,
-
+    LAST_MODIFIER_INDEX,
 
 	//────────────── SEQUENCE KEYS ──────────────
-	SEQUENCE_INDEX,
+	FIRST_SEQUENCE_INDEX,
 	MEMBER,
 	FIELD,
 	QUESTN,
@@ -83,10 +82,14 @@ enum custom_keycodes {
 	NOT_EQ,
 	GRT_EQ,
 	LSS_EQ,
-
+    BCKQT,
+    POW,
+    G,
+    G_DIE,
+    LAST_SEQUENCE_INDEX,
 
 	//────────────── OS DEPENDENT KEYS ──────────────
-	OS_INDEX,
+	FIRST_OS_INDEX,
 	CMD_OS,
 	CTR_OS,
 	CUT,
@@ -141,17 +144,19 @@ enum custom_keycodes {
 	CLS_APP,
 	WIN_CTR,
 	DEL_LN,
-
+    TRASH,
+    REMOVE,
+    LAST_OS_INDEX,
 
 	//────────────── UNICODE KEYS ──────────────
-	UNICODE_INDEX,
+	FIRST_UNICODE_INDEX,
 	MIDLN,
 	LONGLN,
 	TOPLN,
 	INFNT,
 	ELLIPSIS,
 	PI,
-	POUND, 
+	POUND,
 	DIFF,
 	SIM,
 	QUOT_R,
@@ -163,9 +168,10 @@ enum custom_keycodes {
 	TM,
 	BULLET,
 	CR,
-
+    LAST_UNICODE_INDEX,
 
 	//────────────── CUSTOM HANDLED KEYS ──────────────
+    FIRST_CUSTOM_INDEX,
 	APPLE_F1,
 	APPLE_F2,
 	APPLE_F3,
@@ -191,16 +197,19 @@ enum custom_keycodes {
 	H_LOCK,
 	BORDER,
 	KBLOCK,
+    OSLOCK,
 	RGB_NEXT,
 	RGB_PREV,
 	DEL,
 	DOT,
 	LNG,
+    FLASH
 
 };
 
 
 static void tap_sequence(uint16_t seqName );
+static void del_sequence(uint16_t seqName );
 static uint16_t getOSKey(uint16_t keyName );
 static void tap_sequence(uint16_t seqName);
 static void tap_unicode_key(uint16_t keyName);

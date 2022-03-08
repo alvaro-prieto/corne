@@ -4,11 +4,12 @@
 				{ .fn = {user_fn_on_each_tap, user_fn_on_dance_finished, user_fn_on_dance_reset}, .user_data = (void*)user_user_data, }
 
 enum td_codes {
-	AC_A = 0,
+    TDNULL = 0,
+	AC_A,
 	AC_E,
 	AC_I,
 	AC_O,
-	AC_U,	
+	AC_U,
 	RSET,
 	CMNT,
 	LN,
@@ -31,11 +32,14 @@ enum td_codes {
 	PST,
 	ADD,
 	MUL,
-	CURL,
-	SQR,
+	//CURL,
+	//SQR,
 	PRN,
 	MRK,
 	ENYE,
+	DECI,
+	G_DI,
+    DLT,
 
 };
 
@@ -44,8 +48,11 @@ enum tapType{
 	BASIC_OS_TAP,
 	SEQUENCE_TAP,
 	ACCENT_TAP,
-	REPLACE_TAP, 
 	CUSTOM_TAP,
+    REPLACE_TAP,
+    REPLACE_SEQ_TAP,
+    REPLACE_LANG_TAP,
+    REPLACE_LANG_SEC_TAP,
 };
 
 enum customTap{

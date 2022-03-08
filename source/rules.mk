@@ -14,15 +14,27 @@ BLUETOOTH_ENABLE = no       # Enable Bluetooth with the Adafruit EZ-Key HID
 SWAP_HANDS_ENABLE = no      # Enable one-hand typing
 
 RGBLIGHT_ENABLE    = no
-RGB_MATRIX_ENABLE  =  yes  
-RGB_MATRIX_CUSTOM_USER = yes 
+RGB_MATRIX_ENABLE  =  yes		#REMEMBER: no in development! yes in release
+RGB_MATRIX_CUSTOM_USER = yes	#REMEMBER: no in development! yes in release
 EXTRAFLAGS += -flto
 
 #Are you debugging? 	If so: 	REMEMBER to turn CONSOLE_ENABLE = yes
-CONSOLE_ENABLE = no #no #yes 	CONSOLE_ENABLE = no in a release version
-COMMAND_ENABLE = no  
+CONSOLE_ENABLE = no		#yes in development! no in a release version
+COMMAND_ENABLE = no
 
 #To save some extra bytes
 #SPACE_CADET_ENABLE = no #en mi version de QMK no me sale rentable, quizas a futuro
 GRAVE_ESC_ENABLE = no
 
+#To save further bytes (doesn't seem to do anything at all, maybe in a more recent QMK version)
+DYNAMIC_MACRO_ENABLE = no
+KEY_LOCK_ENABLE = no
+VELOCIKEY_ENABLE = no
+STENO_ENABLE = no
+TERMINAL_ENABLE = no
+AUTO_SHIFT_ENABLE = no
+POINTING_DEVICE_ENABLE = no
+RAW_ENABLE = no
+SEQUENCER_ENABLE = no
+WPM_ENABLE = no
+OLED_ENABLE = no

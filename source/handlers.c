@@ -1,4 +1,4 @@
-//#include QMK_KEYBOARD_H 
+//#include QMK_KEYBOARD_H
 #include "handlers.h"
 #include "keydefs.h"
 #include "dances.h"
@@ -8,7 +8,7 @@
 extern uint8_t is_master;
 
 //(OSX / WINDOWS) this variable is used to stablish the host OS. OSX by default
-enum OS os = OSX;  
+enum OS os = OSX;
 
 
 //═══════════════════════════════════════════════════════════════
@@ -16,7 +16,7 @@ enum OS os = OSX;
 //═══════════════════════════════════════════════════════════════
 
 //Comment this section in a release version. It is used only for debugging purposes
-//Debugging function to visualize the active mod mask. The mod mask allow us to 
+//Debugging function to visualize the active mod mask. The mod mask allow us to
 //have virtual layers activated by overlapping several mod keys simultaneously
 /*
 void logMask( int n, int length){
@@ -28,7 +28,7 @@ void logMask( int n, int length){
   else
     uprintf("0");
   }
-  uprintf("\n"); 
+  uprintf("\n");
 };
 */
 
@@ -56,7 +56,7 @@ void app_switch_end( void ){
 }
 
 
-//fired when right shift is pressed 
+//fired when right shift is pressed
 bool shiftDownHandler( Keypress *kp ){
   if( ! (shift || caps_lock) ){
     register_code(KC_RSFT);
@@ -68,24 +68,24 @@ bool shiftDownHandler( Keypress *kp ){
   return true;
 }
 
-//fired when right shift is released 
+//fired when right shift is released
 void shiftUpHandler( Keypress *kp ){
   if( shift ){
     unregister_code(KC_RSFT);
     shift = false;
     #ifdef RGB_MATRIX_ENABLE
     set_rgb_indicator(RGB_SHIFT, false);
-    #endif    
+    #endif
   }
 }
 
-//fired when M1 is pressed 
+//fired when M1 is pressed
 bool M1DownHandler ( Keypress *kp ){
   passive_down( PASSIVE_SHIFT );
   return true;
 }
 
-//fired when M1 is released 
+//fired when M1 is released
 void M1UpHandler ( Keypress *kp ){
   passive_up();
 }
@@ -95,7 +95,7 @@ void M2UpHandler ( Keypress *kp ){
   app_switch_end();
 }
 
-//fired when M6 is pressed 
+//fired when M6 is pressed
 bool M6DownHandler ( Keypress *kp ){
   //logMask( modMask, 7);
   //logMask( S1_M, 7);
@@ -114,7 +114,7 @@ bool M6DownHandler ( Keypress *kp ){
   return true;
 }
 
-//fired when control/window is pressed 
+//fired when control/window is pressed
 bool ctrDownHandler( Keypress *kp ){
   if( os == OSX ){
     register_code(KC_LCTRL);
@@ -124,7 +124,7 @@ bool ctrDownHandler( Keypress *kp ){
   return true;
 }
 
-//fired when control/window is released 
+//fired when control/window is released
 void ctrUpHandler( Keypress *kp ){
   if( os == OSX ){
     unregister_code(KC_LCTRL);
@@ -144,17 +144,17 @@ void ctrUpHandler( Keypress *kp ){
    ¯¯¯¯¯¯¯¯¯¯¯¯
 
   - enum modifier mod;    (Identifier, it has no relevant purpose)
-  - short mask;       (to easily detect when several mods are hold simultaneously)  
-  - uint8_t layer;    (layer that is activated as soon as the modifier is active) 
+  - short mask;       (to easily detect when several mods are hold simultaneously)
+  - uint8_t layer;    (layer that is activated as soon as the modifier is active)
   - uint16_t skipTime;    (miliseconds to skip the secondary keycode if the hold is too long)
-  - uint16_t keycode;   (keycode fired as soon as the mod is hold)  
-  - uint16_t alternativeKeycode;    (fired as alternative keycode if mod is released with no interruptions)   
-  - uint16_t osKeycode;         (OS dependent keycode fired as soon as the mod is hold)   
-  - uint16_t alternativeOsKeycode;    (fired as alternative OS dependent keycode if mod is released with no interruptions)  
+  - uint16_t keycode;   (keycode fired as soon as the mod is hold)
+  - uint16_t alternativeKeycode;    (fired as alternative keycode if mod is released with no interruptions)
+  - uint16_t osKeycode;         (OS dependent keycode fired as soon as the mod is hold)
+  - uint16_t alternativeOsKeycode;    (fired as alternative OS dependent keycode if mod is released with no interruptions)
   - bool (*downHandler)( struct Keypress *);  (optional callback to be fired when the key is pressed. If returns false, mod is prevented)
   - void (*upHandler)( struct Keypress *);  (optional callback to be fired when the key is released)
 
-  ───────────────────────────────────────────────────────────────────────────────────── 
+  ─────────────────────────────────────────────────────────────────────────────────────
 
   - bool down;        (it is true when it is hold)
   - bool interrupted;   (it is true when other key has been pressed in conjunction)
@@ -169,16 +169,16 @@ void ctrUpHandler( Keypress *kp ){
 Keypress KP[] = {
 
   //NAME      MASK  LAYER   SKIP_TIME KC        ALT_KC      OS_KC     ALT_OS_KC DOWN_CBACK          UP_CBACK          INTERNAL
-  { M1_MOD,   M1_M, _M1,    300,      0,        ES_COLN,    0,        0,        &M1DownHandler,     &M1UpHandler,     0, 0, 0, 0 },  
+  { M1_MOD,   M1_M, _M1,    300,      0,        ES_COLN,    0,        0,        &M1DownHandler,     &M1UpHandler,     0, 0, 0, 0 },
   { M2_MOD,   M2_M, _M2,    300,      0,        ES_SCLN,    0,        0,        0,                  &M2UpHandler,     0, 0, 0, 0 },
   { M3_MOD,   M3_M, _M3,    300,      0,        ES_EQL,     0,        0,        0,                  0,                0, 0, 0, 0 },
   { M4_MOD,   M4_M, _M4,    300,      0,        ES_DLR,     0,        0,        0,                  0,                0, 0, 0, 0 },
-  { M5_MOD,   M5_M, _M5,    300,      0,        ES_DQUO,    0,        0,        0,                  0,                0, 0, 0, 0 },
-  { M6_MOD,   M6_M, _M6,    300,      0,        ES_QUOT,    0,        0,        &M6DownHandler,     0,                0, 0, 0, 0 },
-  { CMD_MOD,  NO_M, _MOD,   250,      0,        KC_TAB,     CMD_OS,   0,        0,                  0,                0, 0, 0, 0 }, 
-  { ALT_MOD,  NO_M, _MOD,   250,      KC_LALT,  S(KC_TAB),  0,        0,        0,                  0,                0, 0, 0, 0 }, 
-  { CTR_MOD,  NO_M, _MOD,   300,      0,        0,          0,        MUTE,     &ctrDownHandler,    &ctrUpHandler,    0, 0, 0, 0 }, 
-  { S1_MOD,   S1_M, _BASE,  250,      0,        KC_ENT,     0,        0,        &shiftDownHandler,  &shiftUpHandler,  0, 0, 0, 0 }, 
+  { M5_MOD,   M5_M, _M5,    300,      0,        ES_QUOT,    0,        0,        0,                  0,                0, 0, 0, 0 },
+  { M6_MOD,   M6_M, _M6,    300,      0,        ES_DQUO,    0,        0,        &M6DownHandler,     0,                0, 0, 0, 0 },
+  { CMD_MOD,  NO_M, _MOD,   250,      0,        KC_TAB,     CMD_OS,   0,        0,                  0,                0, 0, 0, 0 },
+  { ALT_MOD,  NO_M, _MOD,   250,      KC_LALT,  S(KC_TAB),  0,        0,        0,                  0,                0, 0, 0, 0 },
+  { CTR_MOD,  NO_M, _MOD,   300,      0,        BCKQT,      0,        0,        &ctrDownHandler,    &ctrUpHandler,    0, 0, 0, 0 },
+  { S1_MOD,   S1_M, _BASE,  250,      0,        KC_ENT,     0,        0,        &shiftDownHandler,  &shiftUpHandler,  0, 0, 0, 0 },
 
 };
 
@@ -198,8 +198,8 @@ void layer_off_if_not_used( char layer){
     while( kp != 0 && iteration++ < OVERFLOW_SMALL){
       if( kp->layer == layer  ) return;
       kp = kp->next;
-    }   
-    layer_off( layer );   
+    }
+    layer_off( layer );
     //uprintf("Capa desactivada %d \n", layer);
   }
 }
@@ -218,24 +218,24 @@ void interruptMods( void ){
 //Hold down a key in conjunction with the Apple FN key
 void register_fn_key( uint16_t key){
   register_code16( KC_APPLE_FN );
-  register_code16( key ); 
+  register_code16( key );
 }
 
 //Releases a key in conjunction with the Apple FN key
 void unregister_fn_key( uint16_t key){
-  unregister_code16( key ); 
+  unregister_code16( key );
   unregister_code16( KC_APPLE_FN );
 }
 
 //Tap a function key (F1, F2, F3...)
 void tap_function_key( int fnNumber ){
   register_code16( KC_APPLE_FN );
-  tap_code16( KC_F1 + fnNumber - 1); 
+  tap_code16( KC_F1 + fnNumber - 1);
   unregister_code16( KC_APPLE_FN );
 }
 
 //Hold down a function key (F1, F2, F3...)
-void register_function_key( int fnNumber ){  
+void register_function_key( int fnNumber ){
   register_fn_key( KC_F1 + fnNumber - 1 );
 }
 
@@ -254,19 +254,19 @@ void tap_fn_key(uint16_t keycode) {
 //Hold down an OS dependent key
 void register_os_dependent_key( uint16_t key ){
   uint16_t code = getOSKey( key );
-  if( code ) register_code16( code ); 
+  if( code ) register_code16( code );
 }
 
-//Releases an OS dependent key 
+//Releases an OS dependent key
 void unregister_os_dependent_key( uint16_t key ){
   uint16_t code = getOSKey( key );
-  if( code ) unregister_code16( code ); 
+  if( code ) unregister_code16( code );
 }
 
 //Tap an OS dependent key
 void tap_os_dependent_key( uint16_t key ){
   uint16_t code = getOSKey( key );
-  if( code ) tap_code16( code ); 
+  if( code ) tap_code16( code );
 }
 
 //enables the mod layer
@@ -275,17 +275,17 @@ void enable_mod_layer( void ){
 }
 
 //disables the mod layer
-void disable_mod_layer( void ){   
+void disable_mod_layer( void ){
   layer_off(_MOD);
 }
 
 //Hold down a passive key (a modifier that should not behave as modifier)
 void passive_down( uint16_t key ){
   if( !passive ){
-    register_code16( key ); 
+    register_code16( key );
     passive = key;
   }else{
-    unregister_code16( passive ); 
+    unregister_code16( passive );
     passive = 0;
   }
 }
@@ -293,7 +293,7 @@ void passive_down( uint16_t key ){
 //Releases a passive key. It is called automatically in every new key down event
 void passive_up( void ){
   if( passive ){
-    unregister_code16( passive ); 
+    unregister_code16( passive );
     passive = 0;
   }
 }
@@ -306,7 +306,7 @@ void passive_up( void ){
 //═══════════════════════════════════════════════════════════════
 
 //Function that gets called before processing any key event. It can perform several assertions,
-//processing special cases, etc. Returns a boolean indicating wether the current key event should 
+//processing special cases, etc. Returns a boolean indicating wether the current key event should
 //be processed or skipped (false = skip)
 uint8_t klog1 = 0, klog2 = 0;
 bool before_key_handler(uint16_t keycode, bool down, keyrecord_t *record){
@@ -331,8 +331,8 @@ bool before_key_handler(uint16_t keycode, bool down, keyrecord_t *record){
           set_rgb_notification( RGB_LOCK_NOTIFICATION );
         #endif
       }
-      return false;
     }
+    return false;
   }
 
   return true;
@@ -362,7 +362,7 @@ bool mod_combo( bool down ){
         layer_on(_CFG);
       break;
     }
-    
+
   }else{
     switch(lastMask){
       case M2_M + S1_M:
@@ -376,12 +376,12 @@ bool mod_combo( bool down ){
         indicator = RGB_EXTRAS;
         layer_off(_CFG);
       break;
-    } 
+    }
   }
   if(indicator != RGB_NONE){
     #ifdef RGB_MATRIX_ENABLE
       set_rgb_indicator(indicator, down);
-    #endif  
+    #endif
   }
 
   lastMask = modMask;
@@ -396,10 +396,10 @@ bool mod_combo( bool down ){
 //═══════════════════════════════════════════════════════════════
 
 /*
-  Whenever a key is pressed / released, this function is called. 
+  Whenever a key is pressed / released, this function is called.
   Keycode could be an uint8_t / uint16_t code, depending on whether it is
-  a basic or extended code. Extedend codes can come preboiled with 
-  modifiers, such as S(KC_A) which is Shift + A. Custom keycodes in this 
+  a basic or extended code. Extedend codes can come preboiled with
+  modifiers, such as S(KC_A) which is Shift + A. Custom keycodes in this
   keymap are all extended.  The record structure holds information about the
   keystroke as follows:
 
@@ -417,7 +417,7 @@ bool mod_combo( bool down ){
 
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-  
+
   bool down = record->event.pressed;
   if( !before_key_handler(keycode, down, record) ) return false;
 
@@ -426,115 +426,30 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
 
     //────────────────── MODIFIERS ──────────────────
-    //definition order is relevant (keydefs.h) 
-    
-    case M1:  
-    case M2: 
-    case M3: 
-    case M4: 
-    case M5:
-    case M6:          
-    case CMD: 
-    case ALT:
-    case CTR:   
-    case S1:
+    //definition order is relevant (keydefs.h)
+    case FIRST_MODIFIER_INDEX ... LAST_MODIFIER_INDEX:
       mod_key_handler(keycode, down, record);
       mod_combo( down );
       return false;
-    
-    //────────────────── APPLE FUNCTION KEYS ──────────────────
 
-    case APPLE_F1:  
-    case APPLE_F2:
-    case APPLE_F3:  
-    case APPLE_F4:
-    case APPLE_F5:  
-    case APPLE_F6:
-    case APPLE_F7:  
-    case APPLE_F8:
-    case APPLE_F9:  
-    case APPLE_F10:
-    case APPLE_F11:  
-    case APPLE_F12:
+    //────────────────── APPLE FUNCTION KEYS ──────────────────
+    case APPLE_F1 ... APPLE_F12:
       if(down){
         interruptMods();
         tap_function_key( keycode - APPLE_F1 +1 );
       }
-      return false; 
+      return false;
 
-    //────────────────── SEQUENCE KEYS ──────────────────     
-
-    case MEMBER:
-    case FIELD:
-    case QUESTN:
-    case EXCLAM:
-    case ONEPLUS:
-    case ONEMINS:
-    case GR_EQ:
-    case LWR_EQ:
-    case NT_EQ:
-    case SHF_R:
-    case SHF_L:
-    case NOT_EQ:
+    //────────────────── SEQUENCE KEYS ──────────────────
+    case FIRST_SEQUENCE_INDEX ... LAST_SEQUENCE_INDEX:
       if(down){
         interruptMods();
         tap_sequence( keycode );
       }
       return false;
 
-    //────────────────── OS DEPENDENT KEYS ──────────────────    
-
-    case CUT:
-    case COPY:
-    case PASTE:
-    case PST_CLEAN:
-    case PST_PLACE:
-    case UNDO:
-    case REDO:
-    case SCRSHT1:
-    case SCRSHT2:
-    case EURO:
-    case REFRESH:
-    case SAVE:
-    case SELECT:
-    case MUTE:
-    case VOL_UP:
-    case VOL_DOWN:
-    case CLS_APPS:
-    case BR_UP:
-    case BR_DOWN:
-    case W_LEFT:
-    case W_RIGHT:
-    case MONITOR:
-    case Z_IN:
-    case Z_OUT:
-    case TOP:
-    case BOTTOM:
-    case FIRST:
-    case LAST:
-    case MINMZ:
-    case MAXMZ:
-    case WIN_L:
-    case WIN_R:
-    case RESTORE:
-    case CLS_W:
-    case SEARCH:
-    case SRCH_NX:
-    case SRCH_PR:
-    case RPLC:      
-    case SPOTL:
-    case SM_APP:
-    case EMOJI:
-    case LOCK:
-    case WAVE:
-    case DEL_W:
-    case SNG_PR:
-    case SNG_NX:
-    case PLAY:
-    case REBOOT:   
-    case POWER:
-    case WIN_CTR:
-    case DEL_LN:  
+    //────────────────── OS DEPENDENT KEYS ──────────────────
+    case FIRST_OS_INDEX ... LAST_OS_INDEX:
       if(down){
         interruptMods();
         register_os_dependent_key( keycode );
@@ -543,22 +458,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       }
       return false;
 
-    //──────────────────BASIC KEYS NO MODS ──────────────────   
-
+    //──────────────────BASIC KEYS NO MODS ──────────────────
     case KC_END:
     case KC_HOME:
     case KC_PGDN:
     case KC_PGUP:
-    case ES_0:
-    case ES_1:   
-    case ES_2:
-    case ES_3:
-    case ES_4:
-    case ES_5:
-    case ES_6:
-    case ES_7:
-    case ES_8:
-    case ES_9:
+    case ES_1 ... ES_0:
       if(down){
         interruptMods();
         register_code16( keycode );
@@ -567,29 +472,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       }
       return false;
 
-
     //────────────────── UNICODE KEYS ──────────────────
-
-    case LONGLN:
-    case MIDLN:
-    case INFNT:
-    case ELLIPSIS:
-    case PI:
-    case POUND:
-    case DEGR:
-    case REG:
-    case TM:
-    case BULLET:
-    case CR:
-    case TOPLN:
+    case FIRST_UNICODE_INDEX ... LAST_UNICODE_INDEX:
       if(down){
         interruptMods();
         tap_unicode_key( keycode );
       }
       return false;
 
-
-    //────────────────── CUSTOM HANDLED KEYS ──────────────────
+    //════════════════ CUSTOM HANDLED KEYS ══════════════
 
     case DEL:
       if(down){
@@ -599,18 +490,18 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
           register_os_dependent_key( DEL_LN );
         }else{
           register_code16( KC_BSPC );
-        } 
+        }
       }else{
-        if(shift){  
+        if(shift){
           unregister_os_dependent_key( DEL_LN );
           register_code( KC_RSFT );
         }else{
           unregister_code16( KC_BSPC );
-        } 
+        }
       }
       return false;
- 
-    // · · · · · · · · · · · · · · · · · · · · · · · · ·        
+
+    // · · · · · · · · · · · · · · · · · · · · · · · · ·
 
     case DOT:
       if(down){
@@ -619,17 +510,17 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
           register_code16( ES_3 );
         }else{
           register_code16( ES_DOT );
-        } 
+        }
       }else{
-        if(shift){  
+        if(shift){
           unregister_code16( ES_3 );
         }else{
           unregister_code16( ES_DOT );
-        } 
+        }
       }
-      return false;      
+      return false;
 
-    // · · · · · · · · · · · · · · · · · · · · · · · · ·   
+    // · · · · · · · · · · · · · · · · · · · · · · · · ·
 
     case SWAP_OS:
       if(down){
@@ -650,31 +541,71 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
           oled_os_notification( os );
         #endif
       }
-      return false; 
+      return false;
 
-    // · · · · · · · · · · · · · · · · · · · · · · · · ·  
+    // · · · · · · · · · · · · · · · · · · · · · · · · ·
 
-    case BORDER: 
+    case BORDER:
       if(down){
         interruptMods();
         tap_code16( KC_F18 );
       }
-      return false; 
+      return false;
 
-    // · · · · · · · · · · · · · · · · · · · · · · · · ·  
+    // · · · · · · · · · · · · · · · · · · · · · · · · ·
 
-    case KBLOCK: 
+    case FLASH:
       if(down){
         interruptMods();
-        kb_lock = true;
-        layer_move( _MOD );
-        #ifdef RGB_MATRIX_ENABLE
-          set_rgb_notification( RGB_LOCK_NOTIFICATION );
-        #endif
+        tap_code16( KC_F20 );
       }
-      return false; 
+      return false;
 
-    // · · · · · · · · · · · · · · · · · · · · · · · · ·  
+    // · · · · · · · · · · · · · · · · · · · · · · · · ·
+
+    case KBLOCK:
+      if(down){
+        interruptMods();
+      }else{
+          /*
+        if(os == OSX){
+          tap_fn_key(C(S(KC_POWER)));
+        }else{
+          tap_code16(KC_SLEP);
+        }
+        */
+          kb_lock = true;
+          layer_move( _MOD );
+          #ifdef RGB_MATRIX_ENABLE
+            set_rgb_notification( RGB_LOCK_NOTIFICATION );
+          #endif
+      }
+      return false;
+
+    // · · · · · · · · · · · · · · · · · · · · · · · · ·
+
+    case OSLOCK:
+      if(down){
+        interruptMods();
+        register_os_dependent_key( LOCK );
+      }else{
+        unregister_os_dependent_key( LOCK );
+        #ifdef LOCK_KB_ON_LOCK_OS
+            if(os == OSX){
+                tap_fn_key(C(S(KC_POWER)));
+            }else{
+                tap_code16(KC_SLEP);
+            }
+            kb_lock = true;
+            layer_move( _MOD );
+            #ifdef RGB_MATRIX_ENABLE
+                set_rgb_notification( RGB_LOCK_NOTIFICATION );
+            #endif
+          #endif
+      }
+      return false;
+
+    // · · · · · · · · · · · · · · · · · · · · · · · · ·
 
     case SHW_DSK:
       if(down) interruptMods();
@@ -689,9 +620,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
           tap_code16(LWIN(KC_D));
         }
       }
-      return false; 
+      return false;
 
-    // · · · · · · · · · · · · · · · · · · · · · · · · ·  
+    // · · · · · · · · · · · · · · · · · · · · · · · · ·
 
     case EXPS:
       if(down) interruptMods();
@@ -706,9 +637,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
           tap_code16(LWIN(KC_TAB));
         }
       }
-      return false; 
+      return false;
 
-    // · · · · · · · · · · · · · · · · · · · · · · · · ·     
+    // · · · · · · · · · · · · · · · · · · · · · · · · ·
 
     case SCR_OFF:
       if(down){
@@ -719,13 +650,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         }else{
           tap_code16(KC_SLEP);
         }
-        #ifdef LOCK_KB_WHEN_SCREEN_OFF
-          kb_lock = true;
-          layer_move( _MOD );
-          #ifdef RGB_MATRIX_ENABLE
-            set_rgb_notification( RGB_LOCK_NOTIFICATION );
-          #endif          
-        #endif
       }
       return false;
 
@@ -735,7 +659,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       if(down){
         interruptMods();
         if(!app_switch){
-          app_switch_start();        
+          app_switch_start();
         }
         register_code(KC_TAB);
       }else{
@@ -749,13 +673,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       if(down){
         interruptMods();
         if(!app_switch){
-          app_switch_start();        
+          app_switch_start();
         }
         register_code16( S(KC_TAB) );
       }else{
         unregister_code16( S(KC_TAB) );
       }
-      return false;  
+      return false;
 
     // · · · · · · · · · · · · · · · · · · · · · · · · ·
 
@@ -769,17 +693,17 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
           tap_code16( KC_G );
         }
       }
-    return false;  
+    return false;
 
     // · · · · · · · · · · · · · · · · · · · · · · · · ·
-    
+
     case H_LOCK:
       if(down){
         interruptMods();
         toggle_hyper_lock();
       }
 
-    return false;  
+    return false;
 
     // · · · · · · · · · · · · · · · · · · · · · · · · ·
 
@@ -789,9 +713,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         interruptMods();
         #ifdef RGB_MATRIX_ENABLE
         rgb_rotate_theme(keycode == RGB_NEXT ? 1 : -1);
-        #endif        
+        #endif
       }
-      return false; 
+      return false;
 
     // · · · · · · · · · · · · · · · · · · · · · · · · ·
 
@@ -801,16 +725,28 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         lang = ( lang == ES ? EN : ES );
         #ifdef RGB_MATRIX_ENABLE
           set_rgb_notification( lang == ES ? RGB_LANG_ES : RGB_LANG_EN );
-        #endif        
+        #endif
       }
-      return false;       
+      return false;
 
-    //────────────────── DEFAULT ──────────────────     
+    //────────────────── DEFAULT ──────────────────
 
     default:
       if(modsNumber > 0 && !IS_LAYER_ON(_HYP) ){
         interruptMods();
-      }      
+      }
+
+      //the following lines could be skipped, but then, holding down combined keycodes
+      //could contamine the following ones if not fully released. For example: %+3 = %·
+      //Detect shifted keycodes:
+      if((keycode >= QK_LSFT && keycode <= (QK_LSFT + 0xFF)) ||  (keycode >= QK_RSFT && keycode <= (QK_RSFT + 0xFF))){
+          //avoid hold down shifted keycodes to prevent contamination for fast typist
+          if(down){
+            tap_code16( keycode );
+          }
+          return false;
+      }
+
 
   }
 
@@ -826,38 +762,38 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 //═══════════════════════════════════════════════════════════════
 
 //Handler for 'mod keys'. Mod keys could behave slightly differently according to the mod itself,
-//but in general they can activate a temporary layer as far as they are hold, making it possible 
+//but in general they can activate a temporary layer as far as they are hold, making it possible
 //to modify the default behaviour of any key. Mods can also hold any keycode as soon as they get pressed,
 //(such as CMD, or ALT), and also can output a secondary keycode if tapped alone (with no other key being
-//pressed between press and release). This behaviour allows a very wide variety of mods, such as 
+//pressed between press and release). This behaviour allows a very wide variety of mods, such as
 //spacebar that if hold down behaves like a CMD and even redefining some keys by swapping to another layer.
 
 bool mod_key_handler(uint16_t keycode, bool down, keyrecord_t *record){
   bool reset = false;
   Keypress *currentMod = NULL;
-  Keypress *kp = &KP[ keycode - MODIFIER_INDEX - 1];
+  Keypress *kp = &KP[ keycode - FIRST_MODIFIER_INDEX - 1];
   uint8_t iteration = 0;
 
   if(down){
-    //uprintf("Mod down %d\n", keycode - MODIFIER_INDEX - 1);
+    //uprintf("Mod down %d\n", keycode - FIRST_MODIFIER_INDEX - 1);
     modMask += kp->mask;
-    //logMask( modMask, 7);   
-    if(kp->downHandler){ 
+    //logMask( modMask, 7);
+    if(kp->downHandler){
       //uprintf("Custom handler found \n");
       if( !((*kp->downHandler)( kp )) ){
         //uprintf("Prevented MOD\n");
         modMask -= kp->mask;
-        return false; 
-      }  
-    } 
+        return false;
+      }
+    }
     //uprintf("MOD init time is stored\n");
     kp->time = record->event.time;
     if(kp->layer) layer_on(kp->layer);
     if(kp->keycode || kp->osKeycode){
       register_code16( kp->osKeycode ? getOSKey(kp->osKeycode) : kp->keycode);
     }
-    if(modsNumber++ == 0){ 
-      activeMods = kp;  
+    if(modsNumber++ == 0){
+      activeMods = kp;
     }else{
       currentMod = activeMods;
       iteration = 0;
@@ -869,12 +805,12 @@ bool mod_key_handler(uint16_t keycode, bool down, keyrecord_t *record){
     }
 
   }else{
-    //uprintf("Mod up %d\n", keycode - MODIFIER_INDEX - 1);
+    //uprintf("Mod up %d\n", keycode - FIRST_MODIFIER_INDEX - 1);
     //since mods can be prevented by its down handler, check if it is active
     if( kp->mask && !(modMask & kp->mask) ) return false;
 
-    //keep the activeMods queue updated   
-    if(--modsNumber == 0){ 
+    //keep the activeMods queue updated
+    if(--modsNumber == 0){
       activeMods = 0;
       reset = true;
       //uprintf("No remaining mods\n");
@@ -903,8 +839,8 @@ bool mod_key_handler(uint16_t keycode, bool down, keyrecord_t *record){
     if(kp->layer){
       //uprintf("Mod has its own layer, lets try to deactivate it %d\n", kp->layer);
       layer_off_if_not_used(kp->layer);
-    } 
-    
+    }
+
     if(kp->keycode || kp->osKeycode){
       unregister_code16( kp->osKeycode ? getOSKey(kp->osKeycode) : kp->keycode);
     }
@@ -915,16 +851,28 @@ bool mod_key_handler(uint16_t keycode, bool down, keyrecord_t *record){
       //uprintf("it has not been interrupted\n");
       if(!kp->skipTime || (record->event.time - kp->time) < kp->skipTime  ){
         //uprintf("timing is OK, go ahead with the alternative keycode\n");
-        if(kp->alternativeKeycode) tap_code16( kp->alternativeKeycode );
+        if(kp->alternativeKeycode){
+            switch (kp->alternativeKeycode) {
+
+                //used key sequences goes here:
+                case BCKQT:
+                    tap_sequence( kp->alternativeKeycode );
+                break;
+
+                //standar alternative keycodes
+                default:
+                    tap_code16( kp->alternativeKeycode );
+            }
+        }
         if(kp->alternativeOsKeycode) tap_os_dependent_key( kp->alternativeOsKeycode );
       }
     }
 
     if( reset ){
-      resetState( kp );   
+      resetState( kp );
     }
-  }       
-  return false; 
+  }
+  return false;
 }
 
 //═══════════════════════════════════════════════════════════════
@@ -936,21 +884,21 @@ void hyper( bool down){
   interruptMods();
   if( down ){
     layer_move( _HYP );
-    register_code16( KC_LSFT ); 
-    register_code16( KC_LCTRL ); 
-    register_code16( KC_LALT ); 
+    register_code16( KC_LSFT );
+    register_code16( KC_LCTRL );
+    register_code16( KC_LALT );
   }else{
-    unregister_code16( KC_LSFT ); 
-    unregister_code16( KC_LCTRL ); 
-    unregister_code16( KC_LALT ); 
+    unregister_code16( KC_LSFT );
+    unregister_code16( KC_LCTRL );
+    unregister_code16( KC_LALT );
     layer_move( _BASE );
   }
-  
+
 }
 
 //Toggle hyper lock
 void toggle_hyper_lock(void){
-  hyper_lock = !hyper_lock; 
+  hyper_lock = !hyper_lock;
   hyper( hyper_lock );
   #ifdef RGB_MATRIX_ENABLE
   set_rgb_indicator(RGB_HYPER_LOCK, hyper_lock);
@@ -959,12 +907,12 @@ void toggle_hyper_lock(void){
 
 
 //═══════════════════════════════════════════════════════════════
-//   KEYBOARD INIT 
+//   KEYBOARD INIT
 //═══════════════════════════════════════════════════════════════
 
 
 void keyboard_post_init_user(void) {
- 
+
   #ifdef RGB_MATRIX_ENABLE
   init_rgb();
   #endif

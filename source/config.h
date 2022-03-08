@@ -2,9 +2,9 @@
 #pragma once
 
 //no need for underglow in a closed case. Also, I use foam and I don't want any overheat
-#define DISABLE_UNDERGLOW  
-#define LOCK_KB_WHEN_SCREEN_OFF
-#define TAPPING_TERM 275
+#define DISABLE_UNDERGLOW
+#define LOCK_KB_ON_LOCK_OS
+#define TAPPING_TERM 350
 #define UNICODE_SELECTED_MODES UC_WINC
 #define UNICODE_CYCLE_PERSIST false
 #define OVERFLOW_SMALL 15
@@ -66,7 +66,7 @@
 	//#define RGB_MATRIX_LED_PROCESS_LIMIT (DRIVER_LED_TOTAL + 4) / 5 // limits the number of LEDs to process in an animation per task run (increases keyboard responsiveness)
 	#define RGB_MATRIX_LED_PROCESS_LIMIT DRIVER_LED_TOTAL
 	#define RGB_MATRIX_LED_FLUSH_LIMIT 300 // limits in milliseconds how frequently an animation will update the LEDs. 16 (16ms) is equivalent to limiting to 60fps (increases keyboard responsiveness)
-	#define RGB_MATRIX_MAXIMUM_BRIGHTNESS 120 //WARNING! limits maximum brightness of LEDs to 120 out of 255. Higher may cause the controller to crash. 
+	#define RGB_MATRIX_MAXIMUM_BRIGHTNESS 120 //WARNING! limits maximum brightness of LEDs to 120 out of 255. Higher may cause the controller to crash.
 	#define RGB_MATRIX_HUE_STEP 8
 	#define RGB_MATRIX_SAT_STEP 8
 	#define RGB_MATRIX_VAL_STEP 8
@@ -91,7 +91,8 @@
 #define TAPPING_FORCE_HOLD
 #define DISABLE_LEADER
 
-//Even further
+//Even further (export release) (comment all during development)
+
 #ifndef NO_DEBUG
 #define NO_DEBUG
 #endif // !NO_DEBUG

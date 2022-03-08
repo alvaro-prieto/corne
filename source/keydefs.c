@@ -7,9 +7,9 @@
 //ALT A,  CMD G,  CONTROL C, SHIFT S, C+A LCA, ALGR (for Windows), LWIN, H (hyper)
 
 
-//Definition of those shortcuts that perform the same action using different 
+//Definition of those shortcuts that perform the same action using different
 //key combinations accordint to the OS. Currently: {OSX, Windows}
-static const uint16_t osKeys[][NUMBER_OF_OS] PROGMEM = { 
+static const uint16_t osKeys[][NUMBER_OF_OS] PROGMEM = {
 	//CMD_OS
 	{ KC_LCMD, KC_LCTRL},
 	//CTR_OS
@@ -17,15 +17,15 @@ static const uint16_t osKeys[][NUMBER_OF_OS] PROGMEM = {
 	//CUT
 	{ G(ES_X), C(ES_X) },
 	//COPY
-	{ G(ES_C), C(ES_C) }, 
+	{ G(ES_C), C(ES_C) },
 	//PASTE
-	{ G(ES_V), C(ES_V) }, 
+	{ G(ES_V), C(ES_V) },
 	//PLAIN_PASTE
-	{ G(A(S(ES_V))), C(S(ES_V)) }, 
+	{ G(A(S(ES_V))), C(S(ES_V)) },
 	//PASTE_IN_PLACE
-	{ G(S(ES_V)), C(S(ES_V)) }, 
+	{ G(S(ES_V)), C(S(ES_V)) },
 	//UNDO
-	{ G(ES_Z), C(ES_Z) }, 
+	{ G(ES_Z), C(ES_Z) },
 	//REDO
 	{ G(S(ES_Z)), C(S(ES_Z)) },
 	//SCRSHT1
@@ -67,7 +67,7 @@ static const uint16_t osKeys[][NUMBER_OF_OS] PROGMEM = {
 	//BOTTOM
 	{ G(KC_DOWN), G(KC_END)}, //{ G(KC_END), G(KC_END)},
 	//FIRST
-	{ G(KC_LEFT), KC_HOME}, 
+	{ G(KC_LEFT), KC_HOME},
 	//LAST
 	{ G(KC_RIGHT), KC_END},
 	//MINMZ
@@ -80,7 +80,7 @@ static const uint16_t osKeys[][NUMBER_OF_OS] PROGMEM = {
 	{ G(ES_G), C(ES_G)},
 	//SRCH_PR
 	{ G(S(ES_G)), C(S(ES_G))},
-	//RPLC 
+	//RPLC
 	{ A(G(ES_F)), C(ES_H)},
 	//SPOTL
 	{ G(KC_SPC), LWIN(KC_S)},
@@ -118,27 +118,31 @@ static const uint16_t osKeys[][NUMBER_OF_OS] PROGMEM = {
 	{ KC_LCTL, KC_LWIN},
 	//DEL_LN
 	{ G(KC_BSPC), C(S(ES_K))},
-   
+    //TRASH
+    { G(KC_BSPC), KC_DEL},
+    //REMOVE
+    { A(G(KC_BSPC)), S(KC_DEL)},
+
 };
 
 //Definition of those keys that should output more than one character, for example:  >=
-static const uint16_t sequenceKeys[][SEQUENCE_MAX_LENGTH] PROGMEM = { 
+static const uint16_t sequenceKeys[][SEQUENCE_MAX_LENGTH] PROGMEM = {
 	//MEMBER
-	{ ES_MINS, ES_RABK, NULL_KEY }, 
+	{ ES_MINS, ES_RABK, NULL_KEY },
 	//FIELD
-	{ ES_EQL, ES_RABK, NULL_KEY }, 
+	{ ES_EQL, ES_RABK, NULL_KEY },
 	//QUESTN
 	{ ES_IQUE, ES_QUES, KC_LEFT },
 	//EXCLAM
 	{ ES_IEXL, ES_EXLM, KC_LEFT },
 	//CMNT_OP
-	{ ES_SLSH, ES_ASTR, NULL_KEY }, 
+	{ ES_SLSH, ES_ASTR, NULL_KEY },
 	//CMNT_CL
-	{ ES_ASTR, ES_SLSH, NULL_KEY },  
+	{ ES_ASTR, ES_SLSH, NULL_KEY },
 	//ONEPLUS
-	{ ES_PLUS, ES_1, NULL_KEY },  
-	//ONEMINS   
-	{ ES_MINS, ES_1, NULL_KEY },  
+	{ ES_PLUS, ES_1, NULL_KEY },
+	//ONEMINS
+	{ ES_MINS, ES_1, NULL_KEY },
 	//GR_EQ
 	{ ES_RABK, ES_EQL, NULL_KEY },
 	//LWR_EQ
@@ -163,15 +167,22 @@ static const uint16_t sequenceKeys[][SEQUENCE_MAX_LENGTH] PROGMEM = {
 	{ ES_RABK, ES_EQL, NULL_KEY },
 	//LSS_EQ
 	{ ES_LABK, ES_EQL, NULL_KEY },
-	
+    //BCKQT
+    { ES_GRV, KC_SPC, NULL_KEY },
+    //POW
+    { ES_CIRC, KC_SPC, NULL_KEY },
+    //G
+    { ES_G, NULL_KEY, NULL_KEY },
+    //G_DIE
+    { ES_G, ES_DIAE, NULL_KEY },
 };
 
-//UNICODE characters are managed differently according to the OS. In OSX you can set 
+//UNICODE characters are managed differently according to the OS. In OSX you can set
 //Unicode Hex Input in the keyboard device settings, but for most used characters you
 //can use their custom key combination if you don't want to mess with strange input modes.
-//In Windows unicode characters can be managed using its code https://unicode-table.com 
+//In Windows unicode characters can be managed using its code https://unicode-table.com
 //and installing WinCompose
-static const uint16_t unicodeKeys[][NUMBER_OF_OS] PROGMEM = { 
+static const uint16_t unicodeKeys[][NUMBER_OF_OS] PROGMEM = {
 	//MIDLN
 	{ A(ES_MINS), 0x2013},
 	//LONGLN
@@ -208,33 +219,44 @@ static const uint16_t unicodeKeys[][NUMBER_OF_OS] PROGMEM = {
 	{ A(S(ES_3)), 0x2022},
 	//CR
 	{ A(ES_C), 0x00A9},
-	
-};	
+
+};
 
 
 //returns the extendend shortcut keycode according to the current OS
 static uint16_t getOSKey(uint16_t keyName ){
-	return pgm_read_word( &( osKeys[ keyName - OS_INDEX -1 ][ os ] ) );
-}; 
+	return pgm_read_word( &( osKeys[ keyName - FIRST_OS_INDEX -1 ][ os ] ) );
+};
 
 //Returns the uint16_t keycode or the unicode number according to the current OS
 static uint16_t getUnicodeKey(uint16_t keyName ){
-	return pgm_read_word( &( unicodeKeys[ keyName - UNICODE_INDEX -1 ][ os ] ));
+	return pgm_read_word( &( unicodeKeys[ keyName - FIRST_UNICODE_INDEX -1 ][ os ] ));
 };
 
-//taps a sequence of keys. Useful for common key sequences such as <= -> and so on
-static void tap_sequence(uint16_t seqName){
+// shared code among tap_sequence and del_sequence, this function is not public
+static void tap_sequence_internal(uint16_t seqName, bool delete){
 	char overflow = SEQUENCE_MAX_LENGTH;
 	uint16_t currentKey;
 	for(int i=0; i<SEQUENCE_MAX_LENGTH && overflow>0; i++, overflow--){
-		currentKey = pgm_read_word( &( sequenceKeys[ seqName - SEQUENCE_INDEX -1 ][ i ] )); 
+		currentKey = pgm_read_word( &( sequenceKeys[ seqName - FIRST_SEQUENCE_INDEX -1 ][ i ] ));
 		if(currentKey == NULL_KEY) break;
-		tap_code16( currentKey ); 
-	}	
-}; 
+        tap_code16( delete ? KC_BSPC : currentKey );
+	}
+}
 
-//Function that outputs a character using its Unicode number in Windows or its key 
-//combination in macOS. It could behave in the same way in different OS (using only its unicode), 
+//taps a sequence of keys. Useful for common key sequences such as <= -> and so on
+static void tap_sequence(uint16_t seqName){
+    tap_sequence_internal(seqName, false);
+};
+
+//deletes the same amount of characters of a sequence of keys
+static void del_sequence(uint16_t seqName){
+    tap_sequence_internal(seqName, true);
+};
+
+
+//Function that outputs a character using its Unicode number in Windows or its key
+//combination in macOS. It could behave in the same way in different OS (using only its unicode),
 //but it requires to set the keyboard settings in Unicode Hex Input mode in OSX, which I dislike.
 static void tap_unicode_key(uint16_t kc){
 	uint16_t u = getUnicodeKey( kc );
