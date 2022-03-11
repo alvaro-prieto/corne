@@ -19,15 +19,15 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 <table>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/opt.svg" width="35"></td>
-  <td><kbd>Option</kbd> / <kbd>Alt</kbd> if hold. <kbd>Tap</kbd> on press</td>
+  <td><kbd>Option</kbd> / <kbd>Alt</kbd> on hold. <kbd>Tap</kbd> on press</td>
 </tr>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/cmd.svg" width="35"></td>
-  <td><kbd>Command</kbd> / <kbd>Control</kbd> if hold. <kbd>Reverse tap</kbd> on press</td>
+  <td><kbd>Command</kbd> / <kbd>Control</kbd> on hold. <kbd>Reverse tap</kbd> on press</td>
 </tr>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/ctr.svg" width="35"></td>
-  <td><kbd>Control</kbd> / <kbd>Windows</kbd> if hold. <kbd>Backtick</kbd> on press</td>
+  <td><kbd>Control</kbd> / <kbd>Windows</kbd> on hold. <kbd>Backtick</kbd> on press</td>
 </tr>  
 </table>
   
