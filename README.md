@@ -250,6 +250,25 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>     
 </table>
 
+
+
+## Keyboard configuration
+<table>
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/os.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/lang.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/rgbbrup.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/rgbnex.svg" width="35"></td>
+</tr>
+<tr>
+  <td align="center">Keyboard OS</td>
+  <td align="center">Keyboard language</td>
+  <td align="center">Next RGB theme</td>
+  <td align="center">RGB brightness</td>
+</tr>
+</table>
+
+
   
 # 🇬🇧 Description
 Keymap for [Corne Keyboard](https://github.com/foostan/crkbd) specially designed for software developers using macOS and Windows and writting in Spanish and English.
