@@ -110,9 +110,9 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>
 <tr>
   
-  <td colspan="4">
+  <th colspan="4" align="center">
     hola
-  </td>
+  </th>
  </tr> </table> 
 
 
