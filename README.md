@@ -194,37 +194,41 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/paste.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/pasteclean.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/pasteplace.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/refresh.svg" width="35"></td>  
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/spotlight.svg" width="35"></td>
 </tr>
 <tr>
   <td align="center"><code>TAP 1:</code> Copy </td>
   <td align="center"><code>TAP 2:</code> Cut </td>
   <td align="center">Paste</td>  
   <td align="center"><code>TAP 1:</code> Paste without format </td>
-  <td align="center"><code>TAP 2:</code> Paste in place </td>    
+  <td align="center"><code>TAP 2:</code> Paste in place </td>
+  <td align="center">Refresh</td>
+  <td align="center">Spotlight (open apps)</td>
 </tr>  
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/save.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/undo.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/redo.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/selectall.svg" width="35"></td>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/spotlight.svg" width="35"></td>
+
 </tr>
 <tr>
   <td align="center">Save</td>
   <td align="center">Undo</td>
   <td align="center">Redo</td>  
   <td align="center">Select all</td>
-  <td align="center">Spotlight (open apps)</td>
+  
 </tr>    
 <tr>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/refresh.svg" width="35"></td>
+
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/search.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/searchprev.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/searchnext.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/replace.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center">Refresh</td>
+  
   <td align="center">Search</td>
   <td align="center">Search previous</td>  
   <td align="center">Search next</td>
