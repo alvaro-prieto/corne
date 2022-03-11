@@ -69,6 +69,24 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </td></tr> </table> 
 
 
+## Erase
+<table>
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/backspace.svg" width="25"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/supr.svg" width="25"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/deleteword.svg" width="25"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/deleteln.svg" width="25"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/deletefile.svg" width="25"></td>
+</tr>
+<tr>
+  <td align="center">Backspace</td>
+  <td align="center">Delete forward</td>
+  <td align="center">Delete word</td>
+  <td align="center">Delete line</td>
+  <td align="center">1 tap: `delete file` / 2 tap: `permanently delete file`</td>
+</tr>
+</table>
+
 
 
 # 🇬🇧 Description
