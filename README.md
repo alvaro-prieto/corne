@@ -101,10 +101,10 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><kbd>Delete word</kbd></td>
   <td align="center"><kbd>Delete line</kbd></td>
   <td align="center">
-    <ul align="left">
-      <li><code>TAP 1:</code> <kbd>Delete file</kbd> </li>
-      <li><code>TAP 2:</code> <kbd>Permanently delete file</kbd> </li>
-   </ul>
+
+      <code>TAP 1:</code> <kbd>Delete file</kbd>  
+      <code>TAP 2:</code> <kbd>Permanently delete file</kbd> 
+
   </td>
 </tr>
 <tr>
