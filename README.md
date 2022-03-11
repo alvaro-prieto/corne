@@ -65,6 +65,57 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   
 </td></tr> </table> 
 
+
+
+
+
+<table>
+<tr>
+  <th colspan="3">Navigation</th>
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowup.svg" width="25"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowdown.svg" width="25"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowleft.svg" width="25"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowright.svg" width="25"></td>
+</tr>
+<tr>
+  <td align="center">Cursor up</td>
+  <td align="center">Cursor down</td>
+  <td align="center">Cursor right</td>
+  <td align="center">Cursor left</td>
+</tr>
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfup.svg" width="25"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfdown.svg" width="25"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfleft.svg" width="25"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfright.svg" width="25"></td>
+</tr>
+<tr>
+  <td align="center">Page up</td>
+  <td align="center">Page down</td>
+  <td align="center">Word right</td>  
+  <td align="center">Word left</td>
+</tr>
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/fullup.svg" width="25"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/fulldown.svg" width="25"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/fullleft.svg" width="25"></td>  
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/fullright.svg" width="25"></td>
+</tr>
+<tr>
+  <td align="center">Document start</td>
+  <td align="center">Document end</td>
+  <td align="center">Line end</td>  
+  <td align="center">Line start</td>
+</tr>
+<tr>
+  
+  <td colspan="3">
+    hola
+  </td>
+ </tr> </table> 
+
+
 # 🇬🇧 Description
 Keymap for [Corne Keyboard](https://github.com/foostan/crkbd) specially designed for software developers using macOS and Windows and writting in Spanish and English.
 
