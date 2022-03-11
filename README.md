@@ -15,6 +15,23 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 # ⌨️ Legend
 
 
+## Modifiers — <kbd>macOs</kbd> / <kbd>Windows</kbd>
+<table>
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/opt.svg" width="35"></td>
+  <td><kbd>Option</kbd> / <kbd>Alt</kbd> if hold. <kbd>Tap</kbd> on press</td>
+</tr>
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/cmd.svg" width="35"></td>
+  <td><kbd>Command</kbd> / <kbd>Control</kbd> if hold. <kbd>Reverse tap</kbd> on press</td>
+</tr>
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/ctr.svg" width="35"></td>
+  <td><kbd>Control</kbd> / <kbd>Windows</kbd> if hold. <kbd>Backtick</kbd> on press</td>
+</tr>  
+</table>
+  
+
 ## Navigation and selection
 
 <table>
@@ -284,22 +301,6 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>
 </table>
 
-## Modifiers — <kbd>macOs</kbd> / <kbd>Windows</kbd>
-<table>
-<tr>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/opt.svg" width="35"></td>
-  <td><kbd>Option</kbd> / <kbd>Alt</kbd> if hold. <kbd>Tap</kbd> on press</td>
-</tr>
-<tr>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/cmd.svg" width="35"></td>
-  <td><kbd>Command</kbd> / <kbd>Control</kbd> if hold. <kbd>Reverse tap</kbd> on press</td>
-</tr>
-<tr>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/ctr.svg" width="35"></td>
-  <td><kbd>Control</kbd> / <kbd>Windows</kbd> if hold. <kbd>Backtick</kbd> on press</td>
-</tr>  
-</table>
-  
 # 🇬🇧 Description
 Keymap for [Corne Keyboard](https://github.com/foostan/crkbd) specially designed for software developers using macOS and Windows and writting in Spanish and English.
 
