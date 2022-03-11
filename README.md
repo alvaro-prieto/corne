@@ -46,10 +46,10 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowright.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center">Cursor up</td>
-  <td align="center">Cursor down</td>
-  <td align="center">Cursor right</td>
-  <td align="center">Cursor left</td>
+  <td align="center"><kbd>Cursor up</kbd></td>
+  <td align="center"><kbd>Cursor down</kbd></td>
+  <td align="center"><kbd>Cursor right</kbd></td>
+  <td align="center"><kbd>Cursor left</kbd></td>
 </tr>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfup.svg" width="35"></td>
