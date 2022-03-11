@@ -55,9 +55,9 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td>Line end</td>  
   <td>Line start</td>
 </tr>
-
+</table>
   </td><td>
-  
+   
   Combine any of them with the thumb shift to select text
   <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/shift.svg" width="30">
   
