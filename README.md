@@ -284,7 +284,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>
 </table>
 
-## Modifiers (<kbd>macOs</kbd> / <kbd>Windows</kbd>)
+## Modifiers — <kbd>macOs</kbd> / <kbd>Windows</kbd>
 <table>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/opt.svg" width="35"></td>
@@ -294,6 +294,10 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/cmd.svg" width="35"></td>
   <td><kbd>Command</kbd> / <kbd>Control</kbd> if hold. <kbd>Reverse tap</kbd> on press</td>
 </tr>
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/ctr.svg" width="35"></td>
+  <td><kbd>Control</kbd> / <kbd>Windows</kbd> if hold. <kbd>Backtick</kbd> on press</td>
+</tr>  
 </table>
   
 # 🇬🇧 Description
