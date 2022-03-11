@@ -50,16 +50,16 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/fullright.svg" width="30"></td>
 </tr>
 <tr>
-  <td>Document start</td>
-  <td>Document end</td>
-  <td>Line end</td>  
-  <td>Line start</td>
+  <td align="center">Document start</td>
+  <td align="center">Document end</td>
+  <td align="center">Line end</td>  
+  <td align="center">Line start</td>
 </tr>
   
 </table>
 </td><td>
   
-  Combine any of them with the left thumb shift <kbd>⇧</kbd> (spacebar) to select text / words / lines / pages / document. 
+  Combine any of them with the left thumb shift <kbd>⇧</kbd> (spacebar) to `select text` / `words` / `lines` / `pages` / `document. 
   
   
 </td></tr> </table> 
