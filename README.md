@@ -19,7 +19,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowleft.svg" width="30">
 
 | fgdfg | gsdfgs | sfdgsfg |      |   |
-|-------|--------|---------|------|---|
+|-------|:--------:|---------|------|---|
 | sfdgs | sfdg   |         |      |   |
 |       |: <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowleft.svg" width="30">:| sdfgs   |      |   |
 |       |        |         | sdfg |   |
