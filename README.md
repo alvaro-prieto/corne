@@ -14,6 +14,9 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 
 # ⌨️ Legend
 
+
+## Navigation and selection
+
 <table>
 <tr><th>Navigation</th><th>Selection</th></tr>
 <tr><td>
