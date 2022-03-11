@@ -268,6 +268,21 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>
 </table>
 
+## Computer state
+<table>
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/off.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/logout.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/lock.svg" width="35"></td>  
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/scroff.svg" width="35"></td>
+</tr>
+<tr>
+  <td align="center">Shut down</td>
+  <td align="center">Logout + screen off</td>
+  <td align="center">Screen off + Lock keyboard with password</td>
+  <td align="center">Screen off (no password)</td>
+</tr>
+</table>
 
   
 # 🇬🇧 Description
