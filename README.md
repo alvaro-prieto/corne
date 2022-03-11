@@ -119,33 +119,33 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/apptodesktop.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/showall.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/showdesktop.svg" width="35"></td>
-  <td></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/emergency.svg" width="35"></td>
 </tr>
 <tr>
   <td align="center"><code>TAP 1:</code> Show desktop N</td>
   <td align="center"><code>TAP 2:</code> Move app to desktop N</td>
   <td align="center">Show all windows</td>
   <td align="center">Hide all windows</td>
-  <td align="center"></td>
+  <td align="center">Quick close all incognito windows*</td>
 </tr>
   <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/nextapp.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/prevapp.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/sameapp.svg" width="35"></td>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/close.svg" width="35"></td>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/emergency.svg" width="35"></td>
+  <td align="center" colspan="2"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/close.svg" width="35"></td>
+
 </tr>
 <tr>
   <td align="center">Next app</td>
   <td align="center">Previous app</td>
   <td align="center">Next window same app</td>  
-  <td align="center">
+  <td align="center" colspan="2">
     <ul align="left">
       <li><code>TAP 1:</code> Close window </li>
       <li><code>TAP 2:</code> Close app </li>
    </ul>  
   </td>
-  <td align="center">Quick close all incognito windows*</td>
+
 </tr>
 </table>
 
