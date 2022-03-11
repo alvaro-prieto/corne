@@ -98,6 +98,41 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </table>
 
 
+## Multimedia
+<table>
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/play.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/prev.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/next.svg" width="35"></td>
+</tr>
+<tr>
+  <td align="center">Play / pause</td>
+  <td align="center">Previous song</td>
+  <td align="center">Next song</td>
+</tr>
+ <tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/brup.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/brdown.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/scroff.svg" width="35"></td>
+</tr>
+<tr>
+  <td align="center">Brightness +</td>
+  <td align="center">Brightness -</td>
+  <td align="center">Screen off</td>
+</tr>
+  <tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/mute.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/volup.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/voldown.svg" width="35"></td>
+</tr>
+<tr>
+  <td align="center">Mute</td>
+  <td align="center">Vol up</td>
+  <td align="center">Vol down</td>
+</tr>
+</table>
+
+
 
 # 🇬🇧 Description
 Keymap for [Corne Keyboard](https://github.com/foostan/crkbd) specially designed for software developers using macOS and Windows and writting in Spanish and English.
