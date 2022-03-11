@@ -96,14 +96,14 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/deletefile.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center">Backspace</td>
-  <td align="center">Delete forward</td>
-  <td align="center">Delete word</td>
-  <td align="center">Delete line</td>
+  <td align="center"><kbd>Backspace</kbd></td>
+  <td align="center"><kbd>Delete forward</kbd></td>
+  <td align="center"><kbd>Delete word</kbd></td>
+  <td align="center"><kbd>Delete line</kbd></td>
   <td align="center">
     <ul align="left">
-      <li><code>TAP 1:</code> Delete file </li>
-      <li><code>TAP 2:</code> Permanently delete file </li>
+      <li><code>TAP 1:</code> <kbd>Delete file</kbd> </li>
+      <li><code>TAP 2:</code> <kbd>Permanently delete file</kbd> </li>
    </ul>
   </td>
 </tr>
