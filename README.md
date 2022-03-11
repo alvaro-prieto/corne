@@ -225,12 +225,29 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/replace.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center">Spotlight (open apps)</td>  
-  <td align="center">Search</td>
+  <td align="center">Spotlight (search apps)</td>  
+  <td align="center">Search text</td>
   <td align="center">Search previous</td>  
   <td align="center">Search next</td>
   <td align="center">Search & replace</td>
 </tr>   
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/emoji.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/capture.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/region.svg" width="35"></td>
+  <td align="center" colspan="2"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/monitor.svg" width="35"></td>
+</tr>
+<tr>
+  <td align="center">Emoji picker</td>  
+  <td align="center">Capture screen</td>
+  <td align="center">Capture region</td>  
+  <td align="center" colspan="2">
+      <ul align="left">
+      <li><code>TAP 1:</code> Close apps menu </li>
+      <li><code>TAP 2:</code> System monitor </li>
+   </ul>  
+  </td>
+</tr>     
 </table>
 
   
