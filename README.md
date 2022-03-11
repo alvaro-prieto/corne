@@ -179,9 +179,9 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/next.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center">Play / pause</td>
-  <td align="center">Previous song</td>
-  <td align="center">Next song</td>
+  <td align="center"><kbd>Play / pause</kbd></td>
+  <td align="center"><kbd>Previous song</kbd></td>
+  <td align="center"><kbd>Next song</kbd></td>
 </tr>
  <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/brup.svg" width="35"></td>
@@ -189,9 +189,9 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/scroff.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center">Brightness +</td>
-  <td align="center">Brightness -</td>
-  <td align="center">Screen off</td>
+  <td align="center"><kbd>Brightness +</kbd></td>
+  <td align="center"><kbd>Brightness -</kbd></td>
+  <td align="center"><kbd>Screen off</kbd></td>
 </tr>
   <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/volup.svg" width="35"></td>
@@ -199,9 +199,9 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/mute.svg" width="35"></td>    
 </tr>
 <tr>
-  <td align="center">Vol up</td>
-  <td align="center">Vol down</td>
-  <td align="center">Mute</td>  
+  <td align="center"><kbd>Vol up</kbd></td>
+  <td align="center"><kbd>Vol down</kbd></td>
+  <td align="center"><kbd>Mute</kbd></td>  
 </tr>
 </table>
 
