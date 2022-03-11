@@ -71,7 +71,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 
 <table>
 <tr>
-  <th colspan="3">Navigation</th>
+  <th colspan="4">Navigation</th>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowup.svg" width="25"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowdown.svg" width="25"></td>
@@ -110,7 +110,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>
 <tr>
   
-  <td colspan="3">
+  <td colspan="4">
     hola
   </td>
  </tr> </table> 
