@@ -60,7 +60,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   </td></tr>
   <tr><td>
 
-  <table>
+  <table width="100%">
   <tr><th>Navigation</th></tr>
   <tr><td>
   Combine any of them with the left thumb shift <kbd>⇧</kbd> (spacebar) to `select text` / `words` / `lines` / `pages` / `document`. 
