@@ -206,13 +206,15 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/save.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/undo.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/redo.svg" width="35"></td>
-  <td align="center"  colspan="2"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/selectall.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/selectall.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/refresh.svg" width="35"></td>
 </tr>
 <tr>
   <td align="center">Save</td>
   <td align="center">Undo</td>
   <td align="center">Redo</td>  
-  <td align="center" colspan="2">Select all</td>
+  <td align="center">Select all</td>
+  <td align="center">Refresh</td>
 </tr>    
 </table>
 
