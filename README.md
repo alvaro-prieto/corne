@@ -16,7 +16,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 
 <table>
 <tr><th>Navigation</th></tr>
-<tr>
+<tr><td>
   
 <table>
 <tr>
@@ -57,7 +57,8 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>
   
 </table>
-</td>
+  </td></tr>
+  <tr><td>
 
   <table>
   <tr><th>Navigation</th></tr>
