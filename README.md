@@ -20,10 +20,10 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   
 <table>
 <tr>
-  <td><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowup.svg" width="30"></td>
-  <td><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowdown.svg" width="30"></td>
-  <td><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowleft.svg" width="30"></td>
-  <td><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowright.svg" width="30"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowup.svg" width="30"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowdown.svg" width="30"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowleft.svg" width="30"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowright.svg" width="30"></td>
 </tr>
 <tr>
   <td>Cursor up</td>
