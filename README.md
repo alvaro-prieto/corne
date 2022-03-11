@@ -15,7 +15,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 ¡WARNING! This readme is in being edited right now, come back later please
 
 ![Build Status](https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/symbol/apptodesktop.svg  | width=100px)
-[[https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png|width=100px]]
+<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/symbol/apptodesktop.svg" width="100">
 
 
 # 🇬🇧 Description
