@@ -24,7 +24,6 @@
 
     [ Problemas conocidos ]
      ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-    - el tap dance de pregunta y exclamación funciona mal, ya lo arreglare...
 
 
     QMK TWEAKS
