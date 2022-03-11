@@ -180,7 +180,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
       <li><code>TAP 2:</code> Close app </li>
    </ul>  
   </td>
-  <td align="center">Close all incognito windows*</td>
+  <td align="center">Quick close all incognito windows*</td>
 </tr>
 </table>
 
