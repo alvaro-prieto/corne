@@ -111,8 +111,11 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 <tr>
   
   <th colspan="4" align="center">
-    hola
+    Selection
   </th>
+  </tr>
+  <tr>
+    <td colspan="4" align="center"> Combine any of the navigation keys with the left thumb shift <kbd>⇧</kbd> (spacebar) to `select text` / `words` / `lines` / `pages` / `document`. </td>
  </tr> </table> 
 
 
