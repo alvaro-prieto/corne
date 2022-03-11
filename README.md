@@ -124,29 +124,29 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/splitscr2.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center">Maximize</td>
-  <td align="center">Minimize</td>
-  <td align="center">Restore</td>
-  <td align="center">Split left</td>
-  <td align="center">Split right</td>
+  <td align="center"><kbd>Maximize</kbd></td>
+  <td align="center"><kbd>Minimize</kbd></td>
+  <td align="center"><kbd>Restore</kbd></td>
+  <td align="center"><kbd>Split left</kbd></td>
+  <td align="center"><kbd>Split right</kbd></td>
 </tr>
 <tr>
-  <td align="center" colspan="2">
-    <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/todesktop.svg" width="35">
-    <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/apptodesktop.svg" width="35">
-  </td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/showall.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/showdesktop.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/emergency.svg" width="35"></td>
+  <td align="center" colspan="2">
+    <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/todesktop.svg" width="35">
+    <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/apptodesktop.svg" width="35">
+  </td>  
 </tr>
 <tr>
+  <td align="center"><kbd>Show all windows</kbd></td>
+  <td align="center"><kbd>Hide all windows</kbd></td>
+  <td align="center"><kbd>Quick close all incognito windows*</kbd></td>
   <td align="left" colspan="2">
-    <code>TAP 1:</code> Show desktop N<br/>
-    <code>TAP 2:</code> Move app to desktop N
-  </td>
-  <td align="center">Show all windows</td>
-  <td align="center">Hide all windows</td>
-  <td align="center">Quick close all incognito windows*</td>
+    <code>TAP 1:</code> <kbd>Show desktop N</kbd><br/>
+    <code>TAP 2:</code> <kbd>Move app to desktop N</kbd>
+  </td>  
 </tr>
   <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/nextapp.svg" width="35"></td>
@@ -156,13 +156,13 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 
 </tr>
 <tr>
-  <td align="center">Next app</td>
-  <td align="center">Previous app</td>
-  <td align="center">Next window same app</td>  
+  <td align="center"><kbd>Next app</kbd></td>
+  <td align="center"><kbd>Previous app</kbd></td>
+  <td align="center"><kbd>Next window same app</kbd></td>  
   <td align="center" colspan="2">
     <ul align="left">
-      <li><code>TAP 1:</code> Close window </li>
-      <li><code>TAP 2:</code> Close app </li>
+      <li><code>TAP 1:</code> <kbd>Close window</kbd></li>
+      <li><code>TAP 2:</code> <kbd>Close app</kbd></li>
    </ul>  
   </td>
 
