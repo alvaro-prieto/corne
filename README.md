@@ -21,7 +21,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 | fgdfg | gsdfgs | sfdgsfg |      |   |
 |-------|--------|---------|------|---|
 | sfdgs | sfdg   |         |      |   |
-|       | <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowleft.svg" width="30">       | sdfgs   |      |   |
+|       |: <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowleft.svg" width="30">:| sdfgs   |      |   |
 |       |        |         | sdfg |   |
 
 # 🇬🇧 Description
