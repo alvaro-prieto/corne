@@ -216,11 +216,11 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/pasteplace.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center"><code>TAP 1:</code> Copy </td>
-  <td align="center"><code>TAP 2:</code> Cut </td>
-  <td align="center">Paste</td>  
-  <td align="center"><code>TAP 1:</code> Paste without format </td>
-  <td align="center"><code>TAP 2:</code> Paste in place </td>
+  <td align="center"><code>TAP 1:</code> <kbd>Copy</kbd> </td>
+  <td align="center"><code>TAP 2:</code> <kbd>Cut</kbd> </td>
+  <td align="center"><kbd>Paste</kbd></td>  
+  <td align="center"><code>TAP 1:</code> <kbd>Paste without format</kbd> </td>
+  <td align="center"><code>TAP 2:</code> <kbd>Paste in place</kbd> </td>
 </tr>  
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/save.svg" width="35"></td>
@@ -231,11 +231,11 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 
 </tr>
 <tr>
-  <td align="center">Save</td>
-  <td align="center">Undo</td>
-  <td align="center">Redo</td>  
-  <td align="center">Select all</td>
-  <td align="center">Refresh</td>  
+  <td align="center"><kbd>Save</kbd></td>
+  <td align="center"><kbd>Undo</kbd></td>
+  <td align="center"><kbd>Redo</kbd></td>  
+  <td align="center"><kbd>Select all</kbd></td>
+  <td align="center"><kbd>Refresh</kbd></td>  
 </tr>    
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/spotlight.svg" width="35"></td>
@@ -245,11 +245,11 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/replace.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center">Spotlight (search apps)</td>  
-  <td align="center">Search text</td>
-  <td align="center">Search previous</td>  
-  <td align="center">Search next</td>
-  <td align="center">Search & replace</td>
+  <td align="center"><kbd>Spotlight</kbd> (search apps)</td>  
+  <td align="center"><kbd>Search text</kbd></td>
+  <td align="center"><kbd>Search previous</kbd></td>  
+  <td align="center"><kbd>Search next</kbd></td>
+  <td align="center"><kbd>Search & replace</kbd></td>
 </tr>   
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/emoji.svg" width="35"></td>
@@ -258,13 +258,13 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center" colspan="2"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/monitor.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center">Emoji picker</td>  
-  <td align="center">Capture screen</td>
-  <td align="center">Capture region</td>  
+  <td align="center"><kbd>Emoji picker</kbd></td>  
+  <td align="center"><kbd>Capture screen</kbd></td>
+  <td align="center"><kbd>Capture region</kbd></td>  
   <td align="center" colspan="2">
       <ul align="left">
-      <li><code>TAP 1:</code> Close apps menu </li>
-      <li><code>TAP 2:</code> System monitor </li>
+      <li><code>TAP 1:</code> <kbd>Close apps menu</kbd> </li>
+      <li><code>TAP 2:</code> <kbd>System monitor</kbd> </li>
    </ul>  
   </td>
 </tr>     
