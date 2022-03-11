@@ -18,6 +18,12 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowdown.svg" width="30">
 <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowleft.svg" width="30">
 
+| fgdfg | gsdfgs | sfdgsfg |      |   |
+|-------|--------|---------|------|---|
+| sfdgs | sfdg   |         |      |   |
+|       | <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowleft.svg" width="30">       | sdfgs   |      |   |
+|       |        |         | sdfg |   |
+
 # 🇬🇧 Description
 Keymap for [Corne Keyboard](https://github.com/foostan/crkbd) specially designed for software developers using macOS and Windows and writting in Spanish and English.
 
