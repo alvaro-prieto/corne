@@ -23,6 +23,9 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 |Cursor up|Cursor down|Cursor right| Cursor left|
 |<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfup.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfdown.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfleft.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfright.svg" width="30">|
 |Page up|Page down|Word right| Word left|
+|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/fullup.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/fulldown.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/fullleft.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/fullright.svg" width="30">|
+|Document start|Document end|Line end| Line start|
+
 
 # 🇬🇧 Description
 Keymap for [Corne Keyboard](https://github.com/foostan/crkbd) specially designed for software developers using macOS and Windows and writting in Spanish and English.
