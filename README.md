@@ -121,14 +121,14 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center">Screen off</td>
 </tr>
   <tr>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/mute.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/volup.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/voldown.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/mute.svg" width="35"></td>    
 </tr>
 <tr>
-  <td align="center">Mute</td>
   <td align="center">Vol up</td>
   <td align="center">Vol down</td>
+  <td align="center">Mute</td>  
 </tr>
 </table>
 
