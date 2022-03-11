@@ -55,13 +55,14 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td>Line end</td>  
   <td>Line start</td>
 </tr>
+  
 </table>
-  </td><td>
-   
-  Combine any of them with the thumb shift to select text
+</td><td>
+  
+  Combine any of them with the left thumb shift to select text / words / lines / pages / document
   <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/shift.svg" width="30">
   
- </td></tr> </table> 
+</td></tr> </table> 
 
 # 🇬🇧 Description
 Keymap for [Corne Keyboard](https://github.com/foostan/crkbd) specially designed for software developers using macOS and Windows and writting in Spanish and English.
