@@ -98,41 +98,6 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </table>
 
 
-## Multimedia
-<table>
-<tr>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/play.svg" width="35"></td>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/prev.svg" width="35"></td>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/next.svg" width="35"></td>
-</tr>
-<tr>
-  <td align="center">Play / pause</td>
-  <td align="center">Previous song</td>
-  <td align="center">Next song</td>
-</tr>
- <tr>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/brup.svg" width="35"></td>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/brdown.svg" width="35"></td>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/scroff.svg" width="35"></td>
-</tr>
-<tr>
-  <td align="center">Brightness +</td>
-  <td align="center">Brightness -</td>
-  <td align="center">Screen off</td>
-</tr>
-  <tr>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/volup.svg" width="35"></td>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/voldown.svg" width="35"></td>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/mute.svg" width="35"></td>    
-</tr>
-<tr>
-  <td align="center">Vol up</td>
-  <td align="center">Vol down</td>
-  <td align="center">Mute</td>  
-</tr>
-</table>
-
-
 ## Window management
 <table>
 <tr>
@@ -185,7 +150,59 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </table>
 
 
-   
+
+## Multimedia
+<table>
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/play.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/prev.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/next.svg" width="35"></td>
+</tr>
+<tr>
+  <td align="center">Play / pause</td>
+  <td align="center">Previous song</td>
+  <td align="center">Next song</td>
+</tr>
+ <tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/brup.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/brdown.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/scroff.svg" width="35"></td>
+</tr>
+<tr>
+  <td align="center">Brightness +</td>
+  <td align="center">Brightness -</td>
+  <td align="center">Screen off</td>
+</tr>
+  <tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/volup.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/voldown.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/mute.svg" width="35"></td>    
+</tr>
+<tr>
+  <td align="center">Vol up</td>
+  <td align="center">Vol down</td>
+  <td align="center">Mute</td>  
+</tr>
+</table>
+
+
+## Common
+<table>
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/copy.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/cut.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/paste.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/pasteclean.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/pasteplace.svg" width="35"></td>
+</tr>
+<tr>
+  <td align="center"><code>TAP 1:</code> Copy </td>
+  <td align="center"><code>TAP 2:</code> Cut </td>
+  <td align="center">Paste</td>  
+  <td align="center"><code>TAP 1:</code> Paste without format </td>
+  <td align="center"><code>TAP 2:</code> Paste in place </td>    
+</tr>  
+</table>
 
   
 # 🇬🇧 Description
