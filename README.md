@@ -14,26 +14,52 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 
 ¡WARNING! This readme is in being edited right now, come back later please
 
-<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/apptodesktop.svg" width="30">
-<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowdown.svg" width="30">
-<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowleft.svg" width="30">
-
-
 <table>
 <tr><th>Navigation</th><th>Selection</th></tr>
 <tr><td>
-
-|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowup.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowdown.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowleft.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowright.svg" width="30">|
-|:---:|:---:|:---:|:---:|
-|Cursor up|Cursor down|Cursor right| Cursor left|
-|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfup.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfdown.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfleft.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfright.svg" width="30">|
-|Page up|Page down|Word right| Word left|
-|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/fullup.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/fulldown.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/fullleft.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/fullright.svg" width="30">|
-|Document start|Document end|Line end| Line start|
+  
+<table>
+<tr>
+  <td><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowup.svg" width="30"></td>
+  <td><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowdown.svg" width="30"></td>
+  <td><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowleft.svg" width="30"></td>
+  <td><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowright.svg" width="30"></td>
+</tr>
+<tr>
+  <td>Cursor up</td>
+  <td>Cursor down</td>
+  <td>Cursor right</td>
+  <td>Cursor left</td>
+</tr>
+<tr>
+  <td><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfup.svg" width="30"></td>
+  <td><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfdown.svg" width="30"></td>
+  <td><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfleft.svg" width="30"></td>
+  <td><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfright.svg" width="30"></td>
+</tr>
+<tr>
+  <td>Page up</td>
+  <td>Page down</td>
+  <td>Word right</td>  
+  <td>Word left</td>
+</tr>
+<tr>
+  <td><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/fullup.svg" width="30"></td>
+  <td><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/fulldown.svg" width="30"></td>
+  <td><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/fullleft.svg" width="30"></td>  
+  <td><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/fullright.svg" width="30"></td>
+</tr>
+<tr>
+  <td>Document start</td>
+  <td>Document end</td>
+  <td>Line end</td>  
+  <td>Line start</td>
+</tr>
 
   </td><td>
   
   Combine any of them with the thumb shift to select text
+  <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/shift.svg" width="30">
   
  </td></tr> </table> 
 
