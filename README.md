@@ -11,6 +11,12 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 <img src="extra/keymap.png" width="100%" alt="QMK Corne Keyboard layout RSI"/>
 <img src="extra/legend.png" width="300" alt="Legend"/> 
 
+
+¡WARNING! This readme is in being edited right now, come back later please
+![](https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/symbol/apptodesktop.svg | width=100)
+
+
+
 # 🇬🇧 Description
 Keymap for [Corne Keyboard](https://github.com/foostan/crkbd) specially designed for software developers using macOS and Windows and writting in Spanish and English.
 
