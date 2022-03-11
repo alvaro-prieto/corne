@@ -279,11 +279,22 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 <tr>
   <td align="center">Shut down</td>
   <td align="center">Logout + screen off</td>
-  <td align="center">Screen off + Lock keyboard with password</td>
+  <td align="center">Screen off + Lock keyboard with firmware password</td>
   <td align="center">Screen off (no password)</td>
 </tr>
 </table>
 
+## Modifiers
+<table>
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/opt.svg" width="35"></td>
+  <td><kbd>Option</kbd>/<kbd>Alt</kbd> if hold. <kbd>Tap</kbd> on press</td>
+</tr>
+<tr>
+  <td align="center">Shut down</td>
+  <td align="center">Logout + screen off</td>
+</tr>
+</table>
   
 # 🇬🇧 Description
 Keymap for [Corne Keyboard](https://github.com/foostan/crkbd) specially designed for software developers using macOS and Windows and writting in Spanish and English.
