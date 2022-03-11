@@ -59,7 +59,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </table>
 </td><td>
   
-  Combine any of them with the left thumb shift <kbd>⇧</kbd> (spacebar) to `select text` / `words` / `lines` / `pages` / `document. 
+  Combine any of them with the left thumb shift <kbd>⇧</kbd> (spacebar) to `select text` / `words` / `lines` / `pages` / `document`. 
   
   
 </td></tr> </table> 
