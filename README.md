@@ -92,7 +92,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>
 <tr>
   <td colspan="5">
-    All deletion variants are located in the same key, in the right side little finger. It allows fast error fixing, since your hands can remain in its resting position.
+    All deletion variants are located in the same key, in the right little finger. This allows fast error fixing since your hands can remain in its resting position.
   </td>
  </tr>
 </table>
