@@ -15,7 +15,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 ¡WARNING! This readme is in being edited right now, come back later please
 
 <table>
-<tr><th>Navigation</th></tr>
+<tr><th>Navigation</th><th>Selection</th></tr>
 <tr><td>
   
 <table>
@@ -60,12 +60,9 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   </td></tr>
   <tr><td>
 
-  <table width="100%">
-  <tr><th>Navigation</th></tr>
-  <tr><td>
+
   Combine any of them with the left thumb shift <kbd>⇧</kbd> (spacebar) to `select text` / `words` / `lines` / `pages` / `document`. 
-  </td></tr>
-  </table> 
+
   
 </td></tr> </table> 
 
