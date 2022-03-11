@@ -85,8 +85,8 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center">Delete line</td>
   <td align="center">
     <ul align="left">
-      <li><code>TAP 1:</code> delete file </li>
-      <li><code>TAP 2:</code> permanently delete file </li>
+      <li><code>TAP 1:</code> Delete file </li>
+      <li><code>TAP 2:</code> Permanently delete file </li>
    </ul>
   </td>
 </tr>
