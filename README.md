@@ -156,15 +156,21 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center">Split left</td>
   <td align="center">Split right</td>
 </tr>
- <tr>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/half.svg" width="35"></td>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/half2.svg" width="35"></td>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/scroff.svg" width="35"></td>
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/todesktop.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/apptodesktop.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/showall.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/showdesktop.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/emergency.svg" width="35"></td>
+  <td align="center"></td>
 </tr>
 <tr>
-  <td align="center">Brightness +</td>
-  <td align="center">Brightness -</td>
-  <td align="center">Screen off</td>
+  <td align="center">Show desktop N</td>
+  <td align="center">Move app to desktop N</td>
+  <td align="center">Show all windows</td>
+  <td align="center">Hide all windows</td>
+  <td align="center">Quick close all incognito windows/td>
+  <td align="center"></td>
 </tr>
   <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/volup.svg" width="35"></td>
