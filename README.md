@@ -69,7 +69,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </td></tr> </table> 
 
 
-## Erase
+## Deletion
 <table>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/backspace.svg" width="35"></td>
@@ -90,6 +90,11 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
    </ul>
   </td>
 </tr>
+<tr>
+  <td colspan="5">
+    All deletion variants are located in the same key, in the right side little finger. It allows fast error fixing, since your hands can remain in its resting position.
+  </td>
+ </tr>
 </table>
 
 
