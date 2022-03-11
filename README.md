@@ -140,6 +140,8 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/minimize.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/restore.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/close.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/splitscr.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/splitscr2.svg" width="35"></td>
 </tr>
 <tr>
   <td align="center">Maximize</td>
@@ -151,6 +153,8 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
       <li><code>TAP 2:</code> Close app </li>
    </ul>  
   </td>
+  <td align="center">Split left</td>
+  <td align="center">Split right</td>
 </tr>
  <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/half.svg" width="35"></td>
