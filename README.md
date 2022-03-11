@@ -58,10 +58,10 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfright.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center">Page up</td>
-  <td align="center">Page down</td>
-  <td align="center">Word right</td>  
-  <td align="center">Word left</td>
+  <td align="center"><kbd>Page up</kbd></td>
+  <td align="center"><kbd>Page down</kbd></td>
+  <td align="center"><kbd>Word right</kbd></td>  
+  <td align="center"><kbd>Word left</kbd></td>
 </tr>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/fullup.svg" width="35"></td>
@@ -70,10 +70,10 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/fullright.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center">Document start</td>
-  <td align="center">Document end</td>
-  <td align="center">Line end</td>  
-  <td align="center">Line start</td>
+  <td align="center"><kbd>Document start</kbd></td>
+  <td align="center"><kbd>Document end</kbd></td>
+  <td align="center"><kbd>Line end</kbd></td>  
+  <td align="center"><kbd>Line start</kbd></td>
 </tr>
 </table>
   
