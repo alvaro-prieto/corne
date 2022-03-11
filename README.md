@@ -122,8 +122,8 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td></td>
 </tr>
 <tr>
-  <td align="center">Show desktop N</td>
-  <td align="center">Move app to desktop N</td>
+  <td align="center"><code>TAP 1:</code> Show desktop N</td>
+  <td align="center"><code>TAP 2:</code> Move app to desktop N</td>
   <td align="center">Show all windows</td>
   <td align="center">Hide all windows</td>
   <td align="center"></td>
