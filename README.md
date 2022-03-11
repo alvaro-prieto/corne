@@ -21,8 +21,8 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 |<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowup.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowdown.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowleft.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowright.svg" width="30">|
 |:---:|:---:|:---:|:---:|
 |Cursor up|Cursor down|Cursor right| Cursor left|
-|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfwup.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfdown.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfleft.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfright.svg" width="30">|
-
+|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfup.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfdown.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfleft.svg" width="30">|<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/halfright.svg" width="30">|
+|Page up|Page down|Word right| Word left|
 
 # 🇬🇧 Description
 Keymap for [Corne Keyboard](https://github.com/foostan/crkbd) specially designed for software developers using macOS and Windows and writting in Spanish and English.
