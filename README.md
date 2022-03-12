@@ -330,6 +330,9 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>
 </table>
 
+Currently compatible with `macOS` (default) and `Windows`, `Spanish` (default) and `English`. You can extend it if you need to. 
+
+
 ## Computer state
 <table>
 <tr>
