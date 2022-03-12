@@ -254,11 +254,15 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/pasteplace.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center"><code>TAP 1:</code> <kbd>Copy</kbd> </td>
-  <td align="center"><code>TAP 2:</code> <kbd>Cut</kbd> </td>
+  <td align="left" colspan="2">
+    <code>TAP 1:</code> <kbd>Copy</kbd>  
+    <code>TAP 2:</code> <kbd>Cut</kbd> 
+  </td>
   <td align="center"><kbd>Paste</kbd></td>  
-  <td align="center"><code>TAP 1:</code> <kbd>Paste without format</kbd> </td>
-  <td align="center"><code>TAP 2:</code> <kbd>Paste in place</kbd> </td>
+  <td align="left" colspan="2">
+    <code>TAP 1:</code> <kbd>Paste without format</kbd>  
+    <code>TAP 2:</code> <kbd>Paste in place</kbd>
+  </td>
 </tr>  
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/save.svg" width="35"></td>
