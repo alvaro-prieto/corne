@@ -99,12 +99,11 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>      
  </table>
   
- What is the Hyper key for?
-───────────────────────────
-In my case it is going to be used as trigger to activate custom actions/shortcuts
-depending on the focused application. For example, Hyper + I could mean "italic" in
-Word while being "indent" in a code editor and "invert" in Photoshop.
-You can implement this kind of behaviour in programs such as Karabiner-Elements 
+####What is the <kbd>Hyper</kbd> key for?
+
+In my case it is going to be used to activate custom actions/shortcuts depending on the focused application. For example, <kbd>Hyper</kbd> + <kbd>I</kbd>  could mean "italic" in
+Word while being "indent" in a code editor and "invert" in Photoshop. You can implement this kind of behaviour in programs such as Karabiner-Elements and many others.
+  
   
 ## Navigation and selection
 
