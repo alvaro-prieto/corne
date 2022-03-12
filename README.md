@@ -80,22 +80,22 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 <tr>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m1.svg" width="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m4.svg" width="35"> </td>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/bigcfg.svg" height="35"></td>
-  <td align="left">bla bla blahh</td>
+  <td align="left">Configuration layer (OS, Language, RGB...)</td>
 </tr>
 <tr>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m2.svg" width="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/sh.svg" width="35"> </td>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/bighyper.svg" height="35"></td>
-  <td align="left">bla bla blahh</td>
+  <td align="left">Per-app custom shortcuts.<br/><kbd>Shift</kbd>+<kbd>Control</kbd>+<kbd>Alt</kbd></td>
 </tr>  
 <tr>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/bighyper.svg" height="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m6.svg" width="35"> </td>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/bighlock.svg" height="35"></td>
-  <td align="left">bla bla blahh</td>
+  <td align="left">Keep hyper enabled</td>
 </tr>    
 <tr>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/sh.svg" height="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m6.svg" width="35"> </td>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/bigcaps.svg" height="35"></td>
-  <td align="left">bla bla blahh</td>
+  <td align="left">Lock shift, to write in caps.</td>
 </tr>      
  </table>
   
