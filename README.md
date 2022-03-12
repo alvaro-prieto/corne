@@ -101,7 +101,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   
 #### What is the <kbd>Hyper</kbd> key for?
 
-In my case it is going to be used to activate custom `actions`/`shortcuts` depending on the focused application. For example, <kbd>Hyper</kbd> + <kbd>I</kbd>  could mean `italic` in Word while being `indent` in a code editor and `invert colors` in Photoshop. You can implement this kind of behaviour in programs such as Karabiner-Elements and many others.
+In my case it is going to be used to activate custom `actions`/`shortcuts` depending on the focused application. For example, <kbd>Hyper</kbd> + <kbd>I</kbd>  could mean `italic` in Word while being `indent` in a code editor and `invert colors` in Photoshop. You can implement this kind of behaviour using programs such as Karabiner-Elements, Hammerspoon, and many others.
   
   
 ## Navigation and selection
