@@ -34,16 +34,16 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 ## Layer modifiers (colored) 
 <table>
 <tr>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/opt.svg" width="35"></td>
-  <td><kbd>Option</kbd> / <kbd>Alt</kbd> on hold. <kbd>Tap</kbd> on press</td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m1.svg" width="35"></td>
+  <td><kbd>Shift</kbd> on hold by its own. <kbd>Pink layer</kbd> on hold and interrupted. <kbd>Colon</kbd> on short press</td>
 </tr>
 <tr>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/cmd.svg" width="35"></td>
-  <td><kbd>Command</kbd> / <kbd>Control</kbd> on hold. <kbd>Reverse tap</kbd> on press</td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m2.svg" width="35"></td>
+  <td><kbd>Purple layer</kbd> on hold. <kbd>Semicolon</kbd> on short press</td>
 </tr>
 <tr>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/ctr.svg" width="35"></td>
-  <td><kbd>Control</kbd> / <kbd>Windows</kbd> on hold. <kbd>Backtick</kbd> on press</td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/sh.svg" width="35"></td>
+  <td><kbd>Shift</kbd> on hold. <kbd>Enter</kbd> on short press</td>
 </tr>  
 </table>
     
