@@ -34,7 +34,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 ## Layer modifiers (colored) 
 <table>
 <tr>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m1.svg" width="35" height="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m1.svg" width="35" height="85"></td>
   <td>Pasive <kbd>Shift</kbd> on hold by its own or with any of the gray modifiers. <kbd>Pink layer</kbd> on hold and interrupted. <kbd>Colon</kbd> on short press. 
   ¿Why this strange behaviour? Because a pasive <kbd>shift</kbd> is required for many tasks, such as selecting files, proportional distorsion in Photoshop, and so on while using your right hand on the mouse. Also because a <kbd>shift</kbd> key can be required in the left hand to make custom combos, such as <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>. 
   </td>
