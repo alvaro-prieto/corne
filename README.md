@@ -190,10 +190,8 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><kbd>Previous app</kbd></td>
   <td align="center"><kbd>Next window same app</kbd></td>  
   <td align="center" colspan="2">
-    <ul align="left">
-      <li><code>TAP 1:</code> <kbd>Close window</kbd></li>
-      <li><code>TAP 2:</code> <kbd>Close app</kbd></li>
-   </ul>  
+      <code>TAP 1:</code> <kbd>Close window</kbd>
+      <code>TAP 2:</code> <kbd>Close app</kbd>
   </td>
 
 </tr>
