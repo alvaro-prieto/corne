@@ -35,7 +35,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 <table>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m1.svg" width="35"></td>
-  <td><kbd>Shift</kbd> on hold by its own. <kbd>Pink layer</kbd> on hold and interrupted. <kbd>Colon</kbd> on short press</td>
+  <td><kbd>Shift</kbd> on hold by its own or with any of the gray modifiers. <kbd>Pink layer</kbd> on hold and interrupted. <kbd>Colon</kbd> on short press</td>
 </tr>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m2.svg" width="35"></td>
@@ -43,8 +43,24 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/sh.svg" width="35"></td>
-  <td><kbd>Shift</kbd> on hold. <kbd>Enter</kbd> on short press</td>
+  <td><kbd>Shift</kbd> on hold. <kbd>Enter</kbd> on short press. Press in conjunction with <kbd>M6</kbd> to toggle <kbd>Caps lock</kbd></td>
 </tr>  
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m3.svg" width="35"></td>
+  <td><kbd>Red layer</kbd> on hold. <kbd>Equal</kbd> on short press</td>
+</tr>  
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m4.svg" width="35"></td>
+  <td><kbd>Green layer</kbd> on hold. <kbd>Dollar</kbd> on short press</td>
+</tr>  
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m5.svg" width="35"></td>
+  <td><kbd>Blue layer</kbd> on hold. <kbd>Apostrophe</kbd> on short press</td>
+</tr>  
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m6.svg" width="35"></td>
+  <td><kbd>Yellow layer</kbd> on hold. <kbd>Quotation mark</kbd> on short press</td>
+</tr>    
 </table>
     
 
