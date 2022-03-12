@@ -146,7 +146,7 @@ In my case it is going to be used to activate custom `actions`/`shortcuts` depen
 </table>
 
 
-  Selection is easy and you don't need to move your hand from its resting position. Combine any of the navigation keys with the <kbd>Spacebar</kbd> (located right under your thumb) <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/space.svg" width="25"> and it will act like <kbd>Shift</kbd> instead to be able to `select text` / `words` / `lines` / `pages` / `document`
+  Selection is easy and you don't even need to move your hand from its resting position. Combine any of the navigation keys with the <kbd>Spacebar</kbd> (located right under your thumb) <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/space.svg" width="25"> and it will act like <kbd>Shift</kbd> instead to be able to `select text` / `words` / `lines` / `pages` / `document`
   
   If you want to `select everything`, you could press <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/selectall.svg" width="25"> instead.
 
