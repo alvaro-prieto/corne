@@ -254,7 +254,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/pasteplace.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="left" colspan="2">
+  <td align="center" colspan="2">
     <code>TAP 1:</code> <kbd>Copy</kbd><br/>  
     <code>TAP 2:</code> <kbd>Cut</kbd> 
   </td>
