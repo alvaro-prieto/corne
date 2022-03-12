@@ -118,7 +118,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   </td><td>
 
 
-  Selection is easy and you don't need to move your hand from its resting position. Combine any of the navigation keys with the spacebar <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/space.svg" width="20"> and it will act as a <kbd>Shift</kbd> to be able to `select text` / `words` / `lines` / `pages` / `document`
+  Selection is easy and you don't need to move your hand from its resting position. Combine any of the navigation keys above with the <kbd>Spacebar</kbd> (located right under your thumb) <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/space.svg" width="25"> and it will behave like a <kbd>Shift</kbd> instead to be able to `select text` / `words` / `lines` / `pages` / `document`. ¡It is magic! ✨
 
   
 </td></tr> </table> 
