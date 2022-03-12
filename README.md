@@ -15,7 +15,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 # ⌨️ Legend
 
 
-## Modifiers — <kbd>macOs</kbd> / <kbd>Windows</kbd>
+## Default modifiers (gray) — <kbd>macOs</kbd> / <kbd>Windows</kbd>
 <table>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/opt.svg" width="35"></td>
@@ -31,6 +31,22 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>  
 </table>
   
+## Layer modifiers (colored) 
+<table>
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/opt.svg" width="35"></td>
+  <td><kbd>Option</kbd> / <kbd>Alt</kbd> on hold. <kbd>Tap</kbd> on press</td>
+</tr>
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/cmd.svg" width="35"></td>
+  <td><kbd>Command</kbd> / <kbd>Control</kbd> on hold. <kbd>Reverse tap</kbd> on press</td>
+</tr>
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/ctr.svg" width="35"></td>
+  <td><kbd>Control</kbd> / <kbd>Windows</kbd> on hold. <kbd>Backtick</kbd> on press</td>
+</tr>  
+</table>
+    
 
 ## Navigation and selection
 
