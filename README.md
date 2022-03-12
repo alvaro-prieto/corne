@@ -78,15 +78,20 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <th align="center">Purpose</th>
 </tr>
 <tr>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m1.svg" width="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m4.svg" width="35"> </td>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/bigcfg.svg" height="35"></td>
-  <td align="center">bla bla blahh</td>
+  <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m1.svg" width="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m4.svg" width="35"> </td>
+  <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/bigcfg.svg" height="35"></td>
+  <td align="left">bla bla blahh</td>
 </tr>
 <tr>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m2.svg" width="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/sh.svg" width="35"> </td>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/bighyper.svg" height="35"></td>
-  <td align="center">bla bla blahh</td>
+  <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m2.svg" width="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/sh.svg" width="35"> </td>
+  <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/bighyper.svg" height="35"></td>
+  <td align="left">bla bla blahh</td>
 </tr>  
+<tr>
+  <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/bighyper.svg" height="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m6.svg" width="35"> </td>
+  <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/bighlock.svg" height="35"></td>
+  <td align="left">bla bla blahh</td>
+</tr>    
  </table>
   
 ## Navigation and selection
