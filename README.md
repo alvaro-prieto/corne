@@ -73,10 +73,6 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 ## Navigation and selection
 
 <table>
-<tr><th>Navigation</th><th>Selection</th></tr>
-<tr><td>
-  
-<table>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowup.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/arrowdown.svg" width="35"></td>
@@ -114,16 +110,12 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><kbd>Line start</kbd></td>
 </tr>
 </table>
-  
-  </td><td>
 
 
   Selection is easy and you don't need to move your hand from its resting position. Combine any of the navigation keys with the <kbd>Spacebar</kbd> (located right under your thumb) <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/space.svg" width="25"> and it will act like <kbd>Shift</kbd> instead to be able to `select text` / `words` / `lines` / `pages` / `document`
   
   If you want to `select everything`, you could press <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/selectall.svg" width="25"> instead.
 
-  
-</td></tr> </table> 
 
 
 ## Deletion
