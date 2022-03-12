@@ -174,10 +174,8 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/showall.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/showdesktop.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/emergency.svg" width="35"></td>
-  <td align="center" colspan="2">
-    <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/todesktop.svg" width="35">
-    <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/apptodesktop.svg" width="35">
-  </td>  
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/todesktop.svg" width="35"></td>  
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/apptodesktop.svg" width="35"></td>  
 </tr>
 <tr>
   <td align="center"><kbd>Show all windows</kbd></td>
