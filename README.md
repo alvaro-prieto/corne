@@ -70,6 +70,20 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </table>
     
 
+## Combos
+<table>
+<tr>
+  <th align="center">Combo</th>
+  <th align="center">Output</th>
+  <th align="center">Purpose</th>
+</tr>
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m1.svg" width="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m4.svg" width="35"> </td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/bigcfg.svg" height="35"></td>
+  <td align="center">bla bla blahh</td>
+</tr>
+ </table>
+  
 ## Navigation and selection
 
 <table>
