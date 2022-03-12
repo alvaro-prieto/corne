@@ -323,10 +323,10 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/rgbbrup.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center">Keyboard OS</td>
-  <td align="center">Keyboard language</td>
-  <td align="center">Next RGB theme</td>
-  <td align="center">RGB brightness</td>
+  <td align="center"><kbd>Keyboard OS</kbd></td>
+  <td align="center"><kbd>Keyboard language</kbd></td>
+  <td align="center"><kbd>Next RGB theme</kbd></td>
+  <td align="center"><kbd>RGB brightness</kbd></td>
 </tr>
 </table>
 
@@ -339,10 +339,10 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/scroff.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center">Shut down</td>
-  <td align="center">Logout + screen off</td>
-  <td align="center">Screen off + Lock keyboard with firmware password</td>
-  <td align="center">Screen off (no password)</td>
+  <td align="center"><kbd>Shut down</kbd></td>
+  <td align="center"><kbd>Logout</kbd> + <kbd>screen off</kbd></td>
+  <td align="center"><kbd>Screen off + <kbd>Lock keyboard</kbd> with firmware password. Default password: "yo"</td>
+  <td align="center"><kbd>Screen off</kbd> (no password)</td>
 </tr>
 </table>
 
