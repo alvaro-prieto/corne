@@ -92,6 +92,11 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/bighlock.svg" height="35"></td>
   <td align="left">bla bla blahh</td>
 </tr>    
+<tr>
+  <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/sh.svg" height="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/m6.svg" width="35"> </td>
+  <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/bigcaps.svg" height="35"></td>
+  <td align="left">bla bla blahh</td>
+</tr>      
  </table>
   
 ## Navigation and selection
