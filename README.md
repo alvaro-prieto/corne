@@ -295,14 +295,16 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>   
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/emoji.svg" width="35"></td>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/capture.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/region.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/capture.svg" width="35"></td>  
   <td align="center" colspan="2"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/monitor.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center"><kbd>Emoji picker</kbd></td>  
-  <td align="center"><kbd>Capture screen</kbd></td>
-  <td align="center"><kbd>Capture region</kbd></td>  
+  <td align="center"><kbd>Emoji picker</kbd></td> 
+  <td align="left" colspan="2">
+    <code>TAP 1:</code> <kbd>Capture region</kbd><br/>  
+    <code>TAP 2:</code> <kbd>Capture screen</kbd>
+  </td>
   <td align="left" colspan="2">
       <code>TAP 1:</code> <kbd>Close apps menu</kbd><br/>  
       <code>TAP 2:</code> <kbd>System monitor</kbd>
