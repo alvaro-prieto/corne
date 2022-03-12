@@ -303,7 +303,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><kbd>Emoji picker</kbd></td> 
   <td align="left" colspan="2">
     <code>TAP 1:</code> <kbd>Capture region</kbd><br/>  
-    <code>TAP 2:</code> <kbd>Capture screen</kbd>
+    <code>TAP 2:</code> <kbd>Capture screen dialog</kbd>
   </td>
   <td align="left" colspan="2">
       <code>TAP 1:</code> <kbd>Close apps menu</kbd><br/>  
