@@ -345,7 +345,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 <tr>
   <td align="center"><kbd>Shut down</kbd></td>
   <td align="center"><kbd>Logout</kbd> + <kbd>screen off</kbd></td>
-  <td align="center"><kbd>Screen off + <kbd>Lock keyboard</kbd> (firmware password)</td>
+  <td align="center"><kbd>Screen off</kbd> + <kbd>Lock keyboard</kbd> (firmware password)</td>
   <td align="center"><kbd>Screen off</kbd> (no password)</td>
 </tr>
 </table>
