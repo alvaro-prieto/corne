@@ -193,8 +193,8 @@ In my case it is going to be used to activate custom `actions`/`shortcuts` depen
   <td align="center"><kbd>Maximize</kbd></td>
   <td align="center"><kbd>Minimize</kbd></td>
   <td align="center"><kbd>Restore</kbd></td>
-  <td align="center"><kbd>Split left</kbd></td>
-  <td align="center"><kbd>Split right</kbd></td>
+  <td align="center"><kbd>Split left</kbd>*</td>
+  <td align="center"><kbd>Split right</kbd>*</td>
 </tr>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/showall.svg" width="35"></td>
