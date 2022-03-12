@@ -34,7 +34,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 ## Layer modifiers (colored) 
 <table>
 <tr>
-  <th align="center">&nbsp;&nbsp;Modifier&nbsp;&nbsp;</th>
+  <th align="center">Modifier</th>
   <th align="center">Behaviour</th>
 </tr>
 <tr>
