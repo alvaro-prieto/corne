@@ -180,7 +180,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 <tr>
   <td align="center"><kbd>Show all windows</kbd></td>
   <td align="center"><kbd>Hide all windows</kbd></td>
-  <td align="center"><kbd>Quick close all incognito windows*</kbd></td>
+  <td align="center"><kbd>Quick close</kbd><br/>all incognito windows*</td>
   <td align="left" colspan="2">
     <code>TAP 1:</code> <kbd>Show desktop N</kbd><br/>
     <code>TAP 2:</code> <kbd>Move app to desktop N</kbd>
