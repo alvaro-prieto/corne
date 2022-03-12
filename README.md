@@ -255,12 +255,12 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>
 <tr>
   <td align="left" colspan="2">
-    <code>TAP 1:</code> <kbd>Copy</kbd>  
+    <code>TAP 1:</code> <kbd>Copy</kbd><br/>  
     <code>TAP 2:</code> <kbd>Cut</kbd> 
   </td>
   <td align="center"><kbd>Paste</kbd></td>  
   <td align="left" colspan="2">
-    <code>TAP 1:</code> <kbd>Paste without format</kbd>  
+    <code>TAP 1:</code> <kbd>Paste without format</kbd><br/>  
     <code>TAP 2:</code> <kbd>Paste in place</kbd>
   </td>
 </tr>  
@@ -303,11 +303,9 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="center"><kbd>Emoji picker</kbd></td>  
   <td align="center"><kbd>Capture screen</kbd></td>
   <td align="center"><kbd>Capture region</kbd></td>  
-  <td align="center" colspan="2">
-      <ul align="left">
-      <li><code>TAP 1:</code> <kbd>Close apps menu</kbd> </li>
-      <li><code>TAP 2:</code> <kbd>System monitor</kbd> </li>
-   </ul>  
+  <td align="left" colspan="2">
+      <code>TAP 1:</code> <kbd>Close apps menu</kbd><br/>  
+      <code>TAP 2:</code> <kbd>System monitor</kbd>
   </td>
 </tr>     
 </table>
