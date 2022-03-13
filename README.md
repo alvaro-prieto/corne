@@ -105,7 +105,9 @@ In my case it is going to be used to activate custom `actions`/`shortcuts` depen
 
  
 When keyboard is in `configuration` mode, `hyper`, `hyper lock` or `caps lock` mode, certain keys will glow their associated color. 
-  
+
+&nbsp;&nbsp;
+&nbsp;&nbsp;
   
 
  
