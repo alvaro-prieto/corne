@@ -104,7 +104,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 In my case it is going to be used to activate custom `actions`/`shortcuts` depending on the focused application. For example, <kbd>Hyper</kbd> + <kbd>I</kbd>  could mean `italic` in Word while being `indent` in a code editor and `invert colors` in Photoshop. You can implement this kind of behaviour using programs such as Karabiner-Elements, Hammerspoon, and many others.
 
  
-When the keyboard is in `configuration` mode, `hyper`, `hyper lock` or `caps lock` mode, certain keys will glow with its associated color. 
+When keyboard is in `configuration` mode, `hyper`, `hyper lock` or `caps lock` mode, certain keys will glow with its associated color. 
   
   
 
