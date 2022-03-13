@@ -154,8 +154,8 @@ When keyboard is in `configuration` mode, `hyper`, `hyper lock` or `caps lock` m
   Selection is easy and you don't even need to move your hand from its resting position. Combine any of the navigation keys above with the <kbd>Spacebar</kbd> (located right under your thumb) <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/space.svg" width="25"> and it will act like <kbd>Shift</kbd> instead to be able to `select text` / `words` / `lines` / `pages` / `document`
   
   If you want to `select everything`, you could press <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys/selectall.svg" width="25"> instead.
-
-
+&nbsp;
+&nbsp;
 
 ## Deletion
 <table>
@@ -381,6 +381,8 @@ When keyboard is in `configuration` mode, `hyper`, `hyper lock` or `caps lock` m
 
 - Default firmware password: «yo»
 
+&nbsp;
+&nbsp;
 # 🇬🇧 Description
 Keymap for [Corne Keyboard](https://github.com/foostan/crkbd) specially designed for software developers using macOS and Windows and writting in Spanish and English.
 
@@ -421,6 +423,8 @@ Some features require installing and configuring third-party applications; some 
 For further information check the file ``keymap.c``. Some minor modifications have been made to the QMK code in order to compile this keymap; these changes have been listed in the ``Settings`` section. 
 
 Greetings to [Fauxpark](https://github.com/fauxpark), [Drashna](https://github.com/drashna), [Sigprof](https://github.com/sigprof), [Thomas Baart](https://splitkb.com/) and all the QMK developers and members of its Discord channel.
+
+If you are going to create or publish a derived keymap, please include a reference to this repository mentioning me as the original author.
 
 &nbsp;
 &nbsp;
@@ -467,5 +471,7 @@ Algunas características requieren instalar y configurar aplicaciones de tercero
 Para más información acudir al archivo ``keymap.c``. Se han realizado algunas modificaciones mínimas en el código de QMK para poder compilar este keymap; dichos cambios han sido listados en la sección ``Settings``.  
 
 Agradecimientos a [Fauxpark](https://github.com/fauxpark), [Drashna](https://github.com/drashna), [Sigprof](https://github.com/sigprof), [Thomas Baart](https://splitkb.com/)  y a todos los desarrolladores de QMK y los miembros de su canal en Discord.
+
+Si vas a crear o publicar un keymap derivado, por favor incluye una referencia este repositorio mencionándome como el autor original. 
 
 
