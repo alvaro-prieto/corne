@@ -231,7 +231,7 @@ When keyboard is in `configuration` mode, `hyper`, `hyper lock` or `caps lock` m
   <td align="center"><kbd>Previous app</kbd></td>
   <td align="center"><kbd>Next window same app</kbd></td>  
   <td align="center" colspan="2">
-      <code>TAP 1:</code> <kbd>Close window</kbd>
+      <code>TAP 1:</code> <kbd>Close window</kbd><br/>
       <code>TAP 2:</code> <kbd>Close app</kbd>
   </td>
 
