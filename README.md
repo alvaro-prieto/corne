@@ -12,6 +12,8 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 <img src="extra/legend.png" width="300" alt="Legend"/> 
 
 
+:warning: **Currently in development**
+
 # ⌨️ Legend
 
 
