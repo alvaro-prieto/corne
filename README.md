@@ -57,7 +57,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/sh.svg" width="35"></td>
-  <td><kbd>Shift</kbd> al mantener. <kbd>⏎ Enter</kbd> al presionar. Si se presiona en conjunto con <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m6.svg" width="20">  se activa o desactiva el <kbd>bloqueo de mayúsculas</kbd></td>
+  <td><kbd>Shift</kbd> al mantener. <kbd>⏎ Enter</kbd> al presionar. Si se presiona en conjunto con <kbd>M6</kbd> <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m6.svg" width="20">  se activa o desactiva el <kbd>bloqueo de mayúsculas</kbd></td>
 </tr>  
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m3.svg" width="35"></td>
