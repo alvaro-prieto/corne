@@ -11,14 +11,21 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 <img src="extra/keymap.png" width="100%" alt="QMK Corne Keyboard layout RSI"/>
 <img src="extra/legend.png" width="300" alt="Legend"/> 
 
-<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/readen.svg" width="200">
-<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/readsp.svg" width="200">
-<table>
-<tr>
-  <td align="center">a</td>
-  <td align="center">b</td>
-</tr>    
+
+<style>
+  table#select_language td {
+    border: none;
+  }
+</style>
+<table id="select_language">
+  <tbody>
+    <tr>
+      <td><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/readen.svg" width="200"></td>
+      <td><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/readsp.svg" width="200"></td>
+    </tr>
+  </tbody>
 </table>
+
 
 :warning: This keymap is still in develpment / Versión en desarrollo
 
