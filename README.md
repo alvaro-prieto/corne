@@ -59,7 +59,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>  
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m4.svg" width="35"></td>
-  <td><kbd>Green layer</kbd> on hold. <kbd>: Clon</kbd> on short press</td>
+  <td><kbd>Green layer</kbd> on hold. <kbd>: Colon</kbd> on short press</td>
 </tr>  
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m5.svg" width="35"></td>
