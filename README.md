@@ -180,8 +180,8 @@ El propósito de esta filosofía es múltiple:
 <tr>
   <td align="center"><kbd>Página arriba</kbd></td>
   <td align="center"><kbd>Página abajo</kbd></td>
-  <td align="center"><kbd>Palabra derecha</kbd></td>  
-  <td align="center"><kbd>Palabra izquierda</kbd></td>
+  <td align="center"><kbd>Palabra a la derecha</kbd></td>  
+  <td align="center"><kbd>Palabra a la izquierda</kbd></td>
 </tr>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/fullup.svg" width="35"></td>
@@ -192,8 +192,8 @@ El propósito de esta filosofía es múltiple:
 <tr>
   <td align="center"><kbd>Inicio de documento</kbd></td>
   <td align="center"><kbd>Fin de documento</kbd></td>
-  <td align="center"><kbd>Fin de línea</kbd></td>  
-  <td align="center"><kbd>Inicio de línea</kbd></td>
+  <td align="center"><kbd>Inicio de línea</kbd></td>  
+  <td align="center"><kbd>Fin de línea</kbd></td>
 </tr>
 </table>
 
