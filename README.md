@@ -203,7 +203,8 @@ Realizar selecciones es muy sencillo y no es necesario que muevas la mano de su 
 Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/selectall.svg" width="25"> en su lugar.
 &nbsp;
 &nbsp;
-
+ 
+ 
 ## Borrado
 <table>
 <tr>
@@ -226,8 +227,9 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
 
 </table>
 
+ 
 
-## Window management
+## Gestión de ventanas
 <table>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/maximize.svg" width="35"></td>
@@ -237,11 +239,11 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/splitscr2.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center"><kbd>Maximize</kbd></td>
-  <td align="center"><kbd>Minimize</kbd></td>
-  <td align="center"><kbd>Restore</kbd></td>
-  <td align="center"><kbd>Split left</kbd>*</td>
-  <td align="center"><kbd>Split right</kbd>*</td>
+  <td align="center"><kbd>Maximizar</kbd></td>
+  <td align="center"><kbd>Minimizar</kbd></td>
+  <td align="center"><kbd>Restaurar</kbd></td>
+  <td align="center"><kbd>Mitad izquierda</kbd>*</td>
+  <td align="center"><kbd>Mitad derecha</kbd>*</td>
 </tr>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/showall.svg" width="35"></td>
@@ -251,12 +253,12 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/apptodesktop.svg" width="35"></td>  
 </tr>
 <tr>
-  <td align="center"><kbd>Show all windows</kbd></td>
-  <td align="center"><kbd>Hide all windows</kbd></td>
-  <td align="center"><kbd>Quick close</kbd><br/><kbd>all incognito windows*</kbd></td>
+  <td align="center"><kbd>Selector de ventanas</kbd></td>
+  <td align="center"><kbd>Ocultar todo</kbd></td>
+  <td align="center"><kbd>Cerrado rápido</kbd><br/><kbd>de ventanas incógnito*</kbd></td>
   <td align="left" colspan="2">
-    <code>TAP 1:</code> <kbd>Show desktop N</kbd><br/>
-    <code>TAP 2:</code> <kbd>Move app to desktop N</kbd>*
+    <code>TAP 1:</code> <kbd>Ir al escritorio N</kbd><br/>
+    <code>TAP 2:</code> <kbd>Mover app al escritorio N</kbd>*
   </td>  
 </tr>
   <tr>
@@ -269,16 +271,15 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
 
 </tr>
 <tr>
-  <td align="center"><kbd>Next app</kbd></td>
-  <td align="center"><kbd>Previous app</kbd></td>
-  <td align="center"><kbd>Next window same app</kbd></td>  
-  <td align="center"><kbd>Toggle last app</kbd></td>  
+  <td align="center"><kbd>Siguiente app</kbd></td>
+  <td align="center"><kbd>Anterior app</kbd></td>
+  <td align="center"><kbd>Siguiente ventana de misma app</kbd></td>  
+  <td align="center"><kbd>Alternar última app</kbd></td>  
   <td align="left">
-      <code>TAP 1:</code> <kbd>Close window</kbd><br/>
-      <code>TAP 2:</code> <kbd>Close app</kbd>
+      <code>TAP 1:</code> <kbd>Cerrar ventana</kbd><br/>
+      <code>TAP 2:</code> <kbd>Cerrar app</kbd>
   </td>
 
- 
 
 </tr>
 </table>
