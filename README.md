@@ -332,13 +332,13 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
 </tr>
 <tr>
   <td align="left" colspan="2">
-    <code>TAP 1:</code> <kbd>Copy</kbd><br/>  
-    <code>TAP 2:</code> <kbd>Cut</kbd> 
+    <code>TAP 1:</code> <kbd>Copiar</kbd><br/>  
+    <code>TAP 2:</code> <kbd>Cortar</kbd> 
   </td>
   <td align="center"><kbd>Paste</kbd></td>  
   <td align="left" colspan="2">
-    <code>TAP 1:</code> <kbd>Paste without format</kbd><br/>  
-    <code>TAP 2:</code> <kbd>Paste in place</kbd>
+    <code>TAP 1:</code> <kbd>Pegar sin formato</kbd><br/>  
+    <code>TAP 2:</code> <kbd>Paste in situ</kbd>
   </td>
 </tr>  
 <tr>
@@ -350,11 +350,11 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
 
 </tr>
 <tr>
-  <td align="center"><kbd>Save</kbd></td>
-  <td align="center"><kbd>Undo</kbd></td>
-  <td align="center"><kbd>Redo</kbd></td>  
-  <td align="center"><kbd>Select all</kbd></td>
-  <td align="center"><kbd>Refresh</kbd></td>  
+  <td align="center"><kbd>Guardar</kbd></td>
+  <td align="center"><kbd>Deshacer</kbd></td>
+  <td align="center"><kbd>Rehacer</kbd></td>  
+  <td align="center"><kbd>Seleccionar todo</kbd></td>
+  <td align="center"><kbd>Refrescar</kbd></td>  
 </tr>    
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/spotlight.svg" width="35"></td>
@@ -364,11 +364,11 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/replace.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center"><kbd>Search apps</kbd></td>  
-  <td align="center"><kbd>Search text</kbd></td>
-  <td align="center"><kbd>Search previous</kbd></td>  
-  <td align="center"><kbd>Search next</kbd></td>
-  <td align="center"><kbd>Search & replace</kbd></td>
+  <td align="center"><kbd>Buscar apps</kbd></td>  
+  <td align="center"><kbd>Buscar texto</kbd></td>
+  <td align="center"><kbd>Buscar anterior</kbd></td>  
+  <td align="center"><kbd>Buscar siguiente</kbd></td>
+  <td align="center"><kbd>Reemplazar</kbd></td>
 </tr>   
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/emoji.svg" width="35"></td>
@@ -377,14 +377,13 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
   <td align="center" colspan="2"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/monitor.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center"><kbd>Emoji picker</kbd></td> 
+  <td align="center"><kbd>Selector emoji</kbd></td> 
   <td align="left" colspan="2">
-    <code>TAP 1:</code> <kbd>Capture region</kbd><br/>  
-    <code>TAP 2:</code> <kbd>Capture screen dialog</kbd>
+    <code>TAP 1:</code> <kbd>Capturar region</kbd><br/>  
+    <code>TAP 2:</code> <kbd>Opciones de captura</kbd>
   </td>
   <td align="left" colspan="2">
-      <code>TAP 1:</code> <kbd>Close apps menu</kbd><br/>  
-      <code>TAP 2:</code> <kbd>System monitor</kbd>
+      <kbd>Close apps menu</kbd>
   </td>
 </tr>     
 </table>
