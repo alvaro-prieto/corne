@@ -14,6 +14,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
  
 :warning: Versión en desarrollo &nbsp; / &nbsp; This keymap is still in develpment 
  
+ &nbsp;
  
 <p>
   <a href="#%EF%B8%8F-leyenda"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/readsp.svg" width="200"/></a>
