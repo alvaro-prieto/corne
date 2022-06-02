@@ -335,7 +335,7 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
     <code>TAP 1:</code> <kbd>Copiar</kbd><br/>  
     <code>TAP 2:</code> <kbd>Cortar</kbd> 
   </td>
-  <td align="center"><kbd>Paste</kbd></td>  
+  <td align="center"><kbd>Pegar</kbd></td>  
   <td align="left" colspan="2">
     <code>TAP 1:</code> <kbd>Pegar sin formato</kbd><br/>  
     <code>TAP 2:</code> <kbd>Paste in situ</kbd>
