@@ -76,15 +76,16 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </table>
  
  ## What is the _Smart Tilde_? &nbsp; <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/tilde.svg" width="30"> 
-El Corne es un teclado muy compacto, y por ello nos vemos forzados a pensar en mecanismos para reducir el número de teclas necesarias y hacerlo de la manera más útil posible. Se trata de un modificador latente (_dead key_), que modifica el comportamiento de la siguiente tecla pulsada sin necesidad de mantenerla pulsada, es decir, funciona tanto como combinación como secuencia. A diferencia de la tilde, el modificador aplicado depende de la tecla destino, agregando adicionalmente la posibilidad de entrar en modos especiales (caps word, modo borrado, etc...). Quizás cambie en el futuro, por por ahora así es como funciona:
+El Corne es un teclado muy compacto, y por ello nos vemos forzados a pensar en mecanismos para reducir el número de teclas necesarias y hacerlo de la manera más útil posible. Se trata de un modificador latente (_dead key_), que modifica el comportamiento de la siguiente tecla pulsada sin necesidad de mantenerla pulsada, es decir, funciona tanto como combinación como secuencia. A diferencia de la tilde, el modificador aplicado depende de la tecla destino, agregando adicionalmente la posibilidad de entrar en modos especiales (caps word, modo borrado, etc...). Quizás cambie en el futuro, por ahora así es como funciona:
 
 * Como tilde española <kbd>´</kbd> cuando la siguiente letra es una vocal, por ejemplo _camión_
 * Como apóstrofe <kbd>'</kbd> cuando la siguiente letra puede usarse tras el apóstrofe inglés (s,l,m,d,r,t,c), por ejemplo _McDonald's_
 * Como <kbd>ñ</kbd> cuando se pulsa seguida de la letra <kbd>n</kbd>, por ejemplo _España_
-* Como <kbd>g + diéresis</kbd> cuando se pulsa seguida de la letra <kbd>g</kbd>, por ejemplo _cigüeña_
+* Como <kbd>g + ¨ diéresis</kbd> cuando se pulsa seguida de la letra <kbd>g</kbd>, por ejemplo _cigüeña_
 * Como tecla de borrado rápido de palabras completas (si se pulsa más de una vez)
 * Como <kbd>$ dolar</kbd> si se pulsa seguida de un espacio
 * Como <kbd>; + intro</kbd> si se pulsa seguido del modificador <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m3.svg" width="20">(útil para programadores)
+* Activa el modo <kbd>Caps word</kbd> al presionarse en conjunto con <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m2.svg" width="20">. En este modo podrás escribir palabras completas o identificadores de variable en mayúsculas sin necesidad de mantener presionado el <kbd>shift</kbd>
 
 
 
