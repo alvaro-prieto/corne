@@ -12,7 +12,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 <img src="extra/legend.png" width="300" alt="Legend"/> 
 
 
-:warning: This file is being updated right now!
+:warning: This keymap is still in develpment / Versión en desarrollo
 
 # ⌨️ Legend
 
