@@ -396,12 +396,13 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/os.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/rgbnext.svg" width="35"></td>  
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/rgbbrup.svg" width="35"></td>
+ <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/reset.svg" width="35"></td>
 </tr>
 <tr>
   <td align="center"><kbd>Keyboard OS</kbd></td>
   <td align="center"><kbd>Next RGB theme</kbd></td>
   <td align="center"><kbd>RGB brightness</kbd></td>
-  <td align="center"><kbd><code>TAP 2:</code> <br/>Bootloader</kbd></td>
+  <td align="center"><code>TAP 2:</code> <br/><kbd>Bootloader</kbd></td>
 </tr>
 </table>
 
