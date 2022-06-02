@@ -82,9 +82,9 @@ El Corne es un teclado muy compacto, y por ello nos vemos forzados a pensar en m
 * Como <kbd>' apóstrofe</kbd> cuando la siguiente letra puede usarse tras el apóstrofe inglés (s,l,m,d,r,t,c), por ejemplo _McDonald's_
 * Como <kbd>ñ eñe</kbd> cuando se pulsa seguida de la letra <kbd>n</kbd>, por ejemplo _España_
 * Como <kbd>g + ¨ diéresis</kbd> cuando se pulsa seguida de la letra <kbd>g</kbd>, por ejemplo _cigüeña_
-* Como <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/deleteword.svg" width="20"> tecla de borrado rápido de palabras completas (si se pulsa más de una vez)
+* Como <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/deleteword.svg" width="20"> tecla de <kbd>borrado rápido</kbd> de palabras completas (si se pulsa más de una vez)
 * Como <kbd>$ dolar</kbd> si se pulsa seguida de un espacio
-* Como <kbd>; + intro</kbd> si se pulsa seguido del modificador <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m3.svg" width="20">(útil para programadores)
+* Como <kbd>; + intro</kbd> si se pulsa seguido del modificador <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m3.svg" width="20"> (útil para programadores)
 * Activa el modo <kbd>Caps word</kbd> al presionarse en conjunto con <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m2.svg" width="20">. En este modo podrás escribir palabras completas o identificadores de variable en mayúsculas sin necesidad de mantener presionado el <kbd>shift</kbd>
 
 
