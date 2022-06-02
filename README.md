@@ -379,7 +379,7 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
 </tr>
 <tr>
   <td align="center"><kbd>Selector emoji</kbd></td> 
-  <td align="left">
+  <td colspan="2" align="left">
     <code>TAP 1:</code> <kbd>Capturar region</kbd><br/>  
     <code>TAP 2:</code> <kbd>Opciones de captura</kbd>
   </td>
