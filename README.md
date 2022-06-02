@@ -149,7 +149,7 @@ El propósito de esta filosofía es múltiple:
 * Facilidad para recordar los atajos de teclado
 * Independencia del sistema operativo y del programa que recibe el atajo
 * Ergonomía al tener que presionar menos teclas o estar mejor ubicadas
-* Minimizar el uso de <kbd>alt<kbd>, <kbd>control</kbd>, etc...
+* Minimizar el uso de <kbd>alt</kbd>, <kbd>control</kbd/>, etc...
 
 &nbsp;&nbsp;
 &nbsp;&nbsp;
