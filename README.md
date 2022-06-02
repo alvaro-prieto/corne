@@ -140,17 +140,17 @@ El Corne es un teclado muy compacto, y por ello nos vemos forzados a pensar en m
   
 #### ¿Para qué sirve la tecla <kbd>Hyper</kbd>?
 
-La tecla <kbd>hyper</kbd> <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/hyper.svg" width="20">, habitualmente se puede utilizar con programas de mapeo de atajos de teclado. Por ejemplo, <kbd>Hyper</kbd> + <kbd>i</kbd> puede al mismo tiempo significar  `invertir colores` en Photoshop `indentar` en un editor de código y `itálica` en un procesador de Textos. Puedes implementar comportamientos como estos empleando programas de terceros como Karabiner-Elements, Hammerspoon, Keyboard Maestro y muchos otros. A grandes rasgos el funcionamiento es el siguiente: cuando el programa detecta <kbd>hyper + i</kbd> lo traduce en la combinación de teclas deseada en el programa que tiene el foco.
+La tecla <kbd>hyper</kbd> <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/hyper.svg" width="20">, habitualmente se puede utilizar con programas de mapeo de atajos de teclado. Por ejemplo, <kbd>Hyper</kbd> + <kbd>i</kbd> puede al mismo tiempo significar  `invertir colores` en Photoshop `indentar` en un editor de código e `itálica` en un procesador de Textos. Misma combinación, distintas salidas. Puedes implementar comportamientos como estos empleando programas de terceros como Karabiner-Elements, Hammerspoon, Keyboard Maestro y muchos otros. A grandes rasgos el funcionamiento es el siguiente: cuando el programa detecta <kbd>hyper + i</kbd> lo traduce en la combinación de teclas deseada en el programa que tiene el foco.
 
  
-When keyboard is in `configuration` mode, `hyper`, `hyper lock` or `caps lock` mode, certain keys will glow their associated color. 
+Cuando el teclado se encuentra en modo `hyper` <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/hyper.svg" width="20">, o `hyper lock`  <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/hyperlock.svg" width="20"> se iluminará en un determinado color para hacérnoslo saber, al igual que en cualquiera de los otros posibles modos (_bloque de mayúsculas_, _bloque numérico_, etc.)
 
 &nbsp;&nbsp;
 &nbsp;&nbsp;
   
 
  
-## Navigation and selection
+## Navegación y selección de textos
 
 <table>
 <tr>
