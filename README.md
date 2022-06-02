@@ -13,8 +13,8 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 
 
 <p>
-  <a href="#"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/readen.svg" width="200"></a>
-  <a href="#"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/reades.svg" width="200"></a>
+  <a href="#"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/readen.svg" width="200"/></a>
+  <a href="#"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/reades.svg" width="200"/></a>
 </p>
 
 
