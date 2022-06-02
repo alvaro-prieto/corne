@@ -102,45 +102,45 @@ El Corne es un teclado muy compacto, y por ello nos vemos forzados a pensar en m
 ## Combos
 <table>
 <tr>
-  <th align="center">Combo</th>
-  <th align="center">Output</th>
-  <th align="center">Purpose</th>
+  <th align="center">Combinación</th>
+  <th align="center">Salida</th>
+  <th align="center">Propósito</th>
 </tr>
 <tr>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m1.svg" width="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m4.svg" width="35"> </td>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/bigcfg.svg" height="35"></td>
-  <td align="left">Configuration layer<br/><kbd>OS</kbd>, <kbd>RGB</kbd>…</td>
+  <td align="left">Capa de configuración<br/><kbd>OS</kbd>, <kbd>RGB</kbd>…</td>
 </tr>
 <tr>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m2.svg" width="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/sh.svg" width="35"> </td>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/bighyper.svg" height="35"></td>
-  <td align="left">Per-app custom shortcuts.<br/><kbd>Shift</kbd>+<kbd>Control</kbd>+<kbd>Alt</kbd></td>
+  <td align="left">Atajos de teclados personalizados según la aplicación en foco.<br/><kbd>Shift</kbd>+<kbd>Control</kbd>+<kbd>Alt</kbd></td>
 </tr>  
 <tr>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/bighyper.svg" height="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m6.svg" width="35"> </td>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/bighlock.svg" height="35"></td>
-  <td align="left">Toggle hyper lock</td>
+ <td align="left">Activar o desactivar <kbd>hyper-bloqueo</kbd></td>
 </tr>    
 <tr>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/sh.svg" height="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m6.svg" width="35"> </td>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/bigcaps.svg" height="35"></td>
-  <td align="left"><kbd>Lock shift</kbd> to write in caps.</td>
+  <td align="left"><kbd>Bloqueo de mayúsculas</kbd></td>
 </tr>
 <tr>  
     <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/tilde.svg" height="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m2.svg" width="35"> </td>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/bigcapsword.svg" height="35"></td>
-  <td align="left"><kbd>Caps word</kbd> single word in caps</td>
+  <td align="left"><kbd>Caps word</kbd> palabra completa en mayúsculas</td>
 </tr>
   <tr>  
     <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m2.svg" height="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/space.svg" width="35"> </td>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/bignumlock.svg" height="35"></td>
-  <td align="left"><kbd>Num lock</kbd> number layer locked</td>
+  <td align="left"><kbd>Bloqueo numérico</kbd>/td>
 </tr>  
  </table>
   
-#### What is the <kbd>Hyper</kbd> key for?
+#### ¿Para qué sirve la tecla <kbd>Hyper</kbd>?
 
-In my case it is going to be used to activate custom `actions`/`shortcuts` depending on the focused application. For example, <kbd>Hyper</kbd> + <kbd>I</kbd>  could mean `italic` in Word while being `indent` in a code editor and `invert colors` in Photoshop. You can implement this kind of behaviour using programs such as Karabiner-Elements, Hammerspoon, and many others.
+La tecla <kbd>hyper</kbd>, habitualmente se puede utilizar con programas de mapeo de atajos de teclado . For example, <kbd>Hyper</kbd> + <kbd>I</kbd>  could mean `italic` in Word while being `indent` in a code editor and `invert colors` in Photoshop. You can implement this kind of behaviour using programs such as Karabiner-Elements, Hammerspoon, and many others.
 
  
 When keyboard is in `configuration` mode, `hyper`, `hyper lock` or `caps lock` mode, certain keys will glow their associated color. 
