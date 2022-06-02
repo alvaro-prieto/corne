@@ -47,11 +47,11 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m2.svg" width="35px"></td>
-  <td><kbd>Purple layer</kbd> on hold. <kbd>Semicolon</kbd> on short press</td>
+  <td><kbd>Purple layer</kbd> on hold. <kbd>; Semicolon</kbd> on short press</td>
 </tr>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/sh.svg" width="35"></td>
-  <td><kbd>Shift</kbd> on hold. <kbd>Enter</kbd> on short press. Press in conjunction with <kbd>M6</kbd> to toggle <kbd>Caps lock</kbd></td>
+  <td><kbd>Shift</kbd> on hold. <kbd>⏎ Enter</kbd> on short press. Press in conjunction with <kbd>M6</kbd> to toggle <kbd>Caps lock</kbd></td>
 </tr>  
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m3.svg" width="35"></td>
