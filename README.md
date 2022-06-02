@@ -63,11 +63,11 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>  
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m5.svg" width="35"></td>
-  <td><kbd>Blue layer</kbd> on hold. <kbd>Apostrophe</kbd> on short press</td>
+  <td><kbd>Blue layer</kbd> on hold. <kbd>" Quotation mark</kbd> on short press</td>
 </tr>  
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m6.svg" width="35"></td>
-  <td><kbd>Lime layer</kbd> on hold. <kbd>Quotation mark</kbd> on short press</td>
+  <td><kbd>Lime layer</kbd> on hold. <kbd>' Apostrophe</kbd> on short press</td>
 </tr>      
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/tilde.svg" width="35"></td>
