@@ -21,78 +21,82 @@ typedef struct {
 //and can be used, for example to output a different key combination according to the OS. New types of
 //dances could be added if required.
 static const tapdance tds[] PROGMEM ={
-    //TDNULL
-    {0,0,0},
-	//AC_A
-	{ ACCENT_TAP, ES_A, 0 },
-	//AC_E
-	{ ACCENT_TAP, ES_E, 0 },
-	//AC_I
-	{ ACCENT_TAP, ES_I, 0 },
-	//AC_O
-	{ ACCENT_TAP, ES_O, 0 },
-	//AC_U
-	{ ACCENT_TAP, ES_U, 0 },
-	//RSET
+	//TDNULL
+	{0,0,0},
+	//AC_A  a, á
+	//{ ACCENT_TAP, ES_A, 0 },
+	//AC_E  e, é
+	//{ ACCENT_TAP, ES_E, 0 },
+	//AC_I  i, í
+	//{ ACCENT_TAP, ES_I, 0 },
+	//AC_O  o, ó
+	//{ ACCENT_TAP, ES_O, 0 },
+	//AC_U  u, ú
+	//{ ACCENT_TAP, ES_U, 0 },
+    //ENYE  n, ñ
+	//{ REPLACE_LANG_TAP, ES_N, ES_NTIL },
+    //G_DI  g, g¨
+	//{ REPLACE_LANG_SEC_TAP, G, G_DIE },
+
+	//RSET  ( double tap for QMK bootloader)
 	{ CUSTOM_TAP, NULLTAP, RESET_KB },
-	//CMNT
+	//CMNT  /*, */
 	{ REPLACE_SEQ_TAP, CMNT_OP, CMNT_CL },
-	//LN
-	{ CUSTOM_TAP, LINE1, LINE2 },
-	//TAGO
+	//LN ---, ====
+	{ BASIC_TAP, X(ES_C), X(ES_D) },
+	//TAGO <, </
 	{ REPLACE_SEQ_TAP, LWR, TAGOP },
-	//TAGC
+	//TAGC >, />
 	{ REPLACE_SEQ_TAP, GRT, TAGCL },
-	//DSK1
+	//DSK1  swap to desk 1, move app to desk 1
 	{ BASIC_TAP, C(ES_1), C(S(ES_1)) },
-	//DSK2
+	//DSK2  swap to desk 2, move app to desk 2
 	{ BASIC_TAP, C(ES_2), C(S(ES_2)) },
-	//DSK3
+	//DSK3  swap to desk 3, move app to desk 3
 	{ BASIC_TAP, C(ES_3), C(S(ES_3)) },
-	//ORD
-	{ REPLACE_TAP, ES_MORD, ES_FORD },
-	//SCR
+	//SCR   screenshot region, screenshot options
 	{ BASIC_OS_TAP, SCRSHT1, SCRSHT2 },
-	//EXIT
+	//EXIT  close window, close app
 	{ CUSTOM_TAP, CLOSE_WINDOW, CLOSE_APP },
-	//GRTR
+	//GRTR  >=, >>
 	{ REPLACE_SEQ_TAP, GRT_EQ, SHF_R },
-	//LESS
+	//LESS  <= , <<
 	{ REPLACE_SEQ_TAP, LSS_EQ, SHF_L },
-	//NTEQ
-	{ CUSTOM_TAP, DIFF, SIM },
-	//GRTP
-	{ CUSTOM_TAP, QUOT_R, GREQ },
-	//LSSP
-	{ CUSTOM_TAP, QUOT_L, LSEQ },
-	//STR12
+	//STR12  string1, string2
 	{ CUSTOM_TAP, STR1, STR2 },
-	//APPS
-	{ BASIC_OS_TAP, MONITOR, CLS_APPS },
-	//CP
+	//CP  copy cut
 	{ BASIC_OS_TAP, COPY, CUT },
-	//PST
+	//PST  paste without format, plaste in place
 	{ BASIC_OS_TAP, PST_CLEAN, PST_PLACE },
-	//ADD
-	{ REPLACE_TAP, ES_PLUS, ES_MINS },
-	//MUL
-	{ REPLACE_TAP, ES_ASTR, ES_SLSH },
-	//CURL
-	//{ REPLACE_TAP, ES_LCBR, ES_RCBR },
-	//SQR
-	//{ REPLACE_TAP, ES_LBRC, ES_RBRC },
-	//PRN
+    //PRN  (,)
 	{ REPLACE_TAP, ES_LPRN, ES_RPRN },
-	//MRK
-	{ REPLACE_SEQ_TAP, QUESTN, EXCLAM },
-	//ENYE
-	{ REPLACE_LANG_TAP, ES_N, ES_NTIL },
-	//DECI
+	//DECI  . ,
 	{ REPLACE_TAP, ES_DOT, ES_COMM },
-	//G_DI
-    { REPLACE_LANG_SEC_TAP, G, G_DIE },
-    //DLT
-    { BASIC_OS_TAP, TRASH, REMOVE },
+	//DLT  move to trash, permanently delete
+	{ BASIC_OS_TAP, TRASH, REMOVE },
+    //BOOT  turn off / reboot  using Xeno approach
+    { BASIC_TAP, X(ES_I), X(ES_J) },
+    //BOX  code box, using Xeno approach
+    { BASIC_TAP, X(ES_G), X(ES_H) },
+
+    //ORD  º,ª
+	//{ REPLACE_TAP, ES_MORD, ES_FORD },
+	//NTEQ  ≠,≈
+	//{ CUSTOM_TAP, DIFF, SIM },
+	//GRTP  », ≥
+	//{ CUSTOM_TAP, QUOT_R, GREQ },
+	//LSTP  «, ≤
+	//{ CUSTOM_TAP, QUOT_L, LSEQ },
+	//ADD  *,-
+	//{ REPLACE_TAP, ES_PLUS, ES_MINS },
+	//MUL  *,/
+	//{ REPLACE_TAP, ES_ASTR, ES_SLSH },
+	//CURL  {,}
+	//{ REPLACE_TAP, ES_LCBR, ES_RCBR },
+	//SQR  [,]
+	//{ REPLACE_TAP, ES_LBRC, ES_RBRC },
+	//MRK  ¿*?,¡*!
+	//{ SEQUENCE_TAP, QUESTN, EXCLAM },
 };
 
 //if the tap dance output should be a hold (instead of tap), the keycode
@@ -115,12 +119,6 @@ void tap_custom( int kc ){ // enum customTap kc ){  //not restricted to customTa
 			break;
 
 		//────────────────── CUSTOM ACTIONS ──────────────────
-		case LINE1:
-			tap_code16( KC_F16);	//custom third party shortcut
-			break;
-		case LINE2:
-			tap_code16( KC_F17 );	//custom third party shortcut
-			break;
 		case RESET_KB:
 			reset_keyboard();
 			break;
@@ -186,40 +184,76 @@ void dance_reset(qk_tap_dance_state_t *state, void *user_data) {
 	holdTapCode = 0;
 }
 
-//Replace tap. Second tap replaces first output
+//Replace tap. Second tap replaces first output (simplified version)
 void replace_each(qk_tap_dance_state_t *state, void *user_data) {
 	const tapdance * t = &tds[ ((tap_data*)user_data)->keycode ];
-    enum tapType type = (enum tapType) pgm_read_byte( &t->type );
-    bool langTap = (type == REPLACE_LANG_TAP || type == REPLACE_LANG_SEC_TAP);
-    bool tapEnabled = !(langTap && lang != ES);
-    uint16_t kc[] = {pgm_read_word(&t->kc1),  pgm_read_word(&t->kc2)};
-    uint16_t currentKc = kc[ tapEnabled ? state->count == 2 ? 1 : 0 : 0];
+	enum tapType type = (enum tapType) pgm_read_byte( &t->type );
+	uint16_t kc[] = {pgm_read_word(&t->kc1),  pgm_read_word(&t->kc2)};
+	uint16_t currentKc = kc[ state->count == 2 ? 1 : 0 ];
+	switch (type){
+		case REPLACE_TAP:
+			if(state->count >= 2 && state->count <= 3){
+				tap_code16( KC_BSPC );
+			}
+			if(state->count == 3) tap_code16( currentKc );
+			tap_code16( currentKc );
+			break;
 
-    switch (type){
-        case REPLACE_TAP:
-        case REPLACE_LANG_TAP:
-            if(tapEnabled && state->count >= 2 && state->count <= 3){
-                tap_code16( KC_BSPC );
-            }
-            if(state->count == 3) tap_code16( currentKc );
-            tap_code16( currentKc );
-            break;
+		case REPLACE_SEQ_TAP:
+			if(state->count >= 2 && state->count <= 3){
+				del_sequence( kc[state->count-2] );
+			}
+			if(state->count == 3) tap_sequence( currentKc );
+			tap_sequence( currentKc );
+			break;
 
-        case REPLACE_SEQ_TAP:
-        case REPLACE_LANG_SEC_TAP:
-            if(tapEnabled && state->count >= 2 && state->count <= 3){
-                del_sequence( kc[state->count-2] );
-            }
-            if(state->count == 3) tap_sequence( currentKc );
-            tap_sequence( currentKc );
-            break;
+		default: break;
+	}
+	/* this allows to prevent long tap dances
+	if(state->count == 2){
+	   state->finished = true;
+	} */
+}
 
-        default: break;
-    }
-    /* this allows to prevent long tap dances
-    if(state->count == 2){
-       state->finished = true;
-    } */
+//═══════════════════════════════════════════════════════════════
+//   NOT NEEDED IN THE CURRENT VERSION, BUT COULD BE USEFUL SOMEDAY
+//═══════════════════════════════════════════════════════════════
+
+/*
+//Replace tap. Second tap replaces first output (compatible with multiple languages)
+void replace_each(qk_tap_dance_state_t *state, void *user_data) {
+	const tapdance * t = &tds[ ((tap_data*)user_data)->keycode ];
+	enum tapType type = (enum tapType) pgm_read_byte( &t->type );
+	bool langTap = (type == REPLACE_LANG_TAP || type == REPLACE_LANG_SEC_TAP);
+	bool tapEnabled = !(langTap && lang != ES);
+	uint16_t kc[] = {pgm_read_word(&t->kc1),  pgm_read_word(&t->kc2)};
+	uint16_t currentKc = kc[ tapEnabled ? state->count == 2 ? 1 : 0 : 0];
+
+	switch (type){
+		case REPLACE_TAP:
+		case REPLACE_LANG_TAP:
+			if(tapEnabled && state->count >= 2 && state->count <= 3){
+				tap_code16( KC_BSPC );
+			}
+			if(state->count == 3) tap_code16( currentKc );
+			tap_code16( currentKc );
+			break;
+
+		case REPLACE_SEQ_TAP:
+		case REPLACE_LANG_SEC_TAP:
+			if(tapEnabled && state->count >= 2 && state->count <= 3){
+				del_sequence( kc[state->count-2] );
+			}
+			if(state->count == 3) tap_sequence( currentKc );
+			tap_sequence( currentKc );
+			break;
+
+		default: break;
+	}
+	//this allows to prevent long tap dances
+	//if(state->count == 2){
+	//   state->finished = true;
+	//}
 }
 
 
@@ -233,55 +267,48 @@ void accent_each(qk_tap_dance_state_t *state, void *user_data) {
 			tap_code16( vowel );
 		}else if( state->count == 2 ){
 			tap_code16( KC_BSPC );
-			if(shift) unregister_code(KC_RSFT);
 			tap_code16( ES_ACUT );
-			if(shift) register_code(KC_RSFT);
 			tap_code16( vowel );
 			//this allows to prevent long tap dances
 			//state->finished = true;
 		}else if(state->count == 3 ){
-            tap_code16( KC_BSPC );
-            tap_code16( vowel );
-        }
-        if(state->count > 2){
-            tap_code16( vowel );
-        }
+			tap_code16( KC_BSPC );
+			tap_code16( vowel );
+		}
+		if(state->count > 2){
+			tap_code16( vowel );
+		}
 	}else{
 		tap_code16( vowel );
 	}
 }
+*/
 
-//Handler hooks. Add new tap dances here to be able to use them in the keymap.c file using TD( keycode )
-//params: each, finish, reset, data
+
+//══════════════════════════════════════════════
+//                 HANDLER HOOKS
+//══════════════════════════════════════════════
+
+//Add new tap dances here to be able to use them in keymap.c
+//using TD( keycode ).  Params: each, finish, reset, data
+
 qk_tap_dance_action_t tap_dance_actions[] = {
 
-    //Spanish accents
-	[AC_A]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each,    NULL, NULL,  &((tap_data){ AC_A })),
-	[AC_E]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each,    NULL, NULL,  &((tap_data){ AC_E })),
-	[AC_I]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each,    NULL, NULL,  &((tap_data){ AC_I })),
-	[AC_O]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each,    NULL, NULL,  &((tap_data){ AC_O })),
-	[AC_U]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each,    NULL, NULL,  &((tap_data){ AC_U })),
-
-    //Spanish special characters
-	[ENYE]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each,   NULL, NULL,  &((tap_data){ ENYE })),
-	[G_DI]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each,   NULL, NULL,  &((tap_data){ G_DI })),
-
-    //replace dances (instant)
+	//replace dances (instant)
 	[GRTR]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each, NULL, NULL,  &((tap_data){ GRTR })),
-    [CMNT]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each, NULL, NULL,  &((tap_data){ CMNT })),
+	[CMNT]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each, NULL, NULL,  &((tap_data){ CMNT })),
 	[TAGO]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each, NULL, NULL,  &((tap_data){ TAGO })),
 	[TAGC]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each, NULL, NULL,  &((tap_data){ TAGC })),
-    [ORD]     = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each, NULL, NULL,  &((tap_data){ ORD  })),
-	[ADD]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each, NULL, NULL,  &((tap_data){ ADD  })),
-	[MUL]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each, NULL, NULL,  &((tap_data){ MUL  })),
-    [LESS]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each, NULL, NULL,  &((tap_data){ LESS })),
+	[LESS]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each, NULL, NULL,  &((tap_data){ LESS })),
 	[PRN]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each, NULL, NULL,  &((tap_data){ PRN  })),
-	[MRK]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each, NULL, NULL,  &((tap_data){ MRK  })),
-    [DECI]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each, NULL, NULL,  &((tap_data){ DECI })),
+	[DECI]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each, NULL, NULL,  &((tap_data){ DECI })),
+//	[ORD]     = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each, NULL, NULL,  &((tap_data){ ORD  })),
+//	[ADD]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each, NULL, NULL,  &((tap_data){ ADD  })),
+//	[MUL]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each, NULL, NULL,  &((tap_data){ MUL  })),
 //	[CURL]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each, NULL, NULL,  &((tap_data){ CURL })),
 //	[SQR]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each, NULL, NULL,  &((tap_data){ SQR  })),
 
-    //normal dances (processed when timeout is over)
+	//normal dances (processed when timeout is over)
 	[RSET]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   RSET    })),
 	[LN]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   LN      })),
 	[DSK1]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   DSK1    })),
@@ -289,13 +316,26 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 	[DSK3]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   DSK3    })),
 	[SCR]     = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   SCR     })),
 	[EXIT]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   EXIT    })),
-	[NTEQ]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   NTEQ    })),
-	[GRTP]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   GRTP 	})),
-	[LSTP]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   LSTP    })),
 	[STR12]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   STR12	})),
-	[APPS]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   APPS 	})),
 	[CP]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   CP 		})),
 	[PST]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   PST 	})),
-    [DLT]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   DLT 	})),
+	[DLT]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   DLT 	})),
+    [BOOT]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   BOOT 	})),
+//	[MRK]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   MRK     })),
+//	[NTEQ]    = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   NTEQ    })),
+//	[GRTP]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   GRTP 	})),
+//	[LSTP]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  NULL, dance_finished, dance_reset,  &((tap_data){   LSTP    })),
+
+	//Spanish accents
+//	[AC_A]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each,    NULL, NULL,  &((tap_data){ AC_A })),
+//	[AC_E]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each,    NULL, NULL,  &((tap_data){ AC_E })),
+//	[AC_I]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each,    NULL, NULL,  &((tap_data){ AC_I })),
+//	[AC_O]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each,    NULL, NULL,  &((tap_data){ AC_O })),
+//	[AC_U]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  accent_each,    NULL, NULL,  &((tap_data){ AC_U })),
+
+	//Spanish special characters
+//	[ENYE]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each,   NULL, NULL,  &((tap_data){ ENYE })),
+//	[G_DI]	  = ACTION_TAP_DANCE_FN_ADVANCED_USER(  replace_each,   NULL, NULL,  &((tap_data){ G_DI })),
+
 
 };

@@ -57,7 +57,7 @@ static const uint16_t osKeys[][NUMBER_OF_OS] PROGMEM = {
 	//W_RIGHT
 	{ A(KC_RIGHT), A(KC_RIGHT) },
 	//MONITOR
-	{ KC_F19, C(S(KC_ESC))},
+	{ X(KC_E), C(S(KC_ESC))},
 	//Z_IN
 	{ G(ES_PLUS), C(ES_PLUS)},
 	//Z_OUT
@@ -101,9 +101,9 @@ static const uint16_t osKeys[][NUMBER_OF_OS] PROGMEM = {
 	//PLAY
 	{ KC_F8, KC_MEDIA_PLAY_PAUSE},
 	//REBOOT
-	{ C(KC_POWER), C(KC_POWER)},
+	//{ C(KC_POWER), C(KC_POWER)},
 	//POWER
-	{ C(KC_POWER), KC_POWER},
+	//{ C(KC_POWER), KC_POWER},
 	//WIN_L
 	{ C(G(S(KC_L))), LWIN(KC_LEFT)},
 	//WIN_R
@@ -118,10 +118,10 @@ static const uint16_t osKeys[][NUMBER_OF_OS] PROGMEM = {
 	{ KC_LCTL, KC_LWIN},
 	//DEL_LN
 	{ G(KC_BSPC), C(S(ES_K))},
-    //TRASH
-    { G(KC_BSPC), KC_DEL},
-    //REMOVE
-    { A(G(KC_BSPC)), S(KC_DEL)},
+	//TRASH
+	{ G(KC_BSPC), KC_DEL},
+	//REMOVE
+	{ A(G(KC_BSPC)), S(KC_DEL)},
 
 };
 
@@ -167,14 +167,14 @@ static const uint16_t sequenceKeys[][SEQUENCE_MAX_LENGTH] PROGMEM = {
 	{ ES_RABK, ES_EQL, NULL_KEY },
 	//LSS_EQ
 	{ ES_LABK, ES_EQL, NULL_KEY },
-    //BCKQT
-    { ES_GRV, KC_SPC, NULL_KEY },
-    //POW
-    { ES_CIRC, KC_SPC, NULL_KEY },
-    //G
-    { ES_G, NULL_KEY, NULL_KEY },
-    //G_DIE
-    { ES_G, ES_DIAE, NULL_KEY },
+	//BCKQT
+	{ ES_GRV, KC_SPC, NULL_KEY },
+	//POW
+	{ ES_CIRC, KC_SPC, NULL_KEY },
+	//G
+	//{ ES_G, NULL_KEY, NULL_KEY },
+	//G_DIE
+	//{ ES_G, ES_DIAE, NULL_KEY },
 };
 
 //UNICODE characters are managed differently according to the OS. In OSX you can set
@@ -183,6 +183,8 @@ static const uint16_t sequenceKeys[][SEQUENCE_MAX_LENGTH] PROGMEM = {
 //In Windows unicode characters can be managed using its code https://unicode-table.com
 //and installing WinCompose
 static const uint16_t unicodeKeys[][NUMBER_OF_OS] PROGMEM = {
+    //DBLN  (not possible in macOS, Xeno instead)
+    { X(KC_B), 0x2550},
 	//MIDLN
 	{ A(ES_MINS), 0x2013},
 	//LONGLN
@@ -219,9 +221,27 @@ static const uint16_t unicodeKeys[][NUMBER_OF_OS] PROGMEM = {
 	{ A(S(ES_3)), 0x2022},
 	//CR
 	{ A(ES_C), 0x00A9},
+    //CROSS
+    { X(ES_K), 0x253C},
 
 };
 
+//Alias type keys are keys or combinations of keys that have been given
+//an identifying name for legibility purposes. Some of them are xeno keys,
+//those won't work unless you configure them in an external tool
+//⚠ NOTE: xeno keys declaration in keydefs.h
+static const uint16_t aliasKeys[] PROGMEM = {
+    //UNDERSC
+    S(ES_MINS),
+    //TGL_APP   Toggle last app
+    X(KC_A),
+    //UNTAB     shift(tab)
+    S(KC_TAB),
+    //FLASH     Quick close private content
+    X(KC_F),
+    //UNICODE
+    X(KC_L)
+};
 
 //returns the extendend shortcut keycode according to the current OS
 static uint16_t getOSKey(uint16_t keyName ){
@@ -233,6 +253,11 @@ static uint16_t getUnicodeKey(uint16_t keyName ){
 	return pgm_read_word( &( unicodeKeys[ keyName - FIRST_UNICODE_INDEX -1 ][ os ] ));
 };
 
+//Returns the uint16_t keycode for an alias key
+static uint16_t getAliasKey(uint16_t keyName ){
+	return pgm_read_word( &( aliasKeys[ keyName - FIRST_ALIAS_INDEX -1 ] ));
+};
+
 // shared code among tap_sequence and del_sequence, this function is not public
 static void tap_sequence_internal(uint16_t seqName, bool delete){
 	char overflow = SEQUENCE_MAX_LENGTH;
@@ -240,18 +265,18 @@ static void tap_sequence_internal(uint16_t seqName, bool delete){
 	for(int i=0; i<SEQUENCE_MAX_LENGTH && overflow>0; i++, overflow--){
 		currentKey = pgm_read_word( &( sequenceKeys[ seqName - FIRST_SEQUENCE_INDEX -1 ][ i ] ));
 		if(currentKey == NULL_KEY) break;
-        tap_code16( delete ? KC_BSPC : currentKey );
+		tap_code16( delete ? KC_BSPC : currentKey );
 	}
 }
 
 //taps a sequence of keys. Useful for common key sequences such as <= -> and so on
 static void tap_sequence(uint16_t seqName){
-    tap_sequence_internal(seqName, false);
+	tap_sequence_internal(seqName, false);
 };
 
 //deletes the same amount of characters of a sequence of keys
 static void del_sequence(uint16_t seqName){
-    tap_sequence_internal(seqName, true);
+	tap_sequence_internal(seqName, true);
 };
 
 

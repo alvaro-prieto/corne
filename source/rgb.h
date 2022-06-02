@@ -6,8 +6,8 @@
 	#define LAST_RGB 26
 	#define NOTIFICATION_TIMEOUT 5
 	#define NUMBER_OF_KEYS LAST_RGB - FIRST_RGB + 1
-	#define BRIGHTNESS_MULTIPLIER (double) RGB_MATRIX_MAXIMUM_BRIGHTNESS / 255.0
-	#define BRM BRIGHTNESS_MULTIPLIER
+	#define MAX_BRIGHTNESS_MULTIPLIER (double) RGB_MATRIX_MAXIMUM_BRIGHTNESS / 255.0
+    #define BRM MAX_BRIGHTNESS_MULTIPLIER
 	#define MAX_INDICATOR_LENGTH 20
 	#define MAX_NUMBER_OF_INDICATORS 5
 
@@ -16,9 +16,10 @@
 		RGB_NONE = -1,
 		RGB_HYPER_LOCK = 0,
 		RGB_CAPS_LOCK = 1,
-		RGB_SHIFT = 2,
-		RGB_EXTRAS = 3,
-		RGB_HYPER_HOLD = 6,
+		RGB_CAPS_WORD = 5,
+		RGB_EXTRAS = 8,
+		RGB_HYPER_HOLD = 11,
+        RGB_NUM_LOCK = 15,
 	};
 
 	enum rgb_map{
@@ -28,10 +29,7 @@
 		RGB_MAC_NOTIFICATION,
 		RGB_LOCK_NOTIFICATION,
 		RGB_THEME_1,
-		RGB_THEME_2,
-		RGB_LANG_ES,
-		RGB_LANG_EN,
-
+		RGB_THEME_2
 	};
 
 	void init_rgb( void );
@@ -41,7 +39,8 @@
 	void update_rgb_state(void);
 	void rgb_hibernate( bool );
 	void rgb_rotate_theme( int direction );
-    void rgb_matrix_suspend_state_changed( bool suspend );
+    void rgb_brightness( int direction );
+	void rgb_matrix_suspend_state_changed( bool suspend );
 
 
 //#endif

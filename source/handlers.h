@@ -1,22 +1,15 @@
 #pragma once
 
-void tap_key_sequence( uint16_t key );
-bool mod_key_handler( uint16_t keycode, bool down, keyrecord_t *record );
-bool hold_key_handler( uint16_t keycode, bool down, keyrecord_t *record );
-void interruptMods( void );
-void hyper( bool down );
-void toggle_hyper_lock( void );
-void passive_down( uint16_t key );
-void passive_up( void );
-
 enum layers{
 	_BASE = 0,
 	_M1,
 	_M2,
 	_M3,
+    _NL,
 	_M4,
 	_M5,
 	_M6,
+    _M7,
 	_HYP,
 	_MOD,
 	_CFG,
@@ -30,11 +23,13 @@ enum modifier{
 	M4_MOD,
 	M5_MOD,
 	M6_MOD,
+    M7_MOD,
 	HYPER_MOD,
 	CMD_MOD,
 	ALT_MOD,
 	CTR_MOD,
-	S1_MOD
+	S1_MOD,
+    TILDE_MOD
 };
 
 typedef struct Keypress{
@@ -64,30 +59,46 @@ enum modMask{
 	M4_M = 1 << 3,
 	M5_M = 1 << 4,
 	M6_M = 1 << 5,
-	S1_M = 1 << 6 
+	S1_M = 1 << 6
 };
 
-enum languages {
-	ES = 0,
-	EN
-};
 
-//active holds and mods are kept in queue, so if any other key is pressed 
+//signatures
+void tap_key_sequence( uint16_t key );
+bool mod_is_active(Keypress *kp);
+bool mod_key_handler( uint16_t keycode, bool down, keyrecord_t *record );
+bool hold_key_handler( uint16_t keycode, bool down, keyrecord_t *record );
+void interrupt_mods( void );
+void hyper( bool down );
+void toggle_hyper_lock( void );
+void passive_down( uint16_t key );
+void passive_up( void );
+void set_caps(bool enabled, bool lock, bool word);
+
+
+
+//active holds and mods are kept in queue, so if any other key is pressed
 //in combination their alternative behavior could be prevented
-Keypress *activeMods	= NULL;
-unsigned char modsNumber = 0;
-unsigned short modMask = 0;
-unsigned short lastMask = 0;
-uint16_t passive = 0;
-bool app_switch = false;
-bool shift = false;
-bool caps_lock = false;
-bool cmd = false;
-unsigned char win = 0;  //0 = false, 1 = waiting for second key 2 = active  
-int RGB_current_mode;  //no se si se usa... TO-DO
-bool hyper_lock = false;
-bool kb_lock = false;
-unsigned char lang = ES;
+static Keypress *activeMods	= NULL;
+static unsigned char modsNumber = 0;
+static unsigned short modMask = 0;
+static unsigned short lastMask = 0;
+static uint16_t passive = 0;
+static bool app_switch = false;
+static bool shift = false;
+static bool caps_lock = false;
+static bool caps_word = false;
+static bool caps_state = false;
+static unsigned char win = 0;  //0 = false, 1 = waiting for second key 2 = active
+static bool hyper_lock = false;
+static bool kb_lock = false;
+static uint16_t delete = 0;  //there are different kinds of deletion (forward, backward, word, line...)
+static uint16_t registered_delete = 0;
+static bool accent = false;
+static bool num_lock = false;
+
+
+
 
 
 

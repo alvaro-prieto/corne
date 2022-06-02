@@ -15,11 +15,11 @@ SWAP_HANDS_ENABLE = no      # Enable one-hand typing
 
 RGBLIGHT_ENABLE    = no
 RGB_MATRIX_ENABLE  =  yes		#REMEMBER: no in development! yes in release
-RGB_MATRIX_CUSTOM_USER = yes	#REMEMBER: no in development! yes in release
+RGB_MATRIX_CUSTOM_USER = yes		#REMEMBER: no in development! yes in release
 EXTRAFLAGS += -flto
 
-#Are you debugging? 	If so: 	REMEMBER to turn CONSOLE_ENABLE = yes
-CONSOLE_ENABLE = no		#yes in development! no in a release version
+#Are you debugging?
+CONSOLE_ENABLE = no		#REMEMBER:yes in development! no in a release version
 COMMAND_ENABLE = no
 
 #To save some extra bytes
@@ -38,3 +38,8 @@ RAW_ENABLE = no
 SEQUENCER_ENABLE = no
 WPM_ENABLE = no
 OLED_ENABLE = no
+AUTO_SHIFT_MODIFIERS = no
+LTO_ENABLE = yes
+VIA_ENABLE = no
+
+#SLEEP_LED_ENABLE = no            # Breathing sleep LED during USB suspend

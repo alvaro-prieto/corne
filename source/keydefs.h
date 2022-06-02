@@ -3,18 +3,26 @@
 #define CUSTOM_CODES_BASE_INDEX SAFE_RANGE
 #define NUMBER_OF_OS 2
 #define SEQUENCE_MAX_LENGTH 3 //Max number of characters that a sequence key can output
-//#define H(k) C(A(S(k)))  //H = Hyper
+#define H(k) C(A(S(k)))     //H = Hyper
+#define X(k) G(C(A(S(k))))  //X = Xeno
 
 /*
 
-What is the Hyper key for?
+What is the Hyper modifier for?
 ───────────────────────────
-
 In my case it is going to be used as trigger to activate custom actions/shortcuts
 depending on the focused application. For example, Hyper + I could mean "italic" in
 Word while being "indent" in a code editor and "invert" in Photoshop.
 
-You can implement this kind of behaviour in programs such as Karabiner-Elements
+You can implement this kind of behaviour in programs such as Karabiner-Elements,
+Keyboard Maestro, Hammerspoon, Better Touch Tool, ...
+
+
+What is the Xeno modifier for?
+───────────────────────────
+There are many functions at the level of the operating system or applications that
+do not have a direct shortcut. To make up for this, the Xeno modifier (Greek "external, foreign")
+has been created, which allows these behaviors to be created with the help of external programs.
 
 */
 
@@ -54,11 +62,13 @@ enum custom_keycodes {
 	M4,
 	M5,
 	M6,
+    M7,
 	CMD,
 	ALT,
 	CTR,
 	S1,
-    LAST_MODIFIER_INDEX,
+    TILDE,
+	LAST_MODIFIER_INDEX,
 
 	//────────────── SEQUENCE KEYS ──────────────
 	FIRST_SEQUENCE_INDEX,
@@ -82,11 +92,11 @@ enum custom_keycodes {
 	NOT_EQ,
 	GRT_EQ,
 	LSS_EQ,
-    BCKQT,
-    POW,
-    G,
-    G_DIE,
-    LAST_SEQUENCE_INDEX,
+	BCKQT,
+	POW,
+	//G,
+	//G_DIE,
+	LAST_SEQUENCE_INDEX,
 
 	//────────────── OS DEPENDENT KEYS ──────────────
 	FIRST_OS_INDEX,
@@ -135,8 +145,8 @@ enum custom_keycodes {
 	SNG_PR,
 	SNG_NX,
 	PLAY,
-	REBOOT,
-	POWER,
+	//REBOOT,
+	//POWER,
 	WIN_L,
 	WIN_R,
 	MAXMZ,
@@ -144,12 +154,13 @@ enum custom_keycodes {
 	CLS_APP,
 	WIN_CTR,
 	DEL_LN,
-    TRASH,
-    REMOVE,
-    LAST_OS_INDEX,
+	TRASH,
+	REMOVE,
+	LAST_OS_INDEX,
 
 	//────────────── UNICODE KEYS ──────────────
 	FIRST_UNICODE_INDEX,
+    DBLN,
 	MIDLN,
 	LONGLN,
 	TOPLN,
@@ -168,10 +179,22 @@ enum custom_keycodes {
 	TM,
 	BULLET,
 	CR,
-    LAST_UNICODE_INDEX,
+    CROSS,
+    DCROSS,
+    QCROSS,
+	LAST_UNICODE_INDEX,
+
+	//────────────── ALIAS KEYS ──────────────
+    FIRST_ALIAS_INDEX,
+    UNDERSC,
+    TGL_APP,
+    UNTAB,
+    FLASH,
+    UNICODE,
+    LAST_ALIAS_INDEX,
 
 	//────────────── CUSTOM HANDLED KEYS ──────────────
-    FIRST_CUSTOM_INDEX,
+	FIRST_CUSTOM_INDEX,
 	APPLE_F1,
 	APPLE_F2,
 	APPLE_F3,
@@ -193,18 +216,34 @@ enum custom_keycodes {
 	DESK3,
 	SHW_DSK,
 	EXPS,
-	BOOT,
 	H_LOCK,
-	BORDER,
 	KBLOCK,
-    OSLOCK,
+	OSLOCK,
 	RGB_NEXT,
 	RGB_PREV,
 	DEL,
 	DOT,
-	LNG,
-    FLASH
+    RGB_UP,
+    RGB_DOWN,
+    NLOCK,
 
+    /*────────────── XENO KEYS ──────────────
+    [] Means that alias name is not explicit (could be in a TD, etc)
+
+    TGL_APP     X(KC_A)     Toggle last app
+    DBLN        X(KC_B)     ═ Long equal
+    [LINE1]     X(KC_C)     ───────────────
+    [LINE2]     X(KC_D)     ═══════════════
+    MONITOR     X(KC_E)     System monitor
+    FLASH       X(KC_F)     Quick close private windows
+    [BOX1]      X(KC_G)     Single line box
+    [BOX2]      X(KC_H)     Double line box
+    [OFF]       X(KC_I)     Turn off the computer
+    [REBOOT]    X(KC_J)     Reboot the computer
+    CROSS       X(KC_K)     ┼
+    UNICODE     X(KC_L)     Sample of useful unicode characters
+
+    */
 };
 
 

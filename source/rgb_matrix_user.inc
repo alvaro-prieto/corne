@@ -10,3 +10,4 @@ static bool custom_effect(effect_params_t *params) {
 }
 
 #endif
+

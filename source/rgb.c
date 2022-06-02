@@ -12,8 +12,8 @@
 	  |---------+--------[3]--------+---------+---------+---------|
 	  |   26    |   21    |   20    |   15    |    12   |    7    |
 	  `---------+---------+---------+--------[4]-------[5]--------+---------.
-	                                           \   14   |   13    |    6    |
-	                                            `---------------------------´
+											   \   14   |   13    |    6    |
+												`---------------------------´
 	*/
 
 
@@ -44,6 +44,7 @@
 	unsigned char number_of_active_indicators = 0;
 	enum rgb_indicator active_indicators[ MAX_NUMBER_OF_INDICATORS ];
 	bool rgb_dirty = false; //pending changes to update
+    double current_brightness = 1.0;
 
 	//wheel of themes that the user can iterate through
 	const int wheel_of_themes [] ={
@@ -114,24 +115,29 @@
 		{0x01,0x30,0x37}, {0x00,0x14,0x42}, {0x00,0x0f,0x33}, {0x00,0x1d,0x33},
 		{0x00,0x2e,0x23}},
 
-		//5 - RGB_LANG_ES (spanish flag)
+
+		//UNUSED - RGB_LANG_ES (spanish flag)
 		//["#bc0101","#f2a602","#e9a001","#d60000","#d60000","#ffdd00","#ffdd00","#bd0000","#8f0000","#bd9d00","#cb9f01","#940000","#6b0000","#946c00","#987701","#614c00","#704d00","#4d0000","#2d0101","#3d2e00","#3d2e00"]
 		//["#bc0101","#f2a602","#e9a001","#d60000","#a30000","#ffc800","#a88400","#8e0101","#6a0101","#805e00","#987001","#570000","#420000","#613d00","#654501","#2e1f00","#332000","#290000","#0e0101","#181101","#191000"]
-		{{0xbc,0x01,0x01},{0xf2,0xa6,0x02}, {0xe9,0xa0,0x01}, {0xd6,0x00,0x00},
+		/*
+        {{0xbc,0x01,0x01},{0xf2,0xa6,0x02}, {0xe9,0xa0,0x01}, {0xd6,0x00,0x00},
 		{0xa3,0x00,0x00}, {0xff,0xc8,0x00}, {0xa8,0x84,0x00}, {0x8e,0x01,0x01},
 		{0x6a,0x01,0x01}, {0x80,0x5e,0x00}, {0x98,0x70,0x01}, {0x57,0x00,0x00},
 		{0x42,0x00,0x00}, {0x61,0x3d,0x00}, {0x65,0x45,0x01}, {0x2e,0x1f,0x00},
 		{0x33,0x20,0x00}, {0x29,0x00,0x00}, {0x0e,0x01,0x01}, {0x18,0x11,0x01},
 		{0x19,0x10,0x00}},
+        */
 
-		//6 - RGB_LANG_EN (english flag)
+		//UNUSED - RGB_LANG_EN (english flag)
 		//["#ff0000","#ff0000","#ffffff","#ababab","#b0b0b0","#bd0000","#ff0000","#bd0000","#001eff","#0011ff","#990000","#750000","#6b0000","#1100ff","#0208bb","#020080","#001194","#0c00b3","#001061","#0d0165","#070137"]
+        /*
 		{{0xff,0x00,0x00},{0xff,0x00,0x00}, {0xff,0xff,0xff}, {0xab,0xab,0xab},
 		{0xb0,0xb0,0xb0}, {0xbd,0x00,0x00}, {0xff,0x00,0x00}, {0xbd,0x00,0x00},
 		{0x00,0x1e,0xff}, {0x00,0x11,0xff}, {0x99,0x00,0x00}, {0x75,0x00,0x00},
 		{0x6b,0x00,0x00}, {0x11,0x00,0xff}, {0x02,0x08,0xbb}, {0x02,0x00,0x80},
 		{0x00,0x11,0x94}, {0x0c,0x00,0xb3}, {0x00,0x10,0x61}, {0x0d,0x01,0x65},
 		{0x07,0x01,0x37}},
+        */
 
 	};
 
@@ -145,21 +151,38 @@
 	//value >= 200 = both sides
 
 	static const rgb_led leds[] PROGMEM ={
+
 		//0 - RGB_HYPER_LOCK
 		{126, 0xff * BRM, 0x00 * BRM, 0x90 * BRM, 0},
+
 		//1 - RGB_CAPS_LOCK
-		{126, 0x21 * BRM, 0xd1 * BRM, 0xc8 * BRM, 0},
-		//2 - RGB_SHIFT
-		{126, 0x00 * BRM, 0x10 * BRM, 0x65 * BRM, 0},
-		//3 - RGB_EXTRAS
-		{214, 0xbb * BRM, 0x15 * BRM, 0x00 * BRM, 4},
-		{213, 0xbb * BRM, 0x15 * BRM, 0x00 * BRM, 5},
-		{206, 0xbb * BRM, 0x15 * BRM, 0x00 * BRM, 0},
-		//6 - RGB_HYPER_HOLD
-		{214, 0xff * BRM, 0x00 * BRM, 0x90 * BRM, 7},
-		{213, 0xff * BRM, 0x00 * BRM, 0x90 * BRM, 8},
-		{206, 0xff * BRM, 0x00 * BRM, 0x90 * BRM, 9},
-		{126, 0x36 * BRM, 0x00 * BRM, 0x2c * BRM, 0}
+		{126, 0x21 * BRM, 0xd1 * BRM, 0xc8 * BRM, 2},
+		{214, 0x21 * BRM, 0xd1 * BRM, 0xc8 * BRM, 3},
+		{213, 0x21 * BRM, 0xd1 * BRM, 0xc8 * BRM, 4},
+		{206, 0x21 * BRM, 0xd1 * BRM, 0xc8 * BRM, 0},
+
+		//5 - RGB_CAPS_WORD
+		{214, 0xbb * BRM, 0x20 * BRM, 0x00 * BRM, 6},
+		{213, 0xbb * BRM, 0x20 * BRM, 0x00 * BRM, 7},
+		{206, 0xbb * BRM, 0x20 * BRM, 0x00 * BRM, 0},
+
+		//8 - RGB_EXTRAS
+		{214, 0xff * BRM, 0xff * BRM, 0xff * BRM, 9},
+		{213, 0xff * BRM, 0xff * BRM, 0xff * BRM, 10},
+		{206, 0xff * BRM, 0xff * BRM, 0xff * BRM, 0},
+
+		//11 - RGB_HYPER_HOLD
+		{214, 0xff * BRM, 0x00 * BRM, 0x90 * BRM, 12},
+		{213, 0xff * BRM, 0x00 * BRM, 0x90 * BRM, 13},
+		{206, 0xff * BRM, 0x00 * BRM, 0x90 * BRM, 14},
+		{126, 0x36 * BRM, 0x00 * BRM, 0x2c * BRM, 0},
+
+		//15 - RGB_NUM_LOCK
+		{214, 0x1e * BRM, 0x03 * BRM, 0xa3 * BRM, 16},
+		{213, 0x1e * BRM, 0x03 * BRM, 0xa3 * BRM, 17},
+		{206, 0x1e * BRM, 0x03 * BRM, 0xa3 * BRM, 18},
+		{ 26, 0x1e * BRM, 0x03 * BRM, 0xa3 * BRM, 0},
+
 	};
 
 	//═══════════════════════════════════════════════════════════════
@@ -197,9 +220,9 @@
 		for(int i=0; i<NUMBER_OF_KEYS; i++){
 			rgb_led = (uintptr_t) &(themes[theme_index][i]) ;
 			rgb_matrix_set_color( i + FIRST_RGB ,
-				pgm_read_byte( rgb_led + 0 ) * br,
-				pgm_read_byte( rgb_led + 1 ) * br,
-				pgm_read_byte( rgb_led + 2 ) * br
+				pgm_read_byte( rgb_led + 0 ) * br * current_brightness,
+				pgm_read_byte( rgb_led + 1 ) * br * current_brightness,
+				pgm_read_byte( rgb_led + 2 ) * br * current_brightness
 			);
 		}
 	}
@@ -292,6 +315,14 @@
 		update_rgb_state();
 	}
 
+    //function increase/decrease the current LED brightness.
+    //direction can be either 1 or -1
+    void rgb_brightness( int direction ){
+        double steps = 10.0;
+        current_brightness += direction / steps;
+        current_brightness = MIN( MAX( current_brightness, 0.05) , 1);
+        rgb_dirty = true;
+    }
 
 	//this function is used to draw an indicator, that can be compound of several LEDs
 	void draw_indicator(enum rgb_indicator indicator){
@@ -367,11 +398,11 @@
 	//rgb_matrix.c has been modified as stated in notes.txt to be able to detect
 	//when the keyboard changes its RGB suspend state.
 	void rgb_matrix_suspend_state_changed( bool suspend ){
-        if(kb_lock) return;
+		if(kb_lock) return;
 		if(suspend){
 			rgb_dirty = true;
 		}else{
-            update_rgb_state();
+			update_rgb_state();
 		}
 	}
 

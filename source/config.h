@@ -4,7 +4,7 @@
 //no need for underglow in a closed case. Also, I use foam and I don't want any overheat
 #define DISABLE_UNDERGLOW
 #define LOCK_KB_ON_LOCK_OS
-#define TAPPING_TERM 350
+#define TAPPING_TERM 250
 #define UNICODE_SELECTED_MODES UC_WINC
 #define UNICODE_CYCLE_PERSIST false
 #define OVERFLOW_SMALL 15
@@ -56,6 +56,7 @@
 	#define DISABLE_RGB_MATRIX_MULTISPLASH
 	#define DISABLE_RGB_MATRIX_SOLID_SPLASH
 	#define DISABLE_RGB_MATRIX_SOLID_MULTISPLASH
+    #define RGBLIGHT_DISABLE_KEYCODES
 
 	//RGB CONFIGURATION:
 	#define RGB_MATRIX_KEYPRESSES // reacts to keypresses
