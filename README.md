@@ -208,7 +208,7 @@ When keyboard is in `configuration` mode, `hyper`, `hyper lock` or `caps lock` m
   </td>
 </tr>
 <tr>
-  <td colspan="5">
+  <td colspan="6">
     All deletion variants are located in the same key, in the right little finger. This allows fast error fixing since your hands can remain in its resting position.
   </td>
  </tr>
