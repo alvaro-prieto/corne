@@ -11,14 +11,14 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 <img src="extra/keymap.png" width="100%" alt="QMK Corne Keyboard layout RSI"/>
 <img src="extra/legend.png" width="300" alt="Legend"/> 
 
+:warning: This keymap is still in develpment / Versión en desarrollo
 
 <p>
   <a href="#%EF%B8%8F-legend"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/readen.svg" width="200"/></a>
-  <a href="#"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/readsp.svg" width="200"/></a>
+  <a href="#%EF%B8%8F-leyenda"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/readsp.svg" width="200"/></a>
 </p>
 
-
-:warning: This keymap is still in develpment / Versión en desarrollo
+  
 
 # ⌨️ Legend
 
@@ -505,4 +505,9 @@ Agradecimientos a [Fauxpark](https://github.com/fauxpark), [Drashna](https://git
 
 Si vas a crear o publicar un keymap derivado, por favor incluye una referencia este repositorio mencionándome como el autor original. 
 
+
+
+# ⌨️ Leyenda
+
+bla bla bla
 
