@@ -75,7 +75,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>    
 </table>
  
- ## What is the Smart Tilde <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/tilde.svg" width="25">?
+ ## What is the Smart Tilde? &nbsp; <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/tilde.svg" width="25">?
  To do
 
 ## Combos
