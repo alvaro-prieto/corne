@@ -439,7 +439,7 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
 
 # 🇪🇸 Descripción
 
-Firmware para [Teclado Corne](https://github.com/foostan/crkbd) especialmente diseñado para desarrolladores de software que utilizan macOS y Windows y escriben en español e inglés.
+Firmware para el [Teclado Corne](https://github.com/foostan/crkbd) «CRKBD», especialmente diseñado para desarrolladores de software que utilizan macOS y Windows.
 
 Algunos de los conceptos que se han tenido en cuenta:
 
