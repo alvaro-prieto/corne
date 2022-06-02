@@ -311,19 +311,21 @@ When keyboard is in `configuration` mode, `hyper`, `hyper lock` or `caps lock` m
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/nextapp.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/prevapp.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/sameapp.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/apptoggle.svg" width="35"></td>   
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/close.svg" width="35"></td>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/apptoggle.svg" width="35"></td>
+
 
 </tr>
 <tr>
   <td align="center"><kbd>Next app</kbd></td>
   <td align="center"><kbd>Previous app</kbd></td>
   <td align="center"><kbd>Next window same app</kbd></td>  
+  <td align="center"><kbd>Toggle last app</kbd></td>  
   <td align="left">
       <code>TAP 1:</code> <kbd>Close window</kbd><br/>
       <code>TAP 2:</code> <kbd>Close app</kbd>
   </td>
- <td align="center"><kbd>Toggle last app</kbd></td>  
+
  
 
 </tr>
