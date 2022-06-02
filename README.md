@@ -71,7 +71,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>      
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/tilde.svg" width="35"></td>
-  <td><kbd>Smart tilde</kbd>  <a href="#what-is-the-smart-tilde--">What is the _Smart Tilde_?</a> </td>
+  <td><kbd>Smart tilde</kbd>  <a href="#what-is-the-smart-tilde--">what is the <i>smart tilde</i>?</a> </td>
 </tr>    
 </table>
  
