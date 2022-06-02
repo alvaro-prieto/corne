@@ -39,16 +39,16 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>  
 </table>
   
-## Layer modifiers (colored) 
+## Modificadores de capa (coloreados) 
 <table>
 <tr>
-  <th align="center">Modifier</th>
-  <th align="center">Behaviour</th>
+  <th align="center">Modificador</th>
+  <th align="center">Comportamiento</th>
 </tr>
 <tr>
   <td align="center" valign="top"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m1.svg" width="35"></td>
-  <td>Pasive <kbd>Shift</kbd> on hold by its own or with any of the gray modifiers above. <kbd>Pink layer</kbd> on hold and interrupted. <kbd>Colon</kbd> on short press. 
-  ¿Why this strange behaviour? Because a pasive <kbd>shift</kbd> is required for many tasks, such as selecting files, proportional distorsion in Photoshop, and so on while using your right hand on the mouse. Also because a <kbd>shift</kbd> key can be required in the left hand to make custom combos, such as <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>. Use the right thumb shift <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/sh.svg" width="20"> for capital leters. 
+  <td><kbd>Shift pasivo</kbd> si se presiona en solitario o combinado con cualquiera de los modificadores grises. <kbd>Capa rosa</kbd> al ser interrumpido por otra tecla en combinación. <kbd>_ Guión bajo</kbd> tras una pulsación rápida. 
+  ¿Cuál es el propósito de este funcionamiento? Un <kbd>shift pasivo</kbd> puede ser util para muchas tareas, como por ejemplo seleccionar múltiples archivos, distorsionar proporcionalmente una imagen en Photoshop, etc. mientras utilizas la mano derecha sobre tu ratón. También puede resultar de utilidad tener un <kbd>shift</kbd> en el lado izquierdo para utilizarse en combos de modificadores, como por ejemplo <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>. Utilizar el shift <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/sh.svg" width="20"> del pulgar derecho para escribir en mayúsculas. 
   </td>
 </tr>
 <tr>
@@ -498,7 +498,7 @@ Si vas a crear o publicar un keymap derivado, por favor incluye una referencia e
 </tr>
 <tr>
   <td align="center" valign="top"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m1.svg" width="35"></td>
-  <td>Pasive <kbd>Shift</kbd> on hold by its own or with any of the gray modifiers above. <kbd>Pink layer</kbd> on hold and interrupted. <kbd>Colon</kbd> on short press. 
+  <td>Pasive <kbd>Shift</kbd> on hold by its own or with any of the gray modifiers above. <kbd>Pink layer</kbd> on hold and interrupted. <kbd>_ Underscore</kbd> on short press. 
   ¿Why this strange behaviour? Because a pasive <kbd>shift</kbd> is required for many tasks, such as selecting files, proportional distorsion in Photoshop, and so on while using your right hand on the mouse. Also because a <kbd>shift</kbd> key can be required in the left hand to make custom combos, such as <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>. Use the right thumb shift <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/sh.svg" width="20"> for capital leters. 
   </td>
 </tr>
