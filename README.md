@@ -74,7 +74,9 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td><kbd>Smart tilde</kbd> </td>
 </tr>    
 </table>
-    
+ 
+ #### What is the <kbd>Tilde</kbd> modifier <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/tilde.svg" width="35"> for?
+ To do
 
 ## Combos
 <table>
