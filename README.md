@@ -294,9 +294,9 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/next.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center"><kbd>Play / pause</kbd></td>
-  <td align="center"><kbd>Previous song</kbd></td>
-  <td align="center"><kbd>Next song</kbd></td>
+  <td align="center"><kbd>Play / pausa</kbd></td>
+  <td align="center"><kbd>Anterior</kbd></td>
+  <td align="center"><kbd>Siguiente</kbd></td>
 </tr>
  <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/brup.svg" width="35"></td>
@@ -304,9 +304,9 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/scroff.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center"><kbd>Brightness +</kbd></td>
-  <td align="center"><kbd>Brightness -</kbd></td>
-  <td align="center"><kbd>Screen off</kbd></td>
+  <td align="center"><kbd>Brillo +</kbd></td>
+  <td align="center"><kbd>Billo -</kbd></td>
+  <td align="center"><kbd>Apagar pantalla</kbd></td>
 </tr>
   <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/volup.svg" width="35"></td>
@@ -314,14 +314,14 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/mute.svg" width="35"></td>    
 </tr>
 <tr>
-  <td align="center"><kbd>Vol up</kbd></td>
-  <td align="center"><kbd>Vol down</kbd></td>
-  <td align="center"><kbd>Mute</kbd></td>  
+  <td align="center"><kbd>Volumen +</kbd></td>
+  <td align="center"><kbd>Volumen -</kbd></td>
+  <td align="center"><kbd>Silenciar</kbd></td>  
 </tr>
 </table>
 
 
-## Common
+## Atajos comunes
 <table>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/copy.svg" width="35"></td>
