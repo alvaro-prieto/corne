@@ -166,10 +166,10 @@ El propósito de esta filosofía es múltiple:
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/arrowright.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center"><kbd>Cursor up</kbd></td>
-  <td align="center"><kbd>Cursor down</kbd></td>
-  <td align="center"><kbd>Cursor right</kbd></td>
-  <td align="center"><kbd>Cursor left</kbd></td>
+  <td align="center"><kbd>Cursor arriba</kbd></td>
+  <td align="center"><kbd>Cursor abajo</kbd></td>
+  <td align="center"><kbd>Cursor derecha</kbd></td>
+  <td align="center"><kbd>Cursor izquierda</kbd></td>
 </tr>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/halfup.svg" width="35"></td>
@@ -178,10 +178,10 @@ El propósito de esta filosofía es múltiple:
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/halfright.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center"><kbd>Page up</kbd></td>
-  <td align="center"><kbd>Page down</kbd></td>
-  <td align="center"><kbd>Word right</kbd></td>  
-  <td align="center"><kbd>Word left</kbd></td>
+  <td align="center"><kbd>Página arriba</kbd></td>
+  <td align="center"><kbd>Página abajo</kbd></td>
+  <td align="center"><kbd>Palabra derecha</kbd></td>  
+  <td align="center"><kbd>Palabra izquierda</kbd></td>
 </tr>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/fullup.svg" width="35"></td>
@@ -190,10 +190,10 @@ El propósito de esta filosofía es múltiple:
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/fullright.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center"><kbd>Document start</kbd></td>
-  <td align="center"><kbd>Document end</kbd></td>
-  <td align="center"><kbd>Line end</kbd></td>  
-  <td align="center"><kbd>Line start</kbd></td>
+  <td align="center"><kbd>Inicio de documento</kbd></td>
+  <td align="center"><kbd>Fin de documento</kbd></td>
+  <td align="center"><kbd>Fin de línea</kbd></td>  
+  <td align="center"><kbd>Inicio de línea</kbd></td>
 </tr>
 </table>
 
