@@ -395,7 +395,7 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
 
 
 
-## Keyboard configuration
+## Configuración del teclado
 <table>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/os.svg" width="35"></td>
@@ -404,33 +404,35 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/reset.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center"><kbd>Keyboard OS</kbd></td>
-  <td align="center"><kbd>Next RGB theme</kbd></td>
-  <td align="center"><kbd>RGB brightness</kbd></td>
+  <td align="center"><kbd>Mac / Windows</kbd></td>
+  <td align="center"><kbd>Tema RGB</kbd></td>
+  <td align="center"><kbd>Brillo RGB</kbd></td>
   <td align="center"><code>TAP 2:</code> <br/><kbd>Bootloader</kbd></td>
 </tr>
 </table>
 
-- Implemented OS: `macOS` (default) and `Windows`  
+- Sistemas operativos implementados por ahora: `macOS` (por defecto) y `Windows`  
 
 
-## Computer state
+## Estado del computador
 <table>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/off.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/reboot.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/logout.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/lock.svg" width="35"></td>  
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/scroff.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center"><kbd>Shut down</kbd></td>
-  <td align="center"><kbd>Logout</kbd> + <kbd>screen off</kbd></td>
-  <td align="center"><kbd>Screen off</kbd> + <kbd>Lock keyboard</kbd><br/>(firmware password)</td>
-  <td align="center"><kbd>Screen off</kbd><br/>(no password)</td>
+  <td align="center"><kbd>Apagar</kbd></td>
+  <td align="center"><kbd>Reiniciar</kbd></td>
+  <td align="center"><kbd>Logout</kbd> + <kbd>Apagar pantalla</kbd></td>
+  <td align="center"><kbd>Apagar pantalla</kbd> + <kbd>Bloquear teclado</kbd><br/>(firmware password)</td>
+  <td align="center"><kbd>Apagar pantalla</kbd><br/>(sin password)</td>
 </tr>
 </table>
 
-- Default firmware password: «yo»
+- El password por defecto es: «yo»
 
 &nbsp;
 &nbsp;
