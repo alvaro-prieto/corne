@@ -76,7 +76,9 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </table>
  
  ## What is the _Smart Tilde_? &nbsp; <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/tilde.svg" width="30">
- To do
+ To-do versión en inglés
+ 
+El Corne es un teclado muy compacto, y por ello nos vemos forzados a pensar en mecanismos para reducir el número de teclas necesarias y hacerlo de la manera más útil posible. Se trata de un modificador latente (_dead key_), que modifica el comportamiento de la siguiente tecla pulsada sin necesidad de mantenerla pulsada, es decir, funciona tanto como combinación como secuencia.  
 
 ## Combos
 <table>
