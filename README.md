@@ -196,16 +196,15 @@ When keyboard is in `configuration` mode, `hyper`, `hyper lock` or `caps lock` m
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/deleteword.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/deleteln.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/deletefile.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/destroyfile.svg" width="35"></td>
 </tr>
 <tr>
   <td align="center"><kbd>Backspace</kbd></td>
   <td align="center"><kbd>Delete forward</kbd></td>
   <td align="center"><kbd>Delete word</kbd></td>
   <td align="center"><kbd>Delete line</kbd></td>
-  <td align="left">
-<code>TAP 1:</code> <kbd>Delete file</kbd><br/>
-<code>TAP 2:</code> <kbd>Permanently delete file</kbd>
-   </ul>
+  <td align="center"><kbd>Delete file</kbd></td>
+  <td align="center"><kbd>Destroy file</kbd></td>
   </td>
 </tr>
 <tr>
