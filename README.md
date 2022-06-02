@@ -81,7 +81,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>       
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/tilde.svg" width="35"></td>
-  <td><kbd>Tilde inteligente</kbd>  <a href="#¿qué-es-la-tilde-ingeligente--">¿Qué es la <i>tilde inteligente</i>?</a> </td>
+  <td><kbd>Tilde inteligente</kbd>  <a href="#qué--es-la-tilde-inteligente--">¿Qué es la <i>tilde inteligente</i>?</a> </td>
 </tr>    
 </table>
  
