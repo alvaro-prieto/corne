@@ -401,6 +401,7 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
   <td align="center"><kbd>Keyboard OS</kbd></td>
   <td align="center"><kbd>Next RGB theme</kbd></td>
   <td align="center"><kbd>RGB brightness</kbd></td>
+  <td align="center"><kbd><code>TAP 2:</code> <br/>Bootloader</kbd></td>
 </tr>
 </table>
 
