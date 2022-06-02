@@ -198,13 +198,13 @@ El propósito de esta filosofía es múltiple:
 </table>
 
 
-  Selection is easy and you don't even need to move your hand from its resting position. Combine any of the navigation keys above with the <kbd>Spacebar</kbd> (located right under your thumb) <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/space.svg" width="25"> and it will act like <kbd>Shift</kbd> instead to be able to `select text` / `words` / `lines` / `pages` / `document`
+Realizar selecciones es muy sencillo y no es necesario que muevas la mano de su posición de reposo. Para ello, combina cualquiera de las teclas de navegación listadas arriba con el <kbd>espacio</kbd> (situado bajo tu pulgar izquierdo) <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/space.svg" width="25">. Al pulsar el <kbd>espacio</kbd> combinado con cualquiera de los modificadores <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m3.svg" width="25">,  <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m4.svg" width="25"> o   <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m5.svg" width="25"> el espacio actuará como <kbd>Shift</kbd> en su lugar para permitir seleccionar `caracteres` / `palabras` / `líneas` / `páginas` / `documento`
   
-  If you want to `select everything`, you could press <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/selectall.svg" width="25"> instead.
+Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/selectall.svg" width="25"> en su lugar.
 &nbsp;
 &nbsp;
 
-## Deletion
+## Borrado
 <table>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/backspace.svg" width="35"></td>
@@ -215,19 +215,15 @@ El propósito de esta filosofía es múltiple:
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/destroyfile.svg" width="35"></td>
 </tr>
 <tr>
-  <td align="center"><kbd>Backspace</kbd></td>
-  <td align="center"><kbd>Delete forward</kbd></td>
-  <td align="center"><kbd>Delete word</kbd></td>
-  <td align="center"><kbd>Delete line</kbd></td>
-  <td align="center"><kbd>Delete file</kbd></td>
-  <td align="center"><kbd>Destroy file</kbd></td>
+  <td align="center"><kbd>Borrar</kbd></td>
+  <td align="center"><kbd>Suprimir</kbd></td>
+  <td align="center"><kbd>Borrar palabra</kbd></td>
+  <td align="center"><kbd>Borrar línea</kbd></td>
+  <td align="center"><kbd>Borrar archivo</kbd></td>
+  <td align="center"><kbd>Destruir archivo</kbd></td>
   </td>
 </tr>
-<tr>
-  <td colspan="6">
-    All deletion variants are located in the same key, in the right little finger. This allows fast error fixing since your hands can remain in its resting position.
-  </td>
- </tr>
+
 </table>
 
 
