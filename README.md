@@ -47,7 +47,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>
 <tr>
   <td align="center" valign="top"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m1.svg" width="35"></td>
-  <td><kbd>Shift pasivo</kbd> si se presiona en solitario o combinado con cualquiera de los modificadores grises. <kbd>Capa rosa</kbd> al ser interrumpido por otra tecla en combinación. <kbd>_ Guión bajo</kbd> tras una pulsación rápida. 
+  <td><kbd>Shift pasivo</kbd> si se presiona en solitario o combinado con cualquiera de los modificadores grises. <kbd>Capa rosa</kbd> al ser interrumpido por otra tecla (en combinación). <kbd>_ Guión bajo</kbd> tras una pulsación rápida sin interrupciones. 
   ¿Cuál es el propósito de este funcionamiento? Un <kbd>shift pasivo</kbd> puede ser util para muchas tareas, como por ejemplo seleccionar múltiples archivos, distorsionar proporcionalmente una imagen en Photoshop, etc. mientras utilizas la mano derecha sobre tu ratón. También puede resultar de utilidad tener un <kbd>shift</kbd> en el lado izquierdo para utilizarse en combos de modificadores, como por ejemplo <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>. Utilizar el shift <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/sh.svg" width="20"> del pulgar derecho para escribir en mayúsculas. 
   </td>
 </tr>
