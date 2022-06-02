@@ -12,7 +12,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 <img src="extra/legend.png" width="300" alt="Legend"/> 
 
 
-:warning: Currently in development (double tapped accents will be removed)
+:warning: This file is being updated right now!
 
 # ⌨️ Legend
 
