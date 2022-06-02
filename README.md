@@ -57,31 +57,35 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/sh.svg" width="35"></td>
-  <td><kbd>Shift</kbd> al mantener. <kbd>⏎ Enter</kbd> al presionar. Si se presiona en conjunto con <kbd>M6</kbd> <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m6.svg" width="20">  se activa o desactiva el <kbd>bloqueo de mayúsculas</kbd></td>
+  <td><kbd>Shift</kbd> al mantener. <kbd>⏎ Enter</kbd> al presionar. Si se presiona en conjunto con <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m6.svg" width="20">  se activa o desactiva el <kbd>bloqueo de mayúsculas</kbd></td>
 </tr>  
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m3.svg" width="35"></td>
-  <td><kbd>Red layer</kbd> on hold. <kbd>= Equal</kbd> on short press</td>
+  <td><kbd>Capa roja</kbd> al mantener. <kbd>= Igual</kbd> al presionar</td>
 </tr>  
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m4.svg" width="35"></td>
-  <td><kbd>Green layer</kbd> on hold. <kbd>: Colon</kbd> on short press</td>
+  <td><kbd>Capa verde</kbd> al mantener. <kbd>: Dos puntos</kbd> al presionar</td>
 </tr>  
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m5.svg" width="35"></td>
-  <td><kbd>Blue layer</kbd> on hold. <kbd>" Quotation mark</kbd> on short press</td>
+  <td><kbd>Capa azul</kbd> al mantener. <kbd>" Comillas</kbd> al presionar</td>
 </tr>  
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m6.svg" width="35"></td>
-  <td><kbd>Lime layer</kbd> on hold. <kbd>' Apostrophe</kbd> on short press</td>
-</tr>      
+  <td><kbd>Capa lima</kbd> al mantener. <kbd>' Apóstrofe</kbd> al presionar</td>
+</tr>  
+ <tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m7.svg" width="35"></td>
+  <td><kbd>Capa amarilla</kbd> al mantener. <kbd>+ Más</kbd> al presionar</td>
+</tr>       
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/tilde.svg" width="35"></td>
-  <td><kbd>Smart tilde</kbd>  <a href="#what-is-the-smart-tilde--">what is the <i>smart tilde</i>?</a> </td>
+  <td><kbd>Tilde inteligente</kbd>  <a href="#¿qué-es-la-tilde-ingeligente--">¿Qué es la <i>tilde inteligente</i>?</a> </td>
 </tr>    
 </table>
  
- ## What is the _Smart Tilde_? &nbsp; <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/tilde.svg" width="30"> 
+ ## ¿Qué  es la _Tilde Inteligente_? &nbsp; <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/tilde.svg" width="30"> 
 El Corne es un teclado muy compacto, y por ello nos vemos forzados a pensar en mecanismos para reducir el número de teclas necesarias y hacerlo de la manera más útil posible. Se trata de un modificador latente (_dead key_), que modifica el comportamiento de la siguiente tecla pulsada sin necesidad de mantenerla pulsada, es decir, funciona tanto como combinación como secuencia. A diferencia de la tilde, el modificador aplicado depende de la tecla destino, agregando adicionalmente la posibilidad de entrar en modos especiales (caps word, modo borrado, etc...). Quizás cambie en el futuro, por ahora así es como funciona:
 
 * Como <kbd>´ tilde</kbd> española cuando la siguiente letra es una vocal, por ejemplo _camión_
