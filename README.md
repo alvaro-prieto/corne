@@ -11,11 +11,12 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 <img src="extra/keymap.png" width="100%" alt="QMK Corne Keyboard layout RSI"/>
 <img src="extra/legend.png" width="300" alt="Legend"/> 
 
-
+<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/readen.svg" width="200">
+<img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/readsp.svg" width="200">
 <table>
 <tr>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/readen.svg" width="250"></td>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/readsp.svg" width="250"></td>
+  <td align="center">a</td>
+  <td align="center">b</td>
 </tr>    
 </table>
 
