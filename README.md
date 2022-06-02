@@ -138,7 +138,7 @@ El Corne es un teclado muy compacto, y por ello nos vemos forzados a pensar en m
 </tr>  
  </table>
   
-#### ¿Para qué sirve la tecla _Hyper_? <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/hyper.svg" width="35">
+#### ¿Para qué sirve la tecla _Hyper_? <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/hyper.svg" width="28">
 
 La tecla <kbd>hyper</kbd> <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/hyper.svg" width="20">, habitualmente se puede utilizar con programas de mapeo de atajos de teclado. Por ejemplo, <kbd>Hyper</kbd> + <kbd>i</kbd> puede al mismo tiempo significar  `invertir colores` en Photoshop `indentar` en un editor de código e `itálica` en un procesador de Textos. Misma combinación, distintas salidas. Puedes implementar comportamientos como estos empleando programas de terceros como Karabiner-Elements, Hammerspoon, Keyboard Maestro y muchos otros. A grandes rasgos el funcionamiento es el siguiente: cuando el programa detecta <kbd>hyper + i</kbd> lo traduce en la combinación de teclas deseada en el programa que tiene el foco.
 
