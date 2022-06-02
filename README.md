@@ -426,9 +426,9 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
 <tr>
   <td align="center"><kbd>Apagar</kbd></td>
   <td align="center"><kbd>Reiniciar</kbd></td>
-  <td align="center"><kbd>Logout</kbd><br/>+ <br/><kbd>Apagar pantalla</kbd></td>
-  <td align="center"><kbd>Apagar pantalla</kbd><br/>+ <br/><kbd>Bloquear teclado</kbd><br/>(firmware password)</td>
-  <td align="center"><kbd>Apagar pantalla</kbd><br/><br/>(sin password)</td>
+  <td align="center"><kbd>Logout</kbd><br/><kbd>Apagar pantalla</kbd></td>
+  <td align="center"><kbd>Apagar pantalla</kbd><br/><kbd>Bloquear teclado</kbd><br/>(firmware password)</td>
+  <td align="center"><kbd>Apagar pantalla</kbd><br/>(sin password)</td>
 </tr>
 </table>
 
