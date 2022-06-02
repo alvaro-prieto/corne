@@ -85,7 +85,7 @@ El Corne es un teclado muy compacto, y por ello nos vemos forzados a pensar en m
 * Como <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/deleteword.svg" width="20"> tecla de <kbd>borrado rápido</kbd> de palabras completas (si se pulsa más de una vez)
 * Como <kbd>$ dolar</kbd> si se pulsa seguida de un espacio
 * Como <kbd>; + intro</kbd> si se pulsa seguido del modificador <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m3.svg" width="20"> (útil para programadores)
-* Activa el modo <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/capsword.svg" width="20"> <kbd>Caps word</kbd> al presionarse en conjunto con <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m2.svg" width="20">. En este modo podrás escribir palabras completas o identificadores de variable en mayúsculas sin necesidad de mantener presionado el <kbd>shift</kbd>
+* Activa el modo <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/capsword.svg" width="20"> <kbd>Caps word</kbd> al presionarse en conjunto con <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m2.svg" width="20">. En este modo podrás escribir palabras completas o identificadores de variable en mayúsculas sin necesidad de mantener presionado el <kbd>shift</kbd> (útil para programadores)
 
 
 
