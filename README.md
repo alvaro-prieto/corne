@@ -35,7 +35,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/ctr.svg" width="35"></td>
-  <td><kbd>Control</kbd> / <kbd>Windows</kbd> al mantener. <kbd>Acento inverso</kbd> ` al presionar</td>
+  <td><kbd>Control</kbd> / <kbd>Windows</kbd> al mantener. <kbd>` Acento inverso</kbd>  al presionar</td>
 </tr>  
 </table>
   
