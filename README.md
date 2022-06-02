@@ -374,17 +374,22 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/emoji.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/region.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/capture.svg" width="35"></td>  
-  <td align="center" colspan="2"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/monitor.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/monitor.svg" width="35"></td>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/strings.svg" width="35"></td>
 </tr>
 <tr>
   <td align="center"><kbd>Selector emoji</kbd></td> 
-  <td align="left" colspan="2">
+  <td align="left">
     <code>TAP 1:</code> <kbd>Capturar region</kbd><br/>  
     <code>TAP 2:</code> <kbd>Opciones de captura</kbd>
   </td>
-  <td align="left" colspan="2">
-      <kbd>Close apps menu</kbd>
+  <td align="left">
+      <kbd>Monitor sistema</kbd>
   </td>
+  <td align="left">
+    <code>TAP 1:</code> <kbd>String 1</kbd><br/>  
+    <code>TAP 2:</code> <kbd>String 2</kbd>
+  </td> 
 </tr>     
 </table>
 
