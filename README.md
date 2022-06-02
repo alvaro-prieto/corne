@@ -86,7 +86,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 <tr>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m1.svg" width="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m4.svg" width="35"> </td>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/bigcfg.svg" height="35"></td>
-  <td align="left">Configuration layer<br/><kbd>OS</kbd>, <kbd>Language</kbd>, <kbd>RGB</kbd>…</td>
+  <td align="left">Configuration layer<br/><kbd>OS</kbd>, <kbd>RGB</kbd>…</td>
 </tr>
 <tr>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m2.svg" width="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/sh.svg" width="35"> </td>
@@ -101,11 +101,11 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 <tr>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/sh.svg" height="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m6.svg" width="35"> </td>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/bigcaps.svg" height="35"></td>
-  <td align="left">Lock shift, to write in caps.</td>
+  <td align="left"><kbd>Lock shift</kbd> to write in caps.</td>
 </tr>
     <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/tilde.svg" height="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m2.svg" width="35"> </td>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/bigcapsword.svg" height="35"></td>
-  <td align="left">Caps word: single word in caps</td>
+  <td align="left"><kbd>Caps word</kbd> single word in caps</td>
 </tr>    
  </table>
   
