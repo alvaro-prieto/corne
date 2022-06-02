@@ -377,20 +377,17 @@ When keyboard is in `configuration` mode, `hyper`, `hyper lock` or `caps lock` m
 <table>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/os.svg" width="35"></td>
-  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/lang.svg" width="35"></td>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/rgbnext.svg" width="35"></td>  
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/rgbbrup.svg" width="35"></td>
 </tr>
 <tr>
   <td align="center"><kbd>Keyboard OS</kbd></td>
-  <td align="center"><kbd>Keyboard language</kbd></td>
   <td align="center"><kbd>Next RGB theme</kbd></td>
   <td align="center"><kbd>RGB brightness</kbd></td>
 </tr>
 </table>
 
 - Implemented OS: `macOS` (default) and `Windows`  
-- Implemented languages: `Spanish` (default) and `English`   
 
 
 ## Computer state
