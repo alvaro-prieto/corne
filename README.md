@@ -414,7 +414,7 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
 - Sistemas operativos implementados por ahora: `macOS` (por defecto) y `Windows`  
 
 
-## Estado del computador
+## Gestión de estados
 <table>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/off.svg" width="35"></td>
