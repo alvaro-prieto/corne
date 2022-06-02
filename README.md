@@ -529,6 +529,10 @@ Si vas a crear o publicar un keymap derivado, por favor incluye una referencia e
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m6.svg" width="35"></td>
   <td><kbd>Lime layer</kbd> on hold. <kbd>' Apostrophe</kbd> on short press</td>
+</tr>   
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m7.svg" width="35"></td>
+  <td><kbd>Yellow layer</kbd> on hold. <kbd>+ Plus</kbd> on short press</td>
 </tr>      
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/tilde.svg" width="35"></td>
