@@ -67,7 +67,11 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 </tr>  
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m6.svg" width="35"></td>
-  <td><kbd>Yellow layer</kbd> on hold. <kbd>Quotation mark</kbd> on short press</td>
+  <td><kbd>Lime layer</kbd> on hold. <kbd>Quotation mark</kbd> on short press</td>
+</tr>      
+<tr>
+  <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/tilde.svg" width="35"></td>
+  <td><kbd>Smart tilde</kbd> </td>
 </tr>    
 </table>
     
