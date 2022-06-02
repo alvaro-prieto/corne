@@ -104,7 +104,7 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="left">Lock shift, to write in caps.</td>
 </tr>
     <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/tilde.svg" height="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m2.svg" width="35"> </td>
-  <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/bigcaps.svg" height="35"></td>
+  <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/bigcapsword.svg" height="35"></td>
   <td align="left">Caps word: single word in caps</td>
 </tr>    
  </table>
