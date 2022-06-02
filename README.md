@@ -103,10 +103,16 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/bigcaps.svg" height="35"></td>
   <td align="left"><kbd>Lock shift</kbd> to write in caps.</td>
 </tr>
+<tr>  
     <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/tilde.svg" height="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m2.svg" width="35"> </td>
   <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/bigcapsword.svg" height="35"></td>
   <td align="left"><kbd>Caps word</kbd> single word in caps</td>
-</tr>    
+</tr>
+  <tr>  
+    <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m2.svg" height="35"> + <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/space.svg" width="35"> </td>
+  <td align="left"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/bignumlock.svg" height="35"></td>
+  <td align="left"><kbd>Num lock</kbd> number layer locked</td>
+</tr>  
  </table>
   
 #### What is the <kbd>Hyper</kbd> key for?
