@@ -145,6 +145,12 @@ La tecla <kbd>hyper</kbd> <img src="https://raw.githubusercontent.com/alvaro-pri
  
 Cuando el teclado se encuentra en modo `hyper` <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/hyper.svg" width="20">, o `hyper lock`  <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/hyperlock.svg" width="20"> se iluminará en un determinado color para hacérnoslo saber, al igual que en cualquiera de los otros posibles modos (_bloque de mayúsculas_, _bloque numérico_, etc.)
 
+El propósito de esta filosofía es múltiple:
+* Facilidad para recordar los atajos de teclado
+* Independencia del sistema operativo y del programa que recibe el atajo
+* Ergonomía al tener que presionar menos teclas o estar mejor ubicadas
+* Minimizar el uso de <kbd>alt<kbd>, <kbd>control</kbd>, etc...
+
 &nbsp;&nbsp;
 &nbsp;&nbsp;
   
