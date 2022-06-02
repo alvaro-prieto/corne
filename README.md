@@ -11,8 +11,10 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 <img src="extra/keymap.png" width="100%" alt="QMK Corne Keyboard layout RSI"/>
 <img src="extra/legend.png" width="300" alt="Legend"/> 
 
-:warning: Versión en desarrollo / This keymap is still in develpment 
-
+ 
+:warning: Versión en desarrollo &nbsp; / &nbsp; This keymap is still in develpment 
+ 
+ 
 <p>
   <a href="#%EF%B8%8F-leyenda"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/readsp.svg" width="200"/></a>
   <a href="#%EF%B8%8F-legend"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/readen.svg" width="200"/></a>
