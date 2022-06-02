@@ -15,8 +15,6 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 <table>
 <tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/readen.svg" width="250"></td>
-</tr>      
-<tr>
   <td align="center"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/readsp.svg" width="250"></td>
 </tr>    
 </table>
