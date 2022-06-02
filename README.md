@@ -12,14 +12,10 @@ Hysp keymap - developed by Álvaro Prieto Lauroba
 <img src="extra/legend.png" width="300" alt="Legend"/> 
 
 
-<table>
-  <tbody>
-    <tr>
-      <td style="border: none"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/readen.svg" width="200"></td>
-      <td style="border: none"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/readsp.svg" width="200"></td>
-    </tr>
-  </tbody>
-</table>
+<p>
+  <a href="#"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/readen.svg" width="200"></a>
+  <a href="#"><img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/reades.svg" width="200"></a>
+</p>
 
 
 :warning: This keymap is still in develpment / Versión en desarrollo
