@@ -440,9 +440,11 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
 
 # 💡 Filosfía
 
-Todo diseño parte de una serie de premisas y objetivos. Este keymap se se ha diseñado partiendo de la premisa de que vivimos en un mundo caótico en el que no exite consenso a la hora de establecer atajos de teclado, ni entre sistemas operativos ni entre aplicaciones. El objetivo del keymap es por tanto abstraer y unificar todos los atajos, agregando varias capas intermedias que nos permitan tener un teclado unico para gobernarlos a todos. Un teclado para encontrarlos, un teclado para atraerlos a todos y atarlos en las tinieblas en la Tierra de Mordor donde se extienden las sombras... 
+Todo diseño parte de una serie de premisas y objetivos. Este keymap se se ha diseñado partiendo de la premisa de que vivimos en un mundo caótico en el que no exite consenso a la hora de establecer atajos de teclado, ni entre sistemas operativos ni entre aplicaciones. El objetivo del keymap es por tanto abstraer y unificar todos los atajos, llegando a tener un teclado unico para gobernarlos a todos. Un teclado para encontrarlos, un teclado para atraerlos y atarlos en las tinieblas en la Tierra de Mordor donde se extienden las sombras... 
 
 ¿Cómo? Por un lado, los atajos de teclado a nivel de SO más comunes se han implementado como teclas dedicadas (_copiar, pegar, minimizar, apagar la pantalla, etc..._), de manera que en función del sistema operativo en el que nos encontremos la misma pulsación de teclas generará el atajo esperado en el sistema operativo destino. Por ejemplo, <code>copiar</code> en macOS generará la salida <kbd>⌘ + C</kbd> mientras que en Windows será <kbd>Control + C</kbd>
+
+Por otro lado, el concepto de la tecla o "capa virtual" <code>hyper</code>, que nos permite a nivel de software unificar y personalizar los atajos concretos de cada aplicación sin necesidad de memorizar combinaciones complicadas ni de recurrir a teclas como <kbd>control</kbd>, <kbd>alt</kbd>, etc. Hyper se puede considerar como una [capa personalizada para la aplicación que tiene el foco](#para-qué-sirve-la-tecla-), y como nuestro teclado no tiene la capacidad de detectar esto nos vemos obligados a utilizar programas externos a nivel del sistema operativo. 
  
 &nbsp;
 &nbsp;
