@@ -437,6 +437,12 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
 &nbsp;
 &nbsp;
 
+
+# 💡 Filosfía
+
+Todo diseño parte de una serie de premisas y objetivos. Este keymap se se ha diseñado partiendo de la premisa de que vivimos en un mundo caótico en el que no exite consenso a la hora de establecer atajos de teclado, ni entre sistemas operativos ni entre aplicaciones. El objetivo del keymap es por tanto abstraer y unificar todos los atajos, agregando varias capas intermedias que nos permitan tener un teclado unico para gobernarlos a todos. Un teclado para encontrarlos, un teclado para atraerlos a todos y atarlos en las tinieblas en la Tierra de Mordor donde se extienden las Sombras... 
+
+
 # 🇪🇸 Descripción
 
 Firmware para el [Teclado Corne](https://github.com/foostan/crkbd) «CRKBD», especialmente diseñado para desarrolladores de software que utilizan macOS y Windows.
@@ -891,6 +897,12 @@ When keyboard is in `configuration` mode, `hyper`, `hyper lock` or `caps lock` m
 
 &nbsp;
 &nbsp;
+
+
+# 💡 Philosophy
+
+Todo diseño parte de una serie de premisas y objetivos. Este keymap se se ha diseñado partiendo de la premisa de que vivimos en un mundo caótico en el que no exite consenso a la hora de establecer atajos de teclado, ni entre sistemas operativos ni entre aplicaciones. El objetivo del keymap es por tanto abstraer y unificar todos los atajos, agregando varias capas intermedias que nos permitan tener un teclado unico para gobernarlos a todos. Un teclado para encontrarlos, un teclado para atraerlos a todos y atarlos en las tinieblas en la Tierra de Mordor donde se extienden las Sombras... 
+
 # 🇬🇧 Description
 Keymap for [Corne Keyboard](https://github.com/foostan/crkbd) specially designed for software developers using macOS and Windows and writting in Spanish and English.
 
