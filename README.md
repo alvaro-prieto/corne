@@ -441,6 +441,8 @@ Si alternativamente deseas `seleccionarlo todo`, puedes presionar <img src="http
 # 💡 Filosfía
 
 Todo diseño parte de una serie de premisas y objetivos. Este keymap se se ha diseñado partiendo de la premisa de que vivimos en un mundo caótico en el que no exite consenso a la hora de establecer atajos de teclado, ni entre sistemas operativos ni entre aplicaciones. El objetivo del keymap es por tanto abstraer y unificar todos los atajos, agregando varias capas intermedias que nos permitan tener un teclado unico para gobernarlos a todos. Un teclado para encontrarlos, un teclado para atraerlos a todos y atarlos en las tinieblas en la Tierra de Mordor donde se extienden las sombras... 
+
+¿Cómo? Por un lado, los atajos de teclado a nivel de SO más comunes se han implementado como teclas dedicadas (_copiar, pegar, minimizar, apagar la pantalla, etc..._), de manera que en función del sistema operativo en el que nos encontremos la misma pulsación de teclas generará el atajo esperado en el sistema operativo destino. Por ejemplo, <kbd>copiar</kbd> en macOS generará la salida <kbd>⌘ + C</kbd> mientras que en Windows será <kbd>Control + C</kbd>
  
 &nbsp;
 &nbsp;
