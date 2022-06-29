@@ -567,14 +567,14 @@ Si vas a crear o publicar un keymap derivado, por favor incluye una referencia e
  ## What is the _Smart Tilde_? &nbsp; <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/tilde.svg" width="30"> 
 The Corne keyboard has a very compact layout, and so we are encouraged to think of mechanisms to reduce the number of keys needed to make it as useful as possible. Smart tilde is a latent modifier (dead key), which modifies the behavior of the next key pressed without the need to keep it pressed. Unlike the tilde, the applied modifier depends on the target key, with the additional possibility of entering in special input modes (caps word, deleted mode, etc...). Maybe it will change in the future, but for now this is how it works:
 
-* Como <kbd>´ tilde</kbd> española cuando la siguiente letra es una vocal, por ejemplo _camión_
-* Como <kbd>' apóstrofe</kbd> cuando la siguiente letra puede usarse tras el apóstrofe inglés (<kbd>s</kbd>, <kbd>l</kbd>, <kbd>m</kbd>, <kbd>d</kbd>, <kbd>r</kbd>, <kbd>t</kbd>, <kbd>c</kbd>), por ejemplo _McDonald's_
-* Como <kbd>ñ eñe</kbd> cuando se pulsa seguida de la letra <kbd>n</kbd>, por ejemplo _España_
-* Como <kbd>g + ¨ diéresis</kbd> cuando se pulsa seguida de la letra <kbd>g</kbd>, por ejemplo _cigüeña_
-* Como <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/deleteword.svg" width="20"> tecla de <kbd>borrado rápido</kbd> de palabras completas (si se pulsa más de una vez)
-* Como <kbd>$ dolar</kbd> si se pulsa seguida de un espacio
-* Como <kbd>; + intro</kbd> si se pulsa seguido del modificador <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m3.svg" width="20"> (útil para programadores)
-* Activa el modo <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/capsword.svg" width="20"> <kbd>Caps word</kbd> al presionarse en conjunto con <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m2.svg" width="20">. En este modo podrás escribir palabras completas o identificadores de variable en mayúsculas sin necesidad de mantener presionado el <kbd>shift</kbd> (útil para programadores)
+* As a <kbd>Spanish ´ tilde</kbd> when the following letter is a vowel, for example _camión_
+* As <kbd>' apostrophe</kbd> when the next letter can be used after the English apostrophe (<kbd>s</kbd>, <kbd>l</kbd>, <kbd>m</kbd>, <kbd>d</kbd>, <kbd>r</kbd>, <kbd>t</kbd>, <kbd>c</kbd>), for example _McDonald's_
+* As <kbd>ñ</kbd> when pressed followed by the letter <kbd>n</kbd>, for example _España_
+* As <kbd>g + ¨ umlaut</kbd> when pressed followed by the letter <kbd>g</kbd>, for example _cigüeña_
+* As <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/deleteword.svg" width="20"> a <kbd>whole word delete</kbd> key (if pressed more than once in a row)
+* As <kbd>$ dollar</kbd> if pressed followed by a space
+* As <kbd>; + enter</kbd> if pressed followed by the <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m3.svg" width="20"> modifier (useful for programmers)
+* Enables <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/capsword.svg" width="20"> <kbd>Caps word</kbd> mode when pressed in conjunction with <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m2.svg" width="20">. In this mode you will be able to write whole words or variable identifiers in uppercase without having to hold down <kbd>shift</kbd> (useful for programmers) 
 
 
 
