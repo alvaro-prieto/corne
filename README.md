@@ -574,7 +574,7 @@ The Corne keyboard has a very compact layout, and so we are encouraged to think 
 * As a <kbd>whole word delete</kbd> key <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/deleteword.svg" width="20"> (if pressed more than once in a row)
 * As <kbd>$ dollar</kbd> if pressed followed by a space
 * As <kbd>; + enter</kbd> if pressed followed by the <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m3.svg" width="20"> modifier (useful for programmers)
-* Enables <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/capsword.svg" width="20"> <kbd>Caps word</kbd> mode when pressed in conjunction with <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m2.svg" width="20">. In this mode you will be able to write whole words or variable identifiers in uppercase without having to hold down <kbd>shift</kbd> (useful for programmers) 
+* Enables <kbd>Caps word</kbd> mode <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/capsword.svg" width="20"> when pressed in conjunction with <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/m2.svg" width="20">. In this mode you will be able to write whole words or variable identifiers in uppercase without having to hold down <kbd>shift</kbd> (useful for programmers) 
 
 
 
