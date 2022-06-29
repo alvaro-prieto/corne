@@ -565,7 +565,7 @@ Si vas a crear o publicar un keymap derivado, por favor incluye una referencia e
 </table>
  
  ## What is the _Smart Tilde_? &nbsp; <img src="https://raw.githubusercontent.com/alvaro-prieto/corne/main/extra/keys_v2/tilde.svg" width="30"> 
-El Corne es un teclado muy compacto, y por ello nos vemos forzados a pensar en mecanismos para reducir el número de teclas necesarias y hacerlo de la manera más útil posible. Se trata de un modificador latente (_dead key_), que modifica el comportamiento de la siguiente tecla pulsada sin necesidad de mantenerla pulsada, es decir, funciona tanto como combinación como secuencia. A diferencia de la tilde, el modificador aplicado depende de la tecla destino, agregando adicionalmente la posibilidad de entrar en modos especiales (caps word, modo borrado, etc...). Quizás cambie en el futuro, por ahora así es como funciona:
+The Corne keyboard has a very compact layout, and so we are encouraged to think of mechanisms to reduce the number of keys needed to make it as useful as possible. Smart tilde is a latent modifier (dead key), which modifies the behavior of the next key pressed without the need to keep it pressed. Unlike the tilde, the applied modifier depends on the target key, with the additional possibility of entering in special input modes (caps word, deleted mode, etc...). Maybe it will change in the future, but for now this is how it works:
 
 * Como <kbd>´ tilde</kbd> española cuando la siguiente letra es una vocal, por ejemplo _camión_
 * Como <kbd>' apóstrofe</kbd> cuando la siguiente letra puede usarse tras el apóstrofe inglés (<kbd>s</kbd>, <kbd>l</kbd>, <kbd>m</kbd>, <kbd>d</kbd>, <kbd>r</kbd>, <kbd>t</kbd>, <kbd>c</kbd>), por ejemplo _McDonald's_
