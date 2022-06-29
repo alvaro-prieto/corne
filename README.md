@@ -908,7 +908,7 @@ When keyboard is in `configuration` mode, `hyper`, `hyper lock` or `caps lock` m
 
 # 💡 Philosophy
 
-Every design starts from a series of premises and objectives. This keymap has been designed based on the premise that we live in a chaotic world in which there is no consensus when it comes to establishing keyboard shortcuts, neither between operating systems nor between applications. The goal of the keymap is therefore to abstract and unify all the shortcuts, adding several intermediate layers that allow us to have a single keyboard to rule them all. One keyboard to find them, one keymap to bring them all, and in the darkness bind them; In the Land of Mordor where the shadows lie.
+Every design starts from a series of premises and objectives. This keymap has been designed based on the premise that we live in a chaotic world in which there is no consensus when it comes to establishing keyboard shortcuts, neither between operating systems nor between applications. The goal of this keymap is therefore to abstract and unify all the shortcuts, adding several intermediate layers that allow us to have a single keyboard to rule them all. One keyboard to find them, one keymap to bring them all, and in the darkness bind them; In the Land of Mordor where the shadows lie.
 &nbsp;
 &nbsp;
  
