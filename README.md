@@ -488,8 +488,6 @@ Algunas características requieren instalar y configurar aplicaciones de tercero
 &nbsp;
 ## Notas para desarrolladores
 
-Para más información acudir al archivo ``keymap.c``. Se han realizado algunas modificaciones mínimas en el código de QMK para poder compilar este keymap; dichos cambios han sido listados en la sección ``Settings``.  
-
 Agradecimientos a [Fauxpark](https://github.com/fauxpark), [Drashna](https://github.com/drashna), [Sigprof](https://github.com/sigprof), [Elpekeñin](https://qmk.elpekenin.dev/) y a todos los desarrolladores de QMK y los miembros de su canal en Discord.
 
 Si vas a crear o publicar un keymap derivado, por favor incluye una referencia este repositorio mencionándome como el autor original. 
@@ -947,8 +945,6 @@ Some features require installing and configuring third-party applications; some 
 &nbsp;
 
 ## Developer Notes
-
-For further information check the file ``keymap.c``. Some minor modifications have been made to the QMK code in order to compile this keymap; these changes have been listed in the ``Settings`` section. 
 
 Greetings to [Fauxpark](https://github.com/fauxpark), [Drashna](https://github.com/drashna), [Sigprof](https://github.com/sigprof), [Elpekeñin](https://qmk.elpekenin.dev/) and all the QMK developers and members of its Discord channel.
 
