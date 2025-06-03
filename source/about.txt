@@ -1,0 +1,79 @@
+/*
+     _____
+    / ____|
+   | |     ___  _ __ _ __   ___
+   | |    / _ \| '__| '_ \ / _ \
+   | |___| (_) | |  | | | |  __/
+    \_____\___/|_|  |_| |_|\___|
+
+    Hysp keymap v1.0.1 - Corne RP2040
+    Created by Alvaro Prieto Lauroba
+    =============================================
+
+
+    [ Features ]
+     ¯¯¯¯¯¯¯¯¯¯
+    - Target user: person using macOS as their primary operating system and occasionally Windows.
+    - Philosophy: Keyboard shortcuts are OS-independent, meaning they are translated into
+      different key combinations depending on the selected OS mode (macOS by default).
+    - Custom RGB implementation: visual notifications, themes, animations and reactive effects.
+    - Custom modifier implementation with high customization capabilities.
+    - Some keys have been relocated to improve ergonomics (85% QWERTY).
+    - Custom communication between halves (master -> slave -> ack).
+    - Hyper key: This key has been created to allow custom shortcuts depending on the active
+      application. For example, Hyper + I could mean "italic" in Word, "indent" in a code editor,
+      and "invert colours" in Photoshop. This type of behavior can be implemented with programs
+      like Karabiner-Elements.
+
+
+    [ Hardware ]
+     ¯¯¯¯¯¯¯¯¯¯
+    - Developed for Corne LP and Boardsource/Unicorne using userspace
+    - RP2040 is required, as this firmware does not fit on a Pro Micro
+
+
+    [ Passwords ]
+     ¯¯¯¯¯¯¯¯¯¯
+    - To unlok the keyboard type "pass". It will flash a visual notification to let you know that it is active.
+      If you want to change the password, you can change it in config.h
+
+
+    [ Settings ]
+     ¯¯¯¯¯¯¯¯¯¯
+    - Some shortcuts have not an equivalence in different OS.
+    - In macOS settings -> keyboard. Disable: "Use F1, F2 , etc. keys as standard function keys"
+    - In Windows, advanced energy settings: Sleep : turn off screen.
+    - In macOS, split screen features achieved using BetterSnapTool, Rectangle, or similar tools
+    - In Windows Unicode is managed using WinCompose, in macOs using custom key combos (to prevent Unicode Hex)
+    - If you are facing problems in characters such as: ª, >, and others not outputing the expected value,
+      it might depend in your OS keyboard regional settings. Go to Karabiner and select, Country code: 1 (ISO)
+      for your Corne keyboard. MacOS settings is set to "Spanish - ISO"
+    - Turning off your computer shortcut in Windows might change according to your OS language.
+    - Some shortcuts / outputs, might require third party software
+    - Desktop features in macOS require 3 desktops and Change to desktop shortcuts enabled in
+      Keyboard -> shortcuts -> mission control.
+
+
+    [ External software dependent features ]
+     ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    - Per-app hyper shortcuts
+    - Split screen features in macOs
+    - Lines (key output)
+    - Moving APP to certain desktop
+    - Autoflash (script + Karabiner)
+
+
+    [ Used function keys FN ]
+     ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    F16 ln1, F17 ln2, F18 borde, F19 monitor, F20 flash close, F23 Autoflash corne, F24 Autoflash unicorne
+
+
+    [ Compile source ]
+     ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    qmk compile -kb crkbd -km hysp
+    qmk compile -kb boardsource/unicorne -km hysp
+
+    [ External resources ]
+     ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    - RGB map editor (unused in current implementation)
+      https://codepen.io/alvaro-prieto/full/gOLrwKm

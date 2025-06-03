@@ -1,0 +1,57 @@
+Funciones utiles para RGB de lib8tion:
+https://github.com/qmk/qmk_firmware/blob/master/lib/lib8tion/lib8tion.h
+
+• Tiempo
+	lib8tion:
+		uint32_t ms = GET_MILLIS();
+	timer.h:
+		uint16_t t = timer_read();
+		uint32_t t = timer_read32();
+		timer_elapsed(last) y timer_elapsed32(last)
+
+• Utilidades
+	scale8( i, sc) // (i * sc) / 256
+		Ej. Mapear un valor de 0-255 a 0-100
+    	downscaled = scale8( originalnumber, 100);
+        - También existe scale16() y scale16by8()
+• Aleatorios
+	random8()       == random from 0..255
+	random8( n)     == random from 0..(N-1)
+	random8( n, m)  == random from N..(M-1)
+
+• Operaciones acotadas a 8 bits
+	abs8( i)  //valor absoluto de un uint8
+	qadd8(a,b) qsub8(a,b)  // suman y restan con un clamp de 0-255
+	mul8( i, j)  == (i * j) & 0xFF
+	add8( i, j)  == (i + j) & 0xFF
+	sub8( i, j)  == (i - j) & 0xFF
+
+• Trigonometría y funciones rápidas
+	sin8(x)  cos8(x)  //siendo el ángulo y el resultado de 0 a 255
+	sin16(x) cos16(x)  //angulo uint16_t 0-65535, resultado int16_t: -32767 to 32767
+	sqrt16( uint16_t x )
+
+• Aceleración
+	ease8InOutCubic(x)
+	ease8InOutApprox(x)  //más rapida pero más simplificada
+	ease8InOutQuad(x)
+
+• Ondas
+	cubicwave8( x)
+	quadwave8( x)
+	triwave8( x)
+
+• Interpolación
+	lerp8by8(   fromU8, toU8, fract8 )
+    lerp16by8(  fromU16, toU16, fract8 )
+
+• Atenuación
+	//creo que las _video intentan que no sea 0 puro
+	//alguna de ellas lo deslinealiza para mejor sensación visual
+     dim8_video( x)  == scale8_video( x, x)
+     dim8_raw( x)    == scale8( x, x)
+     dim8_lin( x)    == (x<128) ? ((x+1)/2) : scale8(x,x)
+     brighten8_video( x) == 255 - dim8_video( 255 - x)
+     brighten8_raw( x) == 255 - dim8_raw( 255 - x)
+     brighten8_lin( x) == 255 - dim8_lin( 255 - x)
+
