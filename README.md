@@ -488,7 +488,7 @@ Algunas características requieren instalar y configurar aplicaciones de tercero
 &nbsp;
 ## Notas para desarrolladores
 
-Agradecimientos a [Fauxpark](https://github.com/fauxpark), [Drashna](https://github.com/drashna), [Sigprof](https://github.com/sigprof), [Elpekeñin](https://qmk.elpekenin.dev/) y a todos los desarrolladores de QMK y los miembros de su canal en Discord.
+Agradecimientos a [Drashna](https://github.com/drashna), [Dasky](https://github.com/daskygit), [Sigprof](https://github.com/sigprof), [Elpekeñin](https://qmk.elpekenin.dev/), [Fauxpark](https://github.com/fauxpark) y a todos los desarrolladores de QMK y los miembros de su canal en Discord.
 
 Si vas a crear o publicar un keymap derivado, por favor incluye una referencia este repositorio mencionándome como el autor original. 
 
@@ -946,7 +946,7 @@ Some features require installing and configuring third-party applications; some 
 
 ## Developer Notes
 
-Greetings to [Fauxpark](https://github.com/fauxpark), [Drashna](https://github.com/drashna), [Sigprof](https://github.com/sigprof), [Elpekeñin](https://qmk.elpekenin.dev/) and all the QMK developers and members of its Discord channel.
+Greetings to [Drashna](https://github.com/drashna), [Dasky](https://github.com/daskygit), [Sigprof](https://github.com/sigprof), [Elpekeñin](https://qmk.elpekenin.dev/), [Fauxpark](https://github.com/fauxpark) and all the QMK developers and members of its Discord channel.
 
 If you are going to create or publish a derived keymap, please include a reference to this repository mentioning me as the original author.
 
