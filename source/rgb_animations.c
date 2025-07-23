@@ -34,6 +34,7 @@ static struct {
 void rgb_set_animation(enum rgb_animation animation) {
     rgb_disable_all_except( RGB_ANIMATION );
     current_animation = animation;
+    reset_time();
     if (animation != RGB_NO_ANIMATION) {
         if (animations[animation].init != NULL) {
             animations[animation].init();

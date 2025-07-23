@@ -42,9 +42,10 @@ static uint8_t number_of_active_indicators = 0;
 static enum rgb_indicator active_indicators[ MAX_NUMBER_OF_INDICATORS ];
 static bool rgb_dirty = true;
 static bool rgb_suspended = false;
-static uint32_t t = 0;
-static uint16_t dt = 0;
-static uint16_t elapsed = 0;
+static uint32_t t = 0;                      // Animation elapsed time starting on 0 (in ms)
+static uint16_t dt = 0;                     // Delta-time: time since last frame (in ms)
+static uint32_t last_render_time = 0;       // Timestamp of the last rendered frame
+static uint32_t animation_start_time = 0;   // Timestamp of the current animation's start
 
 // buffer_1d and buffer_2d were created to store data used in various animations.
 // Both can be used independently or together, depending on the needs of each effect.
@@ -64,9 +65,9 @@ static RGB palette[ PALETTE_LENGTH ];
 //	FUNCTIONS
 //–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// Reset time variables
+// Reset time for the current animation.
 static void reset_time(void){
-    t = dt = elapsed = 0;
+    last_render_time = 0;
 }
 
 // Determines whether the RGB main loop should be disabled or remain running.
@@ -131,15 +132,49 @@ void post_init_rgb(void){
 void rgb_set_suspend(bool suspend){
     if(suspend){
         disable_rgb();
-    }else{
-        if(rgb_suspended && rgb_on){
-            rgb_dirty = true;
-        }
-        enable_rgb();
+        rgb_on = false;
+    }else if(rgb_suspended){
+        reset_time();
+        dirty();
     }
     rgb_suspended = suspend;
 }
 
+
+
+//	DRAWING DYNAMIC EFFECTS
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Draw dynamic effects, such as notifications and animations
+// It returns true if any dynamic effect is active.
+bool draw_dynamic_effect(void) {
+    if (current_notification == RGB_NO_NOTIFICATION &&
+        current_animation == RGB_NO_ANIMATION &&
+        current_reactive == RGB_NO_REACTIVE) {
+        return false;
+    }
+    uint32_t now = sync_timer_read32();
+    if (last_render_time == 0) {
+        animation_start_time = now;
+        last_render_time = now;
+    }
+    dt = (uint16_t)(now - last_render_time);
+    #ifdef RGB_MATRIX_LED_FLUSH_LIMIT
+    if (RGB_MATRIX_LED_FLUSH_LIMIT > 0 && dt < RGB_MATRIX_LED_FLUSH_LIMIT) {
+        return true; // Limit frame rate
+    }
+    #endif
+    t = now - animation_start_time;
+    if (current_notification != RGB_NO_NOTIFICATION) {
+        draw_current_notification();
+    } else if (current_animation != RGB_NO_ANIMATION) {
+        draw_current_animation();
+    } else if (current_reactive != RGB_NO_REACTIVE) {
+        draw_current_reactive_animation();
+    }
+    last_render_time = now;
+    return true;
+}
 
 //	RGB MAIN LOOP
 //–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -147,38 +182,9 @@ void rgb_set_suspend(bool suspend){
 // RGB main loop. Executes only when rgb_matrix is enabled.
 // Optimized for resource efficiency—RGB activates only when there are pending changes.
 bool rgb_matrix_indicators_user(void) {
-    static uint32_t last_render_time = 0;
-    uint32_t current_time = sync_timer_read32();
-
-    // Limit frame rate
-    #ifdef RGB_MATRIX_LED_FLUSH_LIMIT
-    if (RGB_MATRIX_LED_FLUSH_LIMIT > 0 && last_render_time != 0) {
-        uint32_t elapsed = current_time - last_render_time;
-        if (elapsed < RGB_MATRIX_LED_FLUSH_LIMIT) {
-            return false;
-        }
-    }
-    #endif
-
-    dt = (uint16_t)(current_time - last_render_time);
-    t = current_time;
-    last_render_time = current_time;
-
-    if (current_notification != RGB_NO_NOTIFICATION) {
-        draw_current_notification();
-        return false;
-    }
-    if (current_animation != RGB_NO_ANIMATION) {
-        draw_current_animation();
-        return false;
-    }
-    if (current_reactive != RGB_NO_REACTIVE) {
-        draw_current_reactive_animation();
-        return false;
-    }
-
-    if( rgb_dirty ){
-        // xprintf("RGB is dirty \n");
+    if( !draw_dynamic_effect() && rgb_dirty ){
+        xprintf("RGB is dirty \n");
+        uprintf("Hola\n");
         turn_off_all_leds();
         if( kb_lock ) return false; // Skip theme rendering if the keyboard is locked.
         if( current_theme != RGB_NO_THEME ){

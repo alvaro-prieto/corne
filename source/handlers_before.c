@@ -58,7 +58,7 @@ void before_handling(uint16_t keycode, bool down, keyrecord_t *record, bool *sto
                 sync(SYNC_KB_LOCK, 0, 0);
                 layer_move( _BASE );
                 #ifdef RGB_MATRIX_ENABLE
-                    rgb_set_notification( RGB_LOCK_NOTIFICATION );
+                    rgb_set_notification( RGB_UNLOCK_NOTIFICATION );
                 #endif
             }
             *handled = true;

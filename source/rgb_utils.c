@@ -95,6 +95,18 @@ static inline void clear_buffer_2d(void){
     memset(buffer_2d, 0, sizeof(buffer_2d));
 }
 
+// Fast integer square root for 32-bit numbers
+static uint16_t isqrt(uint32_t n) {
+    if (n == 0) return 0;
+    uint32_t x = n;
+    uint32_t y = (x + 1) >> 1;
+    while (y < x) {
+        x = y;
+        y = (x + n / x) >> 1;
+    }
+    return (uint16_t)x;
+}
+
 // Random number in interval
 static inline uint8_t random8_interval(uint8_t min, uint8_t max) {
     return min + (((uint16_t)random8() * (max - min + 1)) >> 8);

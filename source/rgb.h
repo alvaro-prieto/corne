@@ -22,17 +22,7 @@
 #define NUM_COLUMNS 6
 #define NUM_ROWS 4
 
-
 #define safe(x) ((x) > MAX_BRIGHT ? MAX_BRIGHT : (x))
-
-// RGB type flags
-enum rgb_types{
-    RGB_INDICATOR    = 1 << 0,
-    RGB_NOTIFICATION = 1 << 1,
-    RGB_ANIMATION    = 1 << 2,
-    RGB_REACTIVE     = 1 << 3,
-    RGB_THEME        = 1 << 4
-};
 
 // The indicators are groups of keys that light up to notify of a state
 // Enum value must be the index of the first element in the leds[] group
@@ -50,8 +40,9 @@ enum rgb_indicator{
 enum rgb_notification{
     RGB_WINDOWS_NOTIFICATION = 0,
     RGB_MAC_NOTIFICATION,
+    RGB_BOOT_NOTIFICATION,
     RGB_LOCK_NOTIFICATION,
-    RGB_RING_NOTIFICATION,
+    RGB_UNLOCK_NOTIFICATION,
     RGB_CAPS_WORD_NOTIFICATION,
     RGB_NO_NOTIFICATION
 };
@@ -71,6 +62,7 @@ enum rgb_reactive{
     RGB_REACTIVE_HEATMAP,
     RGB_REACTIVE_LONG_HEATMAP,
     RGB_REACTIVE_MAGIC,
+    RGB_REACTIVE_RING_WAVE,
     RGB_NO_REACTIVE
 };
 
@@ -81,6 +73,15 @@ enum rgb_theme{
     RGB_FLASHING,
     RGB_MILK,
     RGB_NO_THEME
+};
+
+// RGB type flags (related to rgb_disable_all_except)
+enum rgb_types{
+    RGB_INDICATOR    = 1 << 0,
+    RGB_NOTIFICATION = 1 << 1,
+    RGB_ANIMATION    = 1 << 2,
+    RGB_REACTIVE     = 1 << 3,
+    RGB_THEME        = 1 << 4
 };
 
 

@@ -2,7 +2,6 @@
 #include "transactions.h"
 #include "rgb.h"
 #include "split_util.h"
-#include "deferred_exec.h"
 
 //═══════════════════════════════════════════════════════════════
 //	SYNC MODULE ( used for communication between master and slave )
@@ -90,22 +89,16 @@ void init_sync(void) {
     }
 }
 
-// Delayed pairing notification animation
-static uint32_t paired_notification(uint32_t trigger_time, void *cb_arg) {
-    rgb_set_notification( RGB_LOCK_NOTIFICATION );
-    return 0;
-}
-
 // Check if the keyboard is synced. Display a notification when paired
 bool kb_is_synced(void) {
     if (!master || kb_synced)  return kb_synced;
     if (is_transport_connected()) {
         kb_synced = true;
-        defer_exec(1500, paired_notification, NULL);
+        sync(SYNC_KB_PAIRED, 1, 0);
+        rgb_set_notification(RGB_BOOT_NOTIFICATION);
     }
-    return false;
+    return kb_synced;
 }
-
 
 //	 MAIN SYNC LOOP
 //–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -130,11 +123,6 @@ void process_sync_slave(enum sync_events type, uint8_t value, uint8_t modifier){
         // – – – – KB EVENTS – – – – – – – – – – – – – – – – –
         case SYNC_KB_PAIRED:
             kb_synced = value;
-            /*
-            #ifdef RGB_MATRIX_ENABLE
-            rgb_set_notification( RGB_LOCK_NOTIFICATION );
-            #endif
-            */
             break;
         case SYNC_KB_LOCK:
             kb_lock = value;
