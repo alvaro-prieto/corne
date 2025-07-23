@@ -19,7 +19,7 @@
 #define DISABLE_UNDERGLOW       // No need for underglow in a closed case
 #define LOCK_KB_ON_BOOT 0 	    // Lock keyboard with password on boot (0 = no, 1 = yes)
 #define LOCK_KB_ON_LOCK_OS 0    // Lock keyboard with password on lock (0 = no, 1 = yes)
-#define SLEEP_TIMEOUT 10 * 1000
+#define SLEEP_TIMEOUT 120 * 1000
 
 // General
 #define LAYER_STATE_16BIT
