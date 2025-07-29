@@ -12,7 +12,6 @@
 //═══════════════════════════════════════════════════════════════
 
 Keypress *activeMods = NULL;
-uint8_t modsNumber = 0;
 uint8_t modMask = 0;
 uint8_t lastMask = 0;
 enum OS os = OSX;

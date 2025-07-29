@@ -83,7 +83,6 @@ extern bool kb_lock;
 extern bool kb_suspended;
 extern bool master;
 extern bool caps_word;
-extern uint8_t modsNumber;
 extern uint8_t modMask;
 extern uint8_t lastMask;
 extern uint16_t passive;

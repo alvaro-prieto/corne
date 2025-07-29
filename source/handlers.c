@@ -158,7 +158,7 @@ void handle_default(uint16_t keycode, bool down, keyrecord_t *record, bool *stop
 		*stop_propagation = true;
         return;
     }
-	if( modsNumber > 0 && down && !IS_LAYER_ON(_HYP) ){
+	if( down && !IS_LAYER_ON(_HYP) ){
 		interrupt_mods();
 	}
 	// The following lines could be skipped, but then, holding down combined keycodes
