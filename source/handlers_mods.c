@@ -97,6 +97,12 @@ static void layer_off_if_not_used( uint8_t layer ){
     layer_off(layer);
 }
 
+// Interrupts accent and delete
+void interrupt_tilde(void){
+    accent = false;
+    delete = false;
+}
+
 // Interrupts all active modifiers (to prevent their secondary action).
 void interrupt_mods(void){
     for (int i = 0; i < MAX_MODIFIERS; i++) {
@@ -145,6 +151,8 @@ bool mod_key_handler(uint16_t keycode, bool down, keyrecord_t *record){
     if (down) {
         // If the key is already considered down, this is an anomalous event. Ignore to prevent inconsistencies.
         if (kp->down) return false;
+        // To prevent contamination of the pasive tilde mod, unless it is a shifted key (e.g. Á)
+        if(kp->mod != TILDE_MOD && kp->mod != S1_MOD) interrupt_tilde();
         interrupt_mods();
         modMask += kp->mask;
         if (kp->downHandler) {
@@ -321,6 +329,7 @@ bool shiftDownHandler( Keypress *kp ){
 // Fired when right shift (S1) is released
 void shiftUpHandler( Keypress *kp ){
 	set_caps(false, false, false);
+    interrupt_tilde();
 }
 
 // Fired when M1 is pressed
