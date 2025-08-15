@@ -4,7 +4,7 @@
 <img src="misc/logo.png" width="600" alt="Corne QMK hysp keymap Alvaro Prieto Lauroba"/>
 
 # Custom QMK keymap for [Corne RP2040 Keyboard](https://github.com/foostan/crkbd) 
-Hysp keymap - developed by Álvaro Prieto Lauroba
+Hysp keymap - developed by **Álvaro Prieto Lauroba**
 
 [🇬🇧 Description](#-philosophy)    [🇪🇸 Descripción](#-filosfía)    [⬇️ Descarga / download](https://github.com/alvaro-prieto/corne/tree/main/hex)
 
